@@ -18,7 +18,7 @@ class Words:
         self._validLetters = ''.join(self._validWordList)
 
         print(f'Number of Solutions   : {self.solutionWordCount}')
-        print(f'Number of Valid Words : {self.validnWordCount}')
+        print(f'Number of Valid Words : {self.validWordCount}')
         print()
         print(f"Today's Word is       : {self.todaysWord}")
 
@@ -36,7 +36,7 @@ class Words:
         return len(self._solutionWordlist)
 
     @property
-    def validnWordCount(self) -> int:
+    def validWordCount(self) -> int:
         return len(self._validWordList)
 
     def _CompileCounts(self, letters: str) -> Counter[str]:
