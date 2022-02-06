@@ -12,6 +12,7 @@ class Words:
         self.solutionWordlist = SOLUTION_WORDS
         self.validWordList = VALID_WORDS
 
-    def GetTodaysWord(self):
+    @property
+    def todaysWord(self) -> str:
         # Get the index into the solution word list from today's date
-        return self.solutionWordlist[(date.today() - self.startDate).days]
+        return self.solutionWordlist[(date.today() - self.startDate).days].upper()
