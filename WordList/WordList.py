@@ -35,8 +35,8 @@ class Words:
     def validnWordCount(self) -> int:
         return len(self._validWordList)
 
-    def _CompileCounts(self, letters: str) -> dict[str, int]:
-        return dict(Counter(letters))
+    def _CompileCounts(self, letters: str) -> Counter[str]:
+        return Counter(letters)
 
     @property
     def soutionLetterCounterByFrequency(self) -> dict[str, int]:
