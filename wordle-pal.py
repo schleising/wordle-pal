@@ -1,7 +1,11 @@
+import termplotlib as tpl
+
 from WordList.WordList import Words
 
 words = Words()
+solutionCountsByLetter = words.soutionLetterCounterByLetter
 
-for letter, count in words.soutionLetterCounterByFrequency.items(): print(f'{letter} : {count}')
-print('--------------')
-for letter, count in words.soutionLetterCounterByLetter.items(): print(f'{letter} : {count}')
+fig = tpl.figure()
+
+fig.barh(list(solutionCountsByLetter.values()), list(solutionCountsByLetter.keys()))
+fig.show()
