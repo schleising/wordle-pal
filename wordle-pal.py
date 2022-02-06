@@ -20,6 +20,7 @@ print()
 for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): print(f'{count + 1:2}) {word.upper()} - Score: {score}')
 
 with open('README.md', 'w') as readmeFile:
+    readmeFile.write('[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)\n')
     readmeFile.write('# wordle-pal\n')
     readmeFile.write('Help with Wordle words\n')
     readmeFile.write('<br>\n')
