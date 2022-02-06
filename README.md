@@ -1,3 +1,4 @@
+[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)
 # wordle-pal
 Help with Wordle words
 <br>
