@@ -1,3 +1,5 @@
+from datetime import date
+
 import termplotlib as tpl
 
 from WordList.WordList import Words
@@ -33,4 +35,4 @@ with open('README.md', 'w') as readmeFile:
     readmeFile.write('<br>\n\n')
 
     readmeFile.write('## Today\'s Word\n')
-    readmeFile.write(f'{words.todaysWord}\n')
+    readmeFile.write(f'{words.todaysWord} - Updated {date.today().day:02}-{date.today().month:02}-{date.today().year}\n')
