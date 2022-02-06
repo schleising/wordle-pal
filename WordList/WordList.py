@@ -22,6 +22,10 @@ class Words:
         print()
         print(f"Today's Word is       : {self.todaysWord}")
 
+        # Create counters of each letter
+        self.soutionLetterCounter = self._CompileCounts(self._solutionLetters)
+        self.validLetterCounter = self._CompileCounts(self._validLetters)
+
     @property
     def todaysWord(self) -> str:
         # Get the index into the solution word list from today's date
@@ -40,16 +44,16 @@ class Words:
 
     @property
     def soutionLetterCounterByFrequency(self) -> dict[str, int]:
-        return dict(sorted(self._CompileCounts(self._solutionLetters).items(), key=lambda x: x[1], reverse=True))
+        return dict(sorted(self.soutionLetterCounter.items(), key=lambda x: x[1], reverse=True))
 
     @property
     def validLetterCounterByFrequency(self) -> dict[str, int]:
-        return dict(sorted(self._CompileCounts(self._validLetters).items(), key=lambda x: x[1], reverse=True))
+        return dict(sorted(self.validLetterCounter.items(), key=lambda x: x[1], reverse=True))
 
     @property
     def soutionLetterCounterByLetter(self) -> dict[str, int]:
-        return dict(sorted(self._CompileCounts(self._solutionLetters).items(), key=lambda x: x[0]))
+        return dict(sorted(self.soutionLetterCounter.items(), key=lambda x: x[0]))
 
     @property
     def validLetterCounterByLetter(self) -> dict[str, int]:
-        return dict(sorted(self._CompileCounts(self._validLetters).items(), key=lambda x: x[0]))
+        return dict(sorted(self.validLetterCounter.items(), key=lambda x: x[0]))
