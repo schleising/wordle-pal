@@ -27,7 +27,7 @@ with open('README.md', 'w') as readmeFile:
     readmeFile.write('Help with Wordle words\n')
     readmeFile.write('<br>\n')
     readmeFile.write('<br>\n\n')
-    readmeFile.write('## Top 10 Starting Words\n')
+    readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
 
     for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
 

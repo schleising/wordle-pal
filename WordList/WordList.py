@@ -11,12 +11,21 @@ class Words:
         # Initialise the word lists
         self._wordList: list[Word] = wordList
 
+        # Get the day number
+        self.dayNumber = (date.today() - self._startDate).days
+
+        # Get today's word
+        self.todaysWord = self._wordList[self.dayNumber].upper()
+
+        # Filter out the words that have already gone
+        self._wordList = self._wordList[self.dayNumber:]
+
         # Concatenate the word lists
         self._letters = Letter().join(self._wordList)
 
         print()
-        print(f'Number of Solutions   : {self.wordCount}')
-        print(f"Today's Word is       : {self.todaysWord}")
+        print(f'Number of Remaining Solutions : {self.wordCount}')
+        print(f"Today's Word is               : {self.todaysWord}")
         print()
 
         # Create counters of each letter
@@ -24,11 +33,6 @@ class Words:
 
         # Using the letter counts to score, score each valid word
         self._wordScores = self._CreateWordScores()
-
-    @property
-    def todaysWord(self) -> Word:
-        # Get the index into the solution word list from today's date
-        return self._wordList[(date.today() - self._startDate).days].upper()
 
     @property
     def wordCount(self) -> int:
