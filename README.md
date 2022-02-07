@@ -19,4 +19,4 @@ Help with Wordle words
 <br>
 
 ## Today's Word
-SKILL
+ELDER - Updated 07-02-2022
