@@ -5,18 +5,18 @@ Help with Wordle words
 <br>
 
 ## Top 10 Starting Words (taken from remaining words)
-     1) LATER - Score: 4090
-     2) ALTER - Score: 4090
-     3) ALERT - Score: 4090
-     4) AROSE - Score: 4063
-     5) STARE - Score: 4046
-     6) IRATE - Score: 4042
-     7) ARISE - Score: 3997
-     8) RAISE - Score: 3997
-     9) LEARN - Score: 3966
-    10) RENAL - Score: 3966
+     1) LATER - Score: 4087
+     2) ALTER - Score: 4087
+     3) ALERT - Score: 4087
+     4) AROSE - Score: 4060
+     5) STARE - Score: 4043
+     6) IRATE - Score: 4039
+     7) ARISE - Score: 3994
+     8) RAISE - Score: 3994
+     9) LEARN - Score: 3963
+    10) RENAL - Score: 3963
 <br>
 <br>
 
 ## Today's Word
-FRAME - Updated 08-02-2022
+HUMOR - Updated 09-02-2022
