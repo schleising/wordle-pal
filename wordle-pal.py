@@ -121,22 +121,20 @@ if __name__ == '__main__':
 
     # Open the history file and get the new average score
     with open('history.txt', 'r', encoding='utf-8') as inputFile:
-        runningTotal = 0
-        count = 0
-        for line in inputFile:
-            runningTotal += int(line)
-            count += 1
+        # Create a list for the guess number history
+        guessNumberHistory = [int(line) for line in inputFile]
 
-    averageScore = runningTotal / count
+    # Calculate the average score
+    averageScore = sum(guessNumberHistory) / len(guessNumberHistory)
 
     # Output the average score
-    print(f'Average Score: {averageScore:.2}')
+    print(f'Average Score: {averageScore:.2f}')
 
     # Update the readme file
     with open('README.md', 'w') as readmeFile:
         readmeFile.write('[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)\n')
         readmeFile.write('# wordle-pal\n')
-        readmeFile.write('Help with Wordle words\n')
+        readmeFile.write('## Help with Wordle words\n')
         readmeFile.write('<br>\n')
         readmeFile.write('<br>\n\n')
         readmeFile.write(f"## Got today's word in {guessNumber} attempts<br>\n")
@@ -146,6 +144,10 @@ if __name__ == '__main__':
  
         readmeFile.write('<br>\n')
 
+        readmeFile.write(f'## Average Number of Guesses: {averageScore:.2f}<br>\n')
+
+        readmeFile.write('<br>\n\n')
+ 
         readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
 
         for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
