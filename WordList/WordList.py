@@ -4,7 +4,7 @@ from collections import Counter
 from WordList.TypeDefs import Word, Letter, WordScores, LetterScores
 
 class Words:
-    def __init__(self, wordList: list[Word]) -> None:
+    def __init__(self, wordList: list[Word], wordDate: date = date.today()) -> None:
         # Get the starting date
         self._startDate = date(2021, 6, 19)
 
@@ -12,21 +12,16 @@ class Words:
         self._wordList: list[Word] = wordList
 
         # Get the day number
-        self.dayNumber = (date.today() - self._startDate).days
+        self.dayNumber = (wordDate - self._startDate).days
 
         # Get today's word
-        self.todaysWord = self._wordList[self.dayNumber].upper()
+        self.todaysWord = self._wordList[self.dayNumber]
 
         # Filter out the words that have already gone
         self._wordList = self._wordList[self.dayNumber:]
 
         # Concatenate the word lists
         self._letters = Letter().join(self._wordList)
-
-        print()
-        print(f'Number of Remaining Solutions : {self.wordCount}')
-        print(f"Today's Word is               : {self.todaysWord}")
-        print()
 
         # Create counters of each letter
         self._letterCounter = self._CompileCounts()
