@@ -6,7 +6,7 @@ from WordList.TypeDefs import Letter
 from WordList.WordList import Words
 from WordList.DownloadWords import WordDownloader
 
-if __name__ == '__main__':
+def GuessWord(writeFiles = True) -> tuple[int, list[list[str]]]:
     # Get the solution and valid words
     wd = WordDownloader()
 
@@ -121,54 +121,60 @@ if __name__ == '__main__':
     for guessGraphic in guessHistory[:guessNumber]:
         print(''.join(guessGraphic))
 
-    # Write the number of guesses to the history file 
-    with open('history.txt', 'a', encoding='utf-8') as outputFile:
-        outputFile.write(f'{guessNumber}\n')
+    if writeFiles:
+        # Write the number of guesses to the history file 
+        with open('history.txt', 'a', encoding='utf-8') as outputFile:
+            outputFile.write(f'{guessNumber}\n')
 
-    # Open the history file and get the new average score
-    with open('history.txt', 'r', encoding='utf-8') as inputFile:
-        # Create a list for the guess number history
-        guessNumberHistory = [int(line) for line in inputFile]
+        # Open the history file and get the new average score
+        with open('history.txt', 'r', encoding='utf-8') as inputFile:
+            # Create a list for the guess number history
+            guessNumberHistory = [int(line) for line in inputFile]
 
-    # Calculate the average score
-    averageScore = sum(guessNumberHistory) / len(guessNumberHistory)
+        # Calculate the average score
+        averageScore = sum(guessNumberHistory) / len(guessNumberHistory)
 
-    # Output the average score
-    print()
-    print(f'Average Score: {averageScore:.2f}')
+        # Output the average score
+        print()
+        print(f'Average Score: {averageScore:.2f}')
 
-    # Get the counts of each score
-    scoreCounts = Counter(guessNumberHistory)
+        # Get the counts of each score
+        scoreCounts = Counter(guessNumberHistory)
 
-    # Update the readme file
-    with open('README.md', 'w') as readmeFile:
-        readmeFile.write('[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)\n')
-        readmeFile.write('# wordle-pal\n')
-        readmeFile.write('## Help with Wordle words\n')
-        readmeFile.write('</br>\n')
-        readmeFile.write('</br>\n\n')
-        readmeFile.write(f"## Got today's word in {guessNumber} attempts</br>\n")
+        # Update the readme file
+        with open('README.md', 'w') as readmeFile:
+            readmeFile.write('[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)\n')
+            readmeFile.write('# wordle-pal\n')
+            readmeFile.write('## Help with Wordle words\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n\n')
+            readmeFile.write(f"## Got today's word in {guessNumber} attempts</br>\n")
 
-        for guessGraphic in guessHistory[:guessNumber]:
-            readmeFile.write(f'{"".join(guessGraphic)}\\\n')
- 
-        readmeFile.write('</br>\n')
+            for guessGraphic in guessHistory[:guessNumber]:
+                readmeFile.write(f'{"".join(guessGraphic)}\\\n')
+    
+            readmeFile.write('</br>\n')
 
-        readmeFile.write(f'## Average Number of Guesses: {averageScore:.2f}</br>\n')
+            readmeFile.write(f'## Average Number of Guesses: {averageScore:.2f}</br>\n')
 
-        readmeFile.write('## Guess Statistics</br>\n')
+            readmeFile.write('## Guess Statistics</br>\n')
 
-        for count in range(maxGuesses):
-            readmeFile.write(f'    {count+1}: {scoreCounts.get(count+1, 0)}\n')
+            for count in range(maxGuesses):
+                readmeFile.write(f'    {count+1}: {scoreCounts.get(count+1, 0)}\n')
 
-        readmeFile.write('</br>\n\n')
- 
-        readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
+            readmeFile.write('</br>\n\n')
+    
+            readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
 
-        for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
+            for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
 
-        readmeFile.write('</br>\n')
-        readmeFile.write('</br>\n\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n\n')
 
-        readmeFile.write('## Today\'s Word\n')
-        readmeFile.write(f'{words.todaysWord.upper()} - Updated {date.today().day:02}-{date.today().month:02}-{date.today().year}\n')
+            readmeFile.write('## Today\'s Word\n')
+            readmeFile.write(f'{words.todaysWord.upper()} - Updated {date.today().day:02}-{date.today().month:02}-{date.today().year}\n')
+
+    return words.dayNumber, guessHistory[:guessNumber]
+
+if __name__ == '__main__':
+    GuessWord()
