@@ -159,7 +159,7 @@ if __name__ == '__main__':
         readmeFile.write('## Guess Statistics</br>\n')
 
         for count in range(maxGuesses):
-            readmeFile.write(f'    {count+1}: {scoreCounts[count+1] if count+1 in scoreCounts else "0"}\n')
+            readmeFile.write(f'    {count+1}: {scoreCounts.get(count+1, 0)}\n')
 
         readmeFile.write('</br>\n\n')
  
