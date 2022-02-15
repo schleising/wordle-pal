@@ -45,7 +45,7 @@ def guess(update, context):
     msgLines.append('')
     msgLines.extend(guessStrings)
 
-    update.message.reply_text('\n'.join(msgLines))
+    update.message.reply_text('\n'.join(msgLines), quote=False)
 
 def error(update, context):
     """Log Errors caused by Updates."""
