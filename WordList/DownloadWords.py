@@ -1,3 +1,4 @@
+from pathlib import Path
 import requests
 import json
 
@@ -36,6 +37,16 @@ class WordDownloader():
                 # If there is any kind of parsing error, reset the words back to the original ones
                 self.solutionWords = SOLUTION_WORDS
                 self.validWords = VALID_WORDS
+            else:
+                # If parsing was successful, update the default solution and
+                # valid word files in case of changes for use another day if necessary
+                with open(Path('WordList/SolutionWords.py'), 'w', encoding='utf-8') as solutionFile:
+                    wordList = json.dumps(self.solutionWords)
+                    solutionFile.write(f'SOLUTION_WORDS: list[str] = {wordList}')
+
+                with open(Path('WordList/ValidWords.py'), 'w', encoding='utf-8') as validFile:
+                    wordList = json.dumps(self.validWords)
+                    validFile.write(f'VALID_WORDS: list[str] = {wordList}')
 
 if __name__ == '__main__':
     # Test this class
