@@ -28,9 +28,14 @@ class WordDownloader():
             # If the download was OK, get the full text
             fullText = response.text
 
-            # Extract the text using the delimiters and load the JSON string into a Python list
-            self.solutionWords: list[str] = json.loads(fullText.split(self.solutionWordsDelimiter)[1].split(self.validWordsDelimiter)[0])
-            self.validWords: list[str] = json.loads(fullText.split(self.validWordsDelimiter)[1].split(self.endValidWordsDelimiter)[0])
+            try:
+                # Extract the text using the delimiters and load the JSON string into a Python list
+                self.solutionWords: list[str] = json.loads(fullText.split(self.solutionWordsDelimiter)[1].split(self.validWordsDelimiter)[0])
+                self.validWords: list[str] = json.loads(fullText.split(self.validWordsDelimiter)[1].split(self.endValidWordsDelimiter)[0])
+            except:
+                # If there is any kind of parsing error, reset the words back to the original ones
+                self.solutionWords = SOLUTION_WORDS
+                self.validWords = VALID_WORDS
 
 if __name__ == '__main__':
     # Test this class
