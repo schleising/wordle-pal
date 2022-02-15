@@ -38,6 +38,7 @@ def help(update, context):
 
 
 def guess(update, context):
+    print(f'Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name}')
     dayNumber, guessHistory = GuessWord(False)
     guessStrings = [''.join(guessGraphic) for guessGraphic in guessHistory]
     msgLines: list[str] = []
