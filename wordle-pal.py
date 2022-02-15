@@ -1,4 +1,5 @@
 from datetime import date
+from collections import Counter
 
 from WordList.TypeDefs import Letter
 
@@ -136,6 +137,9 @@ if __name__ == '__main__':
     print()
     print(f'Average Score: {averageScore:.2f}')
 
+    # Get the counts of each score
+    scoreCounts = Counter(guessNumberHistory)
+
     # Update the readme file
     with open('README.md', 'w') as readmeFile:
         readmeFile.write('[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)\n')
@@ -151,6 +155,11 @@ if __name__ == '__main__':
         readmeFile.write('<br>\n')
 
         readmeFile.write(f'## Average Number of Guesses: {averageScore:.2f}<br>\n')
+
+        readmeFile.write('## Guess Statistics<br>\n')
+
+        for count in range(maxGuesses):
+            readmeFile.write(f'    {count+1}: {scoreCounts[count+1] if count+1 in scoreCounts else "0"}\n')
 
         readmeFile.write('<br>\n\n')
  
