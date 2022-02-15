@@ -10,7 +10,7 @@ from wordlepal import GuessWord
 # Define a handler for /guess
 def guess(update, context):
     # Print the date and user to the log
-    print(f'{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name}')
+    print(f'{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
 
     # Guess the word returning the day number and guess history for the response
     dayNumber, guessHistory = GuessWord(False)
