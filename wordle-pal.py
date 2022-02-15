@@ -51,8 +51,6 @@ if __name__ == '__main__':
         print()
         for count, (word, score) in enumerate(list(filteredSolutionList.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
         print()
-        # Print the current guess
-        print(f'Guess {guessNumber}: {guess}')
 
         # Set up the variables for good and bad letters and letter position tracking
         goodLetterPositions: list[Letter] = ['_' for _ in range(5)]
@@ -90,9 +88,11 @@ if __name__ == '__main__':
                     excludedLetters += letter
 
         # Print some stats
-        print(f'Letters in correct positions: {" ".join(goodLetterPositions)}')
-        print(f'Letters in bad positions: {" ".join(badLetterPositions)}')
-        print(f'Letters not in word: {" ".join(excludedLetters)}')
+        print(f'Guess {guessNumber}                      : {" ".join(letter for letter in guess)}')
+        print(f'                               {"".join(guessHistory[guessNumber - 1])}')
+        print(f'Letters in correct positions : {" ".join(goodLetterPositions)}')
+        print(f'Letters in bad positions     : {" ".join(badLetterPositions)}')
+        print(f'Letters not in word          : {" ".join(excludedLetters)}')
 
         # Loop over a copy of the words remaining in contention
         for word in dict(filteredSolutionList):
@@ -112,7 +112,9 @@ if __name__ == '__main__':
                         break
 
     # Output the number of guesses it took
+    print()
     print(f'Got the word {guess.upper()} in {guessNumber} attempts')
+    print()
 
     # Output a Wordle like graphic
     for guessGraphic in guessHistory[:guessNumber]:
@@ -131,6 +133,7 @@ if __name__ == '__main__':
     averageScore = sum(guessNumberHistory) / len(guessNumberHistory)
 
     # Output the average score
+    print()
     print(f'Average Score: {averageScore:.2f}')
 
     # Update the readme file
