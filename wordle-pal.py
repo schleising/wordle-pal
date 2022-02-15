@@ -145,30 +145,30 @@ if __name__ == '__main__':
         readmeFile.write('[![Python application](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml/badge.svg)](https://github.com/schleising/wordle-pal/actions/workflows/python-app.yml)\n')
         readmeFile.write('# wordle-pal\n')
         readmeFile.write('## Help with Wordle words\n')
-        readmeFile.write('<br>\n')
-        readmeFile.write('<br>\n\n')
-        readmeFile.write(f"## Got today's word in {guessNumber} attempts<br>\n")
+        readmeFile.write('</br>\n')
+        readmeFile.write('</br>\n\n')
+        readmeFile.write(f"## Got today's word in {guessNumber} attempts</br>\n")
 
         for guessGraphic in guessHistory[:guessNumber]:
             readmeFile.write(f'{"".join(guessGraphic)}\\\n')
  
-        readmeFile.write('<br>\n')
+        readmeFile.write('</br>\n')
 
-        readmeFile.write(f'## Average Number of Guesses: {averageScore:.2f}<br>\n')
+        readmeFile.write(f'## Average Number of Guesses: {averageScore:.2f}</br>\n')
 
-        readmeFile.write('## Guess Statistics<br>\n')
+        readmeFile.write('## Guess Statistics</br>\n')
 
         for count in range(maxGuesses):
             readmeFile.write(f'    {count+1}: {scoreCounts[count+1] if count+1 in scoreCounts else "0"}\n')
 
-        readmeFile.write('<br>\n\n')
+        readmeFile.write('</br>\n\n')
  
         readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
 
         for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
 
-        readmeFile.write('<br>\n')
-        readmeFile.write('<br>\n\n')
+        readmeFile.write('</br>\n')
+        readmeFile.write('</br>\n\n')
 
         readmeFile.write('## Today\'s Word\n')
         readmeFile.write(f'{words.todaysWord.upper()} - Updated {date.today().day:02}-{date.today().month:02}-{date.today().year}\n')
