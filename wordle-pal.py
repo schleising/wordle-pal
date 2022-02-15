@@ -3,11 +3,14 @@ from datetime import date
 from WordList.TypeDefs import Letter
 
 from WordList.WordList import Words
-from WordList.SolutionWords import SOLUTION_WORDS
+from WordList.DownloadWords import WordDownloader
 
 if __name__ == '__main__':
+    # Get the solution and valid words
+    wd = WordDownloader()
+
     # Construct a Words object
-    words = Words(SOLUTION_WORDS)
+    words = Words(wd.solutionWords)
 
     # Set the characters for good and bad letters
     incorrectLetter = '⬜'
