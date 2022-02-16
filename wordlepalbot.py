@@ -2,6 +2,7 @@ import sys
 from datetime import date
 import logging
 from pathlib import Path
+import warnings
 
 from dateparser import parse
 
@@ -92,6 +93,9 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
+    # Filter out a warning from dateparser
+    warnings.filterwarnings('ignore', message='The localize method is no longer necessary')
+
     # Enable logging
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         level=logging.INFO)
