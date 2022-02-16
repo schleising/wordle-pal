@@ -3,6 +3,8 @@ from datetime import date
 import logging
 from pathlib import Path
 
+from dateparser import parse
+
 from telegram.ext import Updater, CommandHandler
 
 from wordlepal import GuessWord
@@ -12,8 +14,26 @@ def guess(update, context):
     # Print the date and user to the log
     print(f'{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
 
+    # Get the requested date
+    commands: list[str] = update.message.text.split(' ')
+
+    # Get the requested date if it exists in the command
+    if len(commands) > 1:
+        wordDate = parse(' '.join(commands[1:]), settings={'DATE_ORDER': 'DMY'})
+
+        if wordDate is None:
+            # If the date couldn't be parsed, let the user know and return
+            update.message.reply_text('Could not parse date')
+            return
+        else:
+            # If the date was parsed, set it as the word date
+            wordDate = wordDate.date()
+    else:
+        # If no date is given use today's date
+        wordDate = date.today()
+
     # Guess the word returning the day number and guess history for the response
-    dayNumber, guessHistory = GuessWord(False)
+    dayNumber, guessHistory = GuessWord(writeFiles = False, wordDate=wordDate)
 
     # Join the guess history lines into strings
     guessStrings = [''.join(guessGraphic) for guessGraphic in guessHistory]

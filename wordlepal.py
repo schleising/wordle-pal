@@ -6,12 +6,12 @@ from WordList.TypeDefs import Letter
 from WordList.WordList import Words
 from WordList.DownloadWords import WordDownloader
 
-def GuessWord(writeFiles = True) -> tuple[int, list[list[str]]]:
+def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today()) -> tuple[int, list[list[str]]]:
     # Get the solution and valid words
     wd = WordDownloader()
 
     # Construct a Words object
-    words = Words(wd.solutionWords)
+    words = Words(wd.solutionWords, wordDate=wordDate)
 
     # Set the characters for good and bad letters
     incorrectLetter = '⬜'
@@ -44,14 +44,15 @@ def GuessWord(writeFiles = True) -> tuple[int, list[list[str]]]:
         # Get the highest scoring remaining word as the guess
         guess = list(filteredSolutionList)[0]
 
-        # Print the top 10 remaining words
-        print()
-        print(f'Top ten remaining words of {len(filteredSolutionList)}')
-        print()
-        print('===============================')
-        print()
-        for count, (word, score) in enumerate(list(filteredSolutionList.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
-        print()
+        if verbose:
+            # Print the top 10 remaining words
+            print()
+            print(f'Top ten remaining words of {len(filteredSolutionList)}')
+            print()
+            print('===============================')
+            print()
+            for count, (word, score) in enumerate(list(filteredSolutionList.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
+            print()
 
         # Set up the variables for good and bad letters and letter position tracking
         goodLetterPositions: list[Letter] = ['_' for _ in range(5)]
@@ -88,12 +89,13 @@ def GuessWord(writeFiles = True) -> tuple[int, list[list[str]]]:
                     # This letter is not in the word, add it to the string of excluded letters
                     excludedLetters += letter
 
-        # Print some stats
-        print(f'Guess {guessNumber}                      : {" ".join(letter for letter in guess)}')
-        print(f'                               {"".join(guessHistory[guessNumber - 1])}')
-        print(f'Letters in correct positions : {" ".join(goodLetterPositions)}')
-        print(f'Letters in bad positions     : {" ".join(badLetterPositions)}')
-        print(f'Letters not in word          : {" ".join(excludedLetters)}')
+        if verbose:
+            # Print some stats
+            print(f'Guess {guessNumber}                      : {" ".join(letter for letter in guess)}')
+            print(f'                               {"".join(guessHistory[guessNumber - 1])}')
+            print(f'Letters in correct positions : {" ".join(goodLetterPositions)}')
+            print(f'Letters in bad positions     : {" ".join(badLetterPositions)}')
+            print(f'Letters not in word          : {" ".join(excludedLetters)}')
 
         # Loop over a copy of the words remaining in contention
         for word in dict(filteredSolutionList):
@@ -112,10 +114,11 @@ def GuessWord(writeFiles = True) -> tuple[int, list[list[str]]]:
                         filteredSolutionList.pop(word, None)
                         break
 
-    # Output the number of guesses it took
-    print()
-    print(f'Got the word {guess.upper()} in {guessNumber} attempts')
-    print()
+    if verbose:
+        # Output the number of guesses it took
+        print()
+        print(f'Got the word {guess.upper()} in {guessNumber} attempts')
+        print()
 
     # Output a Wordle like graphic
     for guessGraphic in guessHistory[:guessNumber]:
@@ -177,4 +180,4 @@ def GuessWord(writeFiles = True) -> tuple[int, list[list[str]]]:
     return words.dayNumber, guessHistory[:guessNumber]
 
 if __name__ == '__main__':
-    GuessWord()
+    GuessWord(verbose=True)
