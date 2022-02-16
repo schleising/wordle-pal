@@ -8,11 +8,17 @@ class Words:
         # Get the starting date
         self._startDate = date(2021, 6, 19)
 
+        # Print the wordDate for interest
+        print(f'Words:__init__():wordDate : {wordDate}')
+
         # Initialise the word lists
         self._wordList: list[Word] = wordList
 
         # Get the day number
         self.dayNumber = (wordDate - self._startDate).days
+
+        # Print the day number for interest
+        print(f'Words:__init__():dayNumber: {self.dayNumber}')
 
         # Get today's word
         self.todaysWord = self._wordList[self.dayNumber]
