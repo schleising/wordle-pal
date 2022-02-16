@@ -33,6 +33,14 @@ def guess(update, context):
     # Send the reply removing the quote of the original /guess message
     update.message.reply_text('\n'.join(msgLines), quote=False)
 
+def knowEncona(update, context):
+    if update.message.from_user.first_name == 'Tim':
+        update.message.reply_text('Yes, Tim, you do')
+    elif update.message.from_user.first_name == 'Stephen':
+        update.message.reply_text("No, Steve, you don't")
+    else:
+        update.message.reply_text("Sorry, Dean, it's unclear")
+
 # Log errors
 def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -59,6 +67,7 @@ def main():
 
     # On receipt of a /guess command call the guess() function
     dp.add_handler(CommandHandler('guess', guess))
+    dp.add_handler(CommandHandler('doiknowencona', knowEncona))
 
     # Add the error handler to log errors
     dp.add_error_handler(error)
