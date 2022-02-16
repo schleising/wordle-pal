@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 from collections import Counter
 
 from WordList.TypeDefs import Word, Letter, WordScores, LetterScores
@@ -7,6 +7,25 @@ class Words:
     def __init__(self, wordList: list[Word], wordDate: date = date.today()) -> None:
         # Get the starting date
         self._startDate = date(2021, 6, 19)
+
+        # Assume that the date is in bounds
+        self.dateOutOfBounds = False
+
+        # Check the date is not before the start date
+        if wordDate < self._startDate:
+            # Set the wordDate to the start date
+            wordDate = self._startDate
+
+            # Flag the date as out of bounds
+            self.dateOutOfBounds = True
+
+        # Check that the end date is in bounds
+        if (wordDate - self._startDate).days >= len(wordList):
+            # Set the wordDate to the last possible day
+            wordDate = self._startDate + timedelta(days=len(wordList) - 1)
+
+            # Flag the date as out of bounds
+            self.dateOutOfBounds = True
 
         # Print the wordDate for interest
         print(f'Words:__init__():wordDate : {wordDate}')

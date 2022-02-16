@@ -6,7 +6,7 @@ from WordList.TypeDefs import Letter
 from WordList.WordList import Words
 from WordList.DownloadWords import WordDownloader
 
-def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today()) -> tuple[int, list[list[str]]]:
+def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today()) -> tuple[int, list[list[str]], bool]:
     # Get the solution and valid words
     wd = WordDownloader()
 
@@ -177,7 +177,7 @@ def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today())
             readmeFile.write('## Today\'s Word\n')
             readmeFile.write(f'{words.todaysWord.upper()} - Updated {date.today().day:02}-{date.today().month:02}-{date.today().year}\n')
 
-    return words.dayNumber, guessHistory[:guessNumber]
+    return words.dayNumber, guessHistory[:guessNumber], words.dateOutOfBounds
 
 if __name__ == '__main__':
     GuessWord(verbose=True)

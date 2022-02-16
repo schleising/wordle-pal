@@ -34,25 +34,30 @@ def guess(update, context):
         wordDate = date.today()
 
     # Guess the word returning the day number and guess history for the response
-    dayNumber, guessHistory = GuessWord(writeFiles = False, wordDate=wordDate)
+    dayNumber, guessHistory, dateOutOfBounds = GuessWord(writeFiles = False, wordDate=wordDate)
 
-    # Join the guess history lines into strings
-    guessStrings = [''.join(guessGraphic) for guessGraphic in guessHistory]
+    # If the date is in bounds
+    if not dateOutOfBounds:
+        # Join the guess history lines into strings
+        guessStrings = [''.join(guessGraphic) for guessGraphic in guessHistory]
 
-    # Create a list for the output text
-    msgLines: list[str] = []
+        # Create a list for the output text
+        msgLines: list[str] = []
 
-    # Add the first line of text which shows how many guesses it took
-    msgLines.append(f'Wordle {dayNumber} {len(guessHistory)}/6')
+        # Add the first line of text which shows how many guesses it took
+        msgLines.append(f'Wordle {dayNumber} {len(guessHistory)}/6')
 
-    # Add a blank line
-    msgLines.append('')
+        # Add a blank line
+        msgLines.append('')
 
-    # Add the guess history strings
-    msgLines.extend(guessStrings)
+        # Add the guess history strings
+        msgLines.extend(guessStrings)
 
-    # Send the reply removing the quote of the original /guess message
-    update.message.reply_text('\n'.join(msgLines), quote=False)
+        # Send the reply removing the quote of the original /guess message
+        update.message.reply_text('\n'.join(msgLines), quote=False)
+    else:
+        # State that the words have all been used up
+        update.message.reply_text("It's all over, all the words have gone...")
 
 # Log errors
 def error(update, context):
