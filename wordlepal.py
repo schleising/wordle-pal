@@ -1,12 +1,13 @@
 from datetime import date
 from collections import Counter
+from pathlib import Path
 
 from WordList.TypeDefs import Letter
 
 from WordList.WordList import Words
 from WordList.DownloadWords import WordDownloader
 
-def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today()) -> tuple[int, list[list[str]], bool]:
+def GuessWord(writeFiles: bool = True, verbose: bool = False, wordDate: date = date.today()) -> tuple[int, list[list[str]], str, bool]:
     # Get the solution and valid words
     wd = WordDownloader()
 
@@ -114,6 +115,14 @@ def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today())
                         filteredSolutionList.pop(word, None)
                         break
 
+    # Check whether the word was actually guessed
+    if guess != words.todaysWord:
+        # If not return 'X'
+        guessNumberString = 'X'
+    else:
+        # If so, return the guess number as a string
+        guessNumberString = str(guessNumber)
+
     if verbose:
         # Output the number of guesses it took
         print()
@@ -126,7 +135,7 @@ def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today())
 
     if writeFiles:
         # Write the number of guesses to the history file 
-        with open('history.txt', 'a', encoding='utf-8') as outputFile:
+        with open(Path('history.txt'), 'a', encoding='utf-8') as outputFile:
             outputFile.write(f'{guessNumber}\n')
 
         # Open the history file and get the new average score
@@ -177,7 +186,36 @@ def GuessWord(writeFiles = True, verbose = False, wordDate: date = date.today())
             readmeFile.write('## Today\'s Word\n')
             readmeFile.write(f'{words.todaysWord.upper()} - Updated {date.today().day:02}-{date.today().month:02}-{date.today().year}\n')
 
-    return words.dayNumber, guessHistory[:guessNumber], words.dateOutOfBounds
+    return words.dayNumber, guessHistory[:guessNumber], guessNumberString, words.dateOutOfBounds
 
 if __name__ == '__main__':
     GuessWord(verbose=True)
+
+    # currentDate = date(2021, 6, 19)
+
+    # dateOutOfBounds = False
+
+    # with open(Path('Output.txt'), 'w', encoding='utf-8') as outputFile:
+    #     while True:
+    #         dayNumber, guessHistory, guessNumberString, dateOutOfBounds = GuessWord(wordDate=currentDate)
+
+    #         if dateOutOfBounds:
+    #             break
+
+    #         print('===============')
+    #         print(f'Wordle {dayNumber} {guessNumberString}/6')
+    #         print()
+
+    #         # Output a Wordle like graphic
+    #         for guessGraphic in guessHistory:
+    #             print(''.join(guessGraphic))
+
+    #         outputFile.write('===============\n')
+    #         outputFile.write(f'Wordle {dayNumber} {guessNumberString}/6\n')
+    #         outputFile.write('\n')
+
+    #         # Output a Wordle like graphic
+    #         for guessGraphic in guessHistory:
+    #             outputFile.write(f"{''.join(guessGraphic)}\n")
+
+    #         currentDate = currentDate + timedelta(days=1)

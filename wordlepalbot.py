@@ -34,7 +34,7 @@ def guess(update, context):
         wordDate = date.today()
 
     # Guess the word returning the day number and guess history for the response
-    dayNumber, guessHistory, dateOutOfBounds = GuessWord(writeFiles = False, wordDate=wordDate)
+    dayNumber, guessHistory, guessNumberString, dateOutOfBounds = GuessWord(writeFiles = False, wordDate=wordDate)
 
     # If the date is in bounds
     if not dateOutOfBounds:
@@ -45,7 +45,7 @@ def guess(update, context):
         msgLines: list[str] = []
 
         # Add the first line of text which shows how many guesses it took
-        msgLines.append(f'Wordle {dayNumber} {len(guessHistory)}/6')
+        msgLines.append(f'Wordle {dayNumber} {guessNumberString}/6')
 
         # Add a blank line
         msgLines.append('')
