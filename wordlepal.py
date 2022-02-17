@@ -53,12 +53,20 @@ def RunGame(wordDate: date = date.today(), downloadWords: bool = False, writeFil
             for count in range(Constants.MAX_GUESSES):
                 readmeFile.write(f'    {count+1}: {scoreCounts.get(count+1, 0)}\n')
 
-            readmeFile.write('</br>\n\n')
-    
-            readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
-
-            for count, (word, score) in enumerate(list(words.wordScores.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
-
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
+            readmeFile.write('</br>\n')
             readmeFile.write('</br>\n')
             readmeFile.write('</br>\n\n')
 
