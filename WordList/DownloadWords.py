@@ -38,6 +38,9 @@ class WordDownloader():
             # If there is any kind of download or parsing error, reset the words back to the original ones
             self.solutionWords = SOLUTION_WORDS
             self.validWords = VALID_WORDS
+
+            # Indicate that we are using defaults
+            print('Download or parsing failed, using default word lists')
         else:
             # If download and parsing was successful, update the default solution and
             # valid word files in case of changes for use another day if necessary
