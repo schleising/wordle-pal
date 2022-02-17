@@ -85,10 +85,6 @@ def RunCompleteGame() -> None:
             if words.dateOutOfBounds:
                 break
 
-            print('===============')
-            print(f'Wordle {words.dayNumber} {words.guessNumberString}/6')
-            print()
-
             outputFile.write('===============\n')
             outputFile.write(f'Wordle {words.dayNumber} {words.guessNumberString}/6\n')
             outputFile.write('\n')
