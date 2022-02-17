@@ -8,7 +8,7 @@ from dateparser import parse
 
 from telegram.ext import Updater, CommandHandler
 
-from wordlepal import GuessWord
+from WordList.WordList import Words
 
 # Define a handler for /guess
 def guess(update, context):
@@ -34,18 +34,19 @@ def guess(update, context):
         wordDate = date.today()
 
     # Guess the word returning the day number and guess history for the response
-    dayNumber, guessHistory, guessNumberString, dateOutOfBounds = GuessWord(writeFiles = False, wordDate=wordDate)
+    words = Words()
+    words.GuessWord(wordDate=wordDate)
 
     # If the date is in bounds
-    if not dateOutOfBounds:
+    if not words.dateOutOfBounds:
         # Join the guess history lines into strings
-        guessStrings = [''.join(guessGraphic) for guessGraphic in guessHistory]
+        guessStrings = [''.join(guessGraphic) for guessGraphic in words.guessHistory]
 
         # Create a list for the output text
         msgLines: list[str] = []
 
         # Add the first line of text which shows how many guesses it took
-        msgLines.append(f'Wordle {dayNumber} {guessNumberString}/6')
+        msgLines.append(f'Wordle {words.dayNumber} {words.guessNumberString}/6')
 
         # Add a blank line
         msgLines.append('')

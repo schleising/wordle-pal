@@ -6,19 +6,20 @@ from WordList.SolutionWords import SOLUTION_WORDS
 from WordList.ValidWords import VALID_WORDS
 
 class WordDownloader():
-    def __init__(self, url: str = 'https://www.nytimes.com/games/wordle/main.bd4cb59c.js') -> None:
+    def __init__(self, url: str = 'https://www.nytimes.com/games/wordle/main.bd4cb59c.js', downloadWords: bool = True) -> None:
         # Set the delimiters used to extract the words from the JavaScript
         self._solutionWordsDelimiter = 'Ma='
         self._validWordsDelimiter = ',Oa='
         self._endValidWordsDelimiter = ',Ra='
         self._url = url
 
-        # If the JavaScript did not download correctly, use the defaults
+        # Use the defaults to start with
         self.solutionWords = SOLUTION_WORDS
         self.validWords = VALID_WORDS
 
-        # Get and parse the JavaScript
-        self._DownloadWords()
+        # Get and parse the JavaScript if requested to update the words
+        if downloadWords:
+            self._DownloadWords()
         
     def _DownloadWords(self) -> None:
         # Get the JavaScript file
