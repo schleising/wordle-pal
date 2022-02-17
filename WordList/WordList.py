@@ -156,9 +156,9 @@ class Words:
                 print()
 
             # Set up the variables for good and bad letters and letter position tracking
-            goodLetterPositions: list[Letter] = ['_' for _ in range(5)]
+            goodLetterPositions: list[Letter] = ['_' for _ in range(Constants.MAX_LETTERS)]
             goodLetters = ''
-            badLetterPositions: list[Letter] = ['_' for _ in range(5)]
+            badLetterPositions: list[Letter] = ['_' for _ in range(Constants.MAX_LETTERS)]
             excludedLetters = ''
 
             # Create a list for the guess graphic, initialised to all wrong guesses
