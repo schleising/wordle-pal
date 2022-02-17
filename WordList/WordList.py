@@ -36,7 +36,7 @@ class Words:
         self._letterCounter: Counter[Letter] = Counter()
 
         # Using the letter counts to score, score each valid word
-        self._wordScores: WordScores = WordScores()
+        self.wordScores: WordScores = WordScores()
 
         # Set up a string for the guess number
         self.guessNumberString: str = '0'
@@ -55,8 +55,8 @@ class Words:
     def remainingWordCount(self) -> int:
         return len(self._remainingWordList)
 
-    def _CompileCounts(self) -> Counter[Letter]:
-        return Counter(self._letters)
+    def _CompileCounts(self) -> None:
+        self._letterCounter = Counter(self._letters)
 
     @property
     def soutionLetterCounterByFrequency(self) -> LetterScores:
@@ -66,25 +66,22 @@ class Words:
     def soutionLetterCounterByLetter(self) -> LetterScores:
         return dict(sorted(self._letterCounter.items(), key=lambda x: x[0]))
 
-    def _CreateWordScores(self) -> WordScores:
-        # Create an empty dict to contain the scores for each word
-        wordScores: WordScores = {}
-    
+    def _CreateWordScores(self) -> None:
+        # Clear down the word scores dictionary
+        self.wordScores.clear()
+
         # Loop through all the solution words
         for word in self._remainingWordList:
             # Set the word score to 0 for this word
-            wordScores[word] = 0
+            self.wordScores[word] = 0
 
             # Loop through the letters in the word
             for letter in set(word):
                 # Add the score for this letter to the score for this word
-                wordScores[word] += self._letterCounter[letter]
+                self.wordScores[word] += self._letterCounter[letter]
 
-        return wordScores
-
-    @property
-    def wordScoresByScore(self):
-        return dict(sorted(self._wordScores.items(), key=lambda x: x[1], reverse=True))
+        # Sort the word scores by score, highest to lowest
+        self.wordScores = dict(sorted(self.wordScores.items(), key=lambda x: x[1], reverse=True))
 
     def GuessWord(self, wordDate: date = date.today(), verbose: bool = False):
         # Check the date is not before the start date
@@ -118,41 +115,34 @@ class Words:
         # Filter out the words that have already gone
         self._remainingWordList = self._fullWordList[self.dayNumber:]
 
-        # Concatenate the word lists
-        self._letters = Letter().join(self._remainingWordList)
-
-        # Create counters of each letter
-        self._letterCounter = self._CompileCounts()
-
-        # Using the letter counts to score, score each valid word
-        self._wordScores = self._CreateWordScores()
-
         # Set the guess number to 0 and set up an empty guess
         guess = ''
 
-        # Get the list of solution words ordered by score
-        fullSolutionList = self.wordScoresByScore
-
-        # Copy the solution list into the filtered solution list, 
-        # used to ensure that the list doesn't change while looping through it
-        filteredSolutionList = dict(fullSolutionList)
-        
         # Loop over a maximum of six guesses until a match is found
         while self.guessNumber < Constants.MAX_GUESSES and guess != self.todaysWord:
+            # Concatenate the word lists
+            self._letters = Letter().join(self._remainingWordList)
+
+            # Create counters of each letter
+            self._CompileCounts()
+
+            # Using the letter counts to score, score each valid word
+            self._CreateWordScores()
+
             # Increment the guess number for humans
             self.guessNumber += 1
 
             # Get the highest scoring remaining word as the guess
-            guess = list(filteredSolutionList)[0]
+            guess = list(self.wordScores)[0]
 
             if verbose:
                 # Print the top 10 remaining words
                 print()
-                print(f'Top ten remaining words of {len(filteredSolutionList)}')
+                print(f'Top ten remaining words of {len(self.wordScores)}')
                 print()
                 print('===============================')
                 print()
-                for count, (word, score) in enumerate(list(filteredSolutionList.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
+                for count, (word, score) in enumerate(list(self.wordScores.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
                 print()
 
             # Set up the variables for good and bad letters and letter position tracking
@@ -205,20 +195,20 @@ class Words:
                 print(f'Letters not in word          : {" ".join(excludedLetters)}')
 
             # Loop over a copy of the words remaining in contention
-            for word in dict(filteredSolutionList):
+            for word in self.wordScores:
                 # If any excluded letters are in this word, remove it from  the list
                 if set(word) & set(excludedLetters):
-                    filteredSolutionList.pop(word, None)
+                    self._remainingWordList.remove(word)
                 # If there are good letters and they are not a subset of the word set, remove this word from the list
                 elif set(goodLetters) and not set(goodLetters) <= set(word):
-                    filteredSolutionList.pop(word, None)
+                    self._remainingWordList.remove(word)
                 else:
                     # Loop over the letters in this word and remove if it does not have letters in known good postions 
                     # or it has letters in known bad positions
                     for index, letter in enumerate(word):
                         if (letter != goodLetterPositions[index] and goodLetterPositions[index] != '_' or
                             letter == badLetterPositions[index] and badLetterPositions[index] != '_'):
-                            filteredSolutionList.pop(word, None)
+                            self._remainingWordList.remove(word)
                             break
 
         # Check whether the word was actually guessed

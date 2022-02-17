@@ -57,7 +57,7 @@ def RunGame(wordDate: date = date.today(), downloadWords: bool = False, writeFil
     
             readmeFile.write('## Top 10 Starting Words (taken from remaining words)\n')
 
-            for count, (word, score) in enumerate(list(words.wordScoresByScore.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
+            for count, (word, score) in enumerate(list(words.wordScores.items())[:10]): readmeFile.write(f'    {count + 1:2}) {word.upper()} - Score: {score}\n')
 
             readmeFile.write('</br>\n')
             readmeFile.write('</br>\n\n')
@@ -72,7 +72,7 @@ def RunCompleteGame() -> None:
 
     with open(Path('Output.txt'), 'w', encoding='utf-8') as outputFile:
         while True:
-            words = RunGame(wordDate=currentDate)
+            words = RunGame(wordDate=currentDate, writeFiles=True)
 
             if words.dateOutOfBounds:
                 break
