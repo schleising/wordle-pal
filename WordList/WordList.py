@@ -226,7 +226,7 @@ class Words:
             print()
 
         # Output a Wordle like graphic
-        print('===============')
+        print()
         print(f'Wordle {self.dayNumber} {self.guessNumberString}/6')
         print()
 

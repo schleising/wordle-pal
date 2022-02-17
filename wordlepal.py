@@ -28,6 +28,7 @@ def RunGame(wordDate: date = date.today(), downloadWords: bool = False, writeFil
         # Output the average score
         print()
         print(f'Average Score: {averageScore:.2f}')
+        print('===================')
 
         # Get the counts of each score
         scoreCounts = Counter(guessNumberHistory)
