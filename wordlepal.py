@@ -89,10 +89,6 @@ def RunCompleteGame() -> None:
             print(f'Wordle {words.dayNumber} {words.guessNumberString}/6')
             print()
 
-            # Output a Wordle like graphic
-            for guessGraphic in words.guessHistory:
-                print(''.join(guessGraphic))
-
             outputFile.write('===============\n')
             outputFile.write(f'Wordle {words.dayNumber} {words.guessNumberString}/6\n')
             outputFile.write('\n')
