@@ -19,7 +19,7 @@ def guess(update, context):
     commands: list[str] = update.message.text.split(' ')
 
     # Get the requested date if it exists in the command (only accessible by me)
-    if len(commands) > 1 and update.message.from_user.first_name == 'Stephen' and update.message.from_user.last_name == 'Schleising':
+    if len(commands) > 1:
         wordDate = parse(' '.join(commands[1:]), settings={'DATE_ORDER': 'DMY'})
 
         if wordDate is None:
@@ -29,14 +29,15 @@ def guess(update, context):
         else:
             # If the date was parsed, set it as the word date
             wordDate = wordDate.date()
+
+        if update.message.from_user.first_name != 'Stephen' or update.message.from_user.last_name != 'Schlisng':
+            if wordDate > date.today():
+                print(f'Future date requested: {wordDate}')
+                update.message.reply_text(f"Sorry {update.message.from_user.first_name}, no peeking into the future for you")
+                return
     else:
         # If no date is given use today's date
         wordDate = date.today()
-
-        # If someone other than me has requested a different date, warn them off
-        if len(commands) > 1:
-            update.message.reply_text(f"Sorry {update.message.from_user.first_name}, you're not permitted to use the date feature")
-            return
 
     # Guess the word returning the day number and guess history for the response
     words = Words()
