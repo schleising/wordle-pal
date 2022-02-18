@@ -30,7 +30,7 @@ def guess(update, context):
             # If the date was parsed, set it as the word date
             wordDate = wordDate.date()
 
-        if update.message.from_user.first_name != 'Stephen' or update.message.from_user.last_name != 'Schlisng':
+        if update.message.from_user.first_name != 'Stephen' or update.message.from_user.last_name != 'Schleisng':
             if wordDate > date.today():
                 print(f'Future date requested: {wordDate}')
                 update.message.reply_text(f"Sorry {update.message.from_user.first_name}, no peeking into the future for you")
