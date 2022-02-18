@@ -24,7 +24,7 @@ def guess(update, context):
 
         if wordDate is None:
             # If the date couldn't be parsed, let the user know and return
-            update.message.reply_text('Could not parse date')
+            update.message.reply_text(' '.join(commands[1:]))
             return
         else:
             # If the date was parsed, set it as the word date
