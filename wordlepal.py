@@ -15,7 +15,7 @@ def RunGame(wordDate: date = date.today(), downloadWords: bool = False, writeFil
     if writeFiles:
         # Write the number of guesses to the history file 
         with open(Path('history.txt'), 'a', encoding='utf-8') as outputFile:
-            outputFile.write(f'{words.guessNumber}\n')
+            outputFile.write(f'{words.guessNumberString}\n')
 
         # Open the history file and get the new average score
         with open('history.txt', 'r', encoding='utf-8') as inputFile:
@@ -40,7 +40,7 @@ def RunGame(wordDate: date = date.today(), downloadWords: bool = False, writeFil
             readmeFile.write('## Help with Wordle words\n')
             readmeFile.write('</br>\n')
             readmeFile.write('</br>\n\n')
-            readmeFile.write(f"## Got today's word in {words.guessNumber} attempts</br>\n")
+            readmeFile.write(f"## Got today's word in {words.guessNumberString} attempts</br>\n")
 
             for guessGraphic in words.guessHistory:
                 readmeFile.write(f'{"".join(guessGraphic)}\\\n')

@@ -1,6 +1,6 @@
 from datetime import date, timedelta
 from collections import Counter
-from typing import Optional
+from typing import Callable, Optional
 
 from WordList.DownloadWords import WordDownloader
 from WordList.TypeDefs import Word, Letter, WordScores, LetterScores
@@ -8,15 +8,6 @@ import WordList.Constants as Constants
 
 class Words:
     def __init__(self, downloadWords: bool = True) -> None:
-        # Get the starting date
-        self._startDate = Constants.START_DATE
-
-        # Get the solution and valid words
-        wd = WordDownloader(downloadWords=downloadWords)
-
-        # Initialise the word lists
-        self._fullWordList: list[Word] = wd.solutionWords
-
         # Assume that the date is in bounds
         self.dateOutOfBounds = False
 
@@ -25,6 +16,21 @@ class Words:
 
         # Set today's word to None
         self.todaysWord: Optional[str] = None
+
+        # Set up a string for the guess number
+        self.guessNumberString: str = '0'
+
+        # Set up a list for the guess history
+        self.guessHistory: list[list[str]] = []
+
+        # Get the starting date
+        self._startDate = Constants.START_DATE
+
+        # Get the solution and valid words
+        wd = WordDownloader(downloadWords=downloadWords)
+
+        # Initialise the word lists
+        self._fullWordList: list[Word] = wd.solutionWords
 
         # Filter out the words that have already gone
         self._remainingWordList: list[str] = []
@@ -36,16 +42,10 @@ class Words:
         self._letterCounter: Counter[Letter] = Counter()
 
         # Using the letter counts to score, score each valid word
-        self.wordScores: WordScores = WordScores()
-
-        # Set up a string for the guess number
-        self.guessNumberString: str = '0'
+        self._wordScores: WordScores = WordScores()
 
         # Set up the guess number
-        self.guessNumber = 0
-
-        # Set up a 6 x 5 array for the guess history
-        self.guessHistory: list[list[str]] = []
+        self._guessNumber = 0
 
     @property
     def fullWordCount(self) -> int:
@@ -68,22 +68,63 @@ class Words:
 
     def _CreateWordScores(self) -> None:
         # Clear down the word scores dictionary
-        self.wordScores.clear()
+        self._wordScores.clear()
 
         # Loop through all the solution words
         for word in self._remainingWordList:
             # Set the word score to 0 for this word
-            self.wordScores[word] = 0
+            self._wordScores[word] = 0
 
             # Loop through the letters in the word
             for letter in set(word):
                 # Add the score for this letter to the score for this word
-                self.wordScores[word] += self._letterCounter[letter]
+                self._wordScores[word] += self._letterCounter[letter]
 
         # Sort the word scores by score, highest to lowest
-        self.wordScores = dict(sorted(self.wordScores.items(), key=lambda x: x[1], reverse=True))
+        self._wordScores = dict(sorted(self._wordScores.items(), key=lambda x: x[1], reverse=True))
 
-    def GuessWord(self, wordDate: date = date.today(), verbose: bool = False):
+    def _CreateWordScoresByPosition(self) -> None:
+        # Clear down the word scores dictionary
+        self._wordScores.clear()
+
+        # Create a dictionary of letter -> position -> score
+        letterPositionScores: dict[str, dict[int, int]] ={}
+
+        # Iterate over the remaining words
+        for word in self._remainingWordList:
+
+            # Iterate over the letters in the word
+            for position, letter in enumerate(word):
+                # If this letter has not yet been encountered, create an entry in the dict
+                if letter not in letterPositionScores:
+                    letterPositionScores[letter] = {}
+
+                # If this letter has not yet been seen in this position, create an entry in the dict
+                if position not in letterPositionScores[letter]:
+                    letterPositionScores[letter][position] = 0
+
+                # Increment the count of this letter in this position
+                letterPositionScores[letter][position] += 1
+
+        # Iterate over the remaining words once more now the scores are known
+        for word in self._remainingWordList:
+
+            # Set the word score to 0 for this word
+            self._wordScores[word] = 0
+
+            # Iterate over the letters in the word
+            for position, letter in enumerate(word):
+                self._wordScores[word] += letterPositionScores[letter][position]
+
+        # Sort the word scores by score, highest to lowest
+        self._wordScores = dict(sorted(self._wordScores.items(), key=lambda x: x[1], reverse=True))
+
+    def _GuessWordByMethod(self, scoringMethod: Callable, wordDate: date = date.today(), verbose: bool = False):
+        # Reset the guess number and history
+        self._guessNumber = 0
+        self.guessNumberString = '0'
+        self.guessHistory = []
+
         # Check the date is not before the start date
         if wordDate < self._startDate:
             # Set the wordDate to the start date
@@ -119,7 +160,7 @@ class Words:
         guess = ''
 
         # Loop over a maximum of six guesses until a match is found
-        while self.guessNumber < Constants.MAX_GUESSES and guess != self.todaysWord:
+        while self._guessNumber < Constants.MAX_GUESSES and guess != self.todaysWord:
             # Concatenate the word lists
             self._letters = Letter().join(self._remainingWordList)
 
@@ -127,22 +168,22 @@ class Words:
             self._CompileCounts()
 
             # Using the letter counts to score, score each valid word
-            self._CreateWordScores()
+            scoringMethod()
 
             # Increment the guess number for humans
-            self.guessNumber += 1
+            self._guessNumber += 1
 
             # Get the highest scoring remaining word as the guess
-            guess = list(self.wordScores)[0]
+            guess = list(self._wordScores)[0]
 
             if verbose:
                 # Print the top 10 remaining words
                 print()
-                print(f'Top ten remaining words of {len(self.wordScores)}')
+                print(f'Top ten remaining words of {len(self._wordScores)}')
                 print()
                 print('===============================')
                 print()
-                for count, (word, score) in enumerate(list(self.wordScores.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
+                for count, (word, score) in enumerate(list(self._wordScores.items())[:10]): print(f'{count + 1:2}) {word} - Score: {score}')
                 print()
 
             # Set up the variables for good and bad letters and letter position tracking
@@ -188,14 +229,14 @@ class Words:
 
             if verbose:
                 # Print some stats
-                print(f'Guess {self.guessNumber}                      : {" ".join(letter for letter in guess)}')
+                print(f'Guess {self._guessNumber}                      : {" ".join(letter for letter in guess)}')
                 print(f'                               {"".join(guessGraphic)}')
                 print(f'Letters in correct positions : {" ".join(goodLetterPositions)}')
                 print(f'Letters in bad positions     : {" ".join(badLetterPositions)}')
                 print(f'Letters not in word          : {" ".join(excludedLetters)}')
 
             # Loop over a copy of the words remaining in contention
-            for word in self.wordScores:
+            for word in self._wordScores:
                 # If any excluded letters are in this word, remove it from  the list
                 if set(word) & set(excludedLetters):
                     self._remainingWordList.remove(word)
@@ -217,12 +258,12 @@ class Words:
             self.guessNumberString = 'X'
         else:
             # If so, return the guess number as a string
-            self.guessNumberString = str(self.guessNumber)
+            self.guessNumberString = str(self._guessNumber)
 
         if verbose:
             # Output the number of guesses it took
             print()
-            print(f'Got the word {guess.upper()} in {self.guessNumber} attempts')
+            print(f'Got the word {guess.upper()} in {self.guessNumberString} attempts')
             print()
 
         # Output a Wordle like graphic
@@ -232,3 +273,21 @@ class Words:
 
         for guessGraphic in self.guessHistory:
             print(''.join(guessGraphic))
+
+    def GuessWord(self, wordDate: date = date.today(), verbose: bool = False):
+        # First guess the word using score regardless of letter position
+        self._GuessWordByMethod(self._CreateWordScores, wordDate=wordDate, verbose=verbose)
+
+        # Store up the guess number, guess number string and guess history
+        firstGuessNumber = self._guessNumber
+        firstGuessNumberString = self.guessNumberString
+        firtsguessHistory = self.guessHistory
+
+        # Now guess the word using the score incorporating the letter positions
+        self._GuessWordByMethod(self._CreateWordScoresByPosition, wordDate=wordDate, verbose=verbose)
+
+        # Select the best method and use that for the results
+        if firstGuessNumber < self._guessNumber:
+            self._guessNumber = firstGuessNumber
+            self.guessNumberString = firstGuessNumberString
+            self.guessHistory = firtsguessHistory
