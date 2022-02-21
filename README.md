@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨⬜\
-🟩🟩⬜⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.83</br>
+## Average Number of Guesses: 3.57</br>
 ## Guess Statistics</br>
     1: 0
-    2: 0
+    2: 1
     3: 3
     4: 2
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-TACIT - Updated 20-02-2022
+OTHER - Updated 21-02-2022
