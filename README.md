@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜🟨🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜🟨\
+🟩🟨🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.57</br>
+## Average Number of Guesses: 3.50</br>
 ## Guess Statistics</br>
     1: 0
     2: 1
-    3: 3
+    3: 4
     4: 2
     5: 0
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-OTHER - Updated 21-02-2022
+THORN - Updated 22-02-2022
