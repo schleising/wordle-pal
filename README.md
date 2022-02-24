@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟩\
-🟩🟩⬜⬜🟩\
+⬜🟩⬜⬜🟩\
+⬜🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.44</br>
+## Average Number of Guesses: 3.40</br>
 ## Guess Statistics</br>
     1: 0
     2: 1
-    3: 5
+    3: 6
     4: 2
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-TROVE - Updated 23-02-2022
+BLOKE - Updated 24-02-2022
