@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩🟨⬜⬜⬜\
-🟩⬜🟨🟩⬜\
+⬜⬜🟩🟨⬜\
+🟨⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.33</br>
+## Average Number of Guesses: 3.31</br>
 ## Guess Statistics</br>
     1: 0
     2: 1
-    3: 8
+    3: 9
     4: 2
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SPILL - Updated 26-02-2022
+CHANT - Updated 27-02-2022
