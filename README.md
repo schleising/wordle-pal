@@ -6,14 +6,14 @@
 
 ## Got today's word in 3 attempts</br>
 ⬜⬜⬜⬜🟩\
-⬜⬜⬜🟨🟩\
+🟨🟨⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.29</br>
+## Average Number of Guesses: 3.27</br>
 ## Guess Statistics</br>
     1: 0
     2: 1
-    3: 10
+    3: 11
     4: 2
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CHOKE - Updated 28-02-2022
+RUPEE - Updated 01-03-2022
