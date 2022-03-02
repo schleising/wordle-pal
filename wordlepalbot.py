@@ -71,7 +71,7 @@ def guess(update: Update, context):
 
 def RunGameHandler(context: CallbackContext) -> None:
     # Run the game once a day to update the stats
-    RunGame(downloadWords=True, writeFiles=True, verbose=True)
+    RunGame(wordDate=date.today(), downloadWords=True, writeFiles=True, verbose=True)
 
 def dist(update: Update, context):
     # Generate the image and return it without a quote
