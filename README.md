@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-🟨🟨⬜⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜🟩🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.27</br>
+## Average Number of Guesses: 3.19</br>
 ## Guess Statistics</br>
     1: 0
-    2: 1
+    2: 2
     3: 11
     4: 2
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-RUPEE - Updated 01-03-2022
+NASTY - Updated 02-03-2022
