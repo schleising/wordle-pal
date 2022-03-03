@@ -4,16 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩🟨⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜🟨🟨🟨⬜\
+⬜🟩🟨🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.19</br>
+## Average Number of Guesses: 3.24</br>
 ## Guess Statistics</br>
     1: 0
     2: 2
     3: 11
-    4: 2
+    4: 3
     5: 0
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-NASTY - Updated 02-03-2022
+MOURN - Updated 03-03-2022
