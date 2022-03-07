@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩⬜🟩⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜🟩⬜⬜\
+⬜🟨🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.15</br>
+## Average Number of Guesses: 3.14</br>
 ## Guess Statistics</br>
     1: 0
     2: 3
-    3: 13
+    3: 14
     4: 3
     5: 0
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-CLOTH - Updated 06-03-2022
+HOARD - Updated 07-03-2022
