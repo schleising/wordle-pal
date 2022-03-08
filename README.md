@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟩⬜⬜\
-⬜🟨🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+🟩⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.14</br>
+## Average Number of Guesses: 3.09</br>
 ## Guess Statistics</br>
     1: 0
-    2: 3
+    2: 4
     3: 14
     4: 3
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-HOARD - Updated 07-03-2022
+SWEET - Updated 08-03-2022
