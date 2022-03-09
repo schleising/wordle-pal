@@ -4,16 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜⬜🟨🟨\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜🟩⬜\
+⬜⬜⬜🟩🟩\
+🟩🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.09</br>
+## Average Number of Guesses: 3.13</br>
 ## Guess Statistics</br>
     1: 0
     2: 4
     3: 14
-    4: 3
+    4: 4
     5: 0
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-SWEET - Updated 08-03-2022
+MONTH - Updated 09-03-2022
