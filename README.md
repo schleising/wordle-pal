@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜🟩⬜\
-⬜⬜⬜🟩🟩\
-🟩🟩⬜🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨🟨🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.13</br>
+## Average Number of Guesses: 3.08</br>
 ## Guess Statistics</br>
     1: 0
-    2: 4
+    2: 5
     3: 14
     4: 4
     5: 0
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-MONTH - Updated 09-03-2022
+LAPSE - Updated 10-03-2022
