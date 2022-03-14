@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜⬜\
-⬜⬜🟨🟨⬜\
+## Got today's word in 2 attempts</br>
+🟩🟨⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.07</br>
+## Average Number of Guesses: 3.04</br>
 ## Guess Statistics</br>
     1: 0
-    2: 5
+    2: 6
     3: 17
     4: 4
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-FOCUS - Updated 13-03-2022
+SMELT - Updated 14-03-2022
