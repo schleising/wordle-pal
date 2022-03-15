@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟩🟨⬜🟨🟨\
+🟨⬜🟩🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.04</br>
+## Average Number of Guesses: 3.00</br>
 ## Guess Statistics</br>
     1: 0
-    2: 6
+    2: 7
     3: 17
     4: 4
     5: 0
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-SMELT - Updated 14-03-2022
+TEASE - Updated 15-03-2022
