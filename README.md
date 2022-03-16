@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟨⬜🟩🟨🟩\
+⬜🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 3.00</br>
+## Average Number of Guesses: 2.97</br>
 ## Guess Statistics</br>
     1: 0
-    2: 7
+    2: 8
     3: 17
     4: 4
     5: 0
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-TEASE - Updated 15-03-2022
+CATER - Updated 16-03-2022
