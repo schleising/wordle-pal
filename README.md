@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨⬜\
+⬜🟩🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.97</br>
 ## Guess Statistics</br>
     1: 0
     2: 8
-    3: 17
+    3: 18
     4: 4
     5: 0
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-CATER - Updated 16-03-2022
+MOVIE - Updated 17-03-2022
