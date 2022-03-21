@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟩⬜🟩🟨\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.94</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 9
+    2: 10
     3: 20
     4: 4
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-RENEW - Updated 20-03-2022
+THEIR - Updated 21-03-2022
