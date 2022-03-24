@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-🟩🟨⬜⬜🟩\
+⬜⬜🟨🟨⬜\
+🟨🟨⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 10
-    3: 22
+    3: 23
     4: 4
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-PURGE - Updated 23-03-2022
+CHEST - Updated 24-03-2022
