@@ -6,14 +6,14 @@
 
 ## Got today's word in 3 attempts</br>
 ⬜⬜🟨🟨⬜\
-🟨🟨⬜🟩🟩\
+⬜🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 10
-    3: 23
+    3: 24
     4: 4
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CHEST - Updated 24-03-2022
+DEPOT - Updated 25-03-2022
