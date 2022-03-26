@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨⬜\
-⬜🟩⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟨⬜\
+🟩⬜⬜🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.95</br>
 ## Guess Statistics</br>
     1: 0
     2: 10
     3: 24
-    4: 4
+    4: 5
     5: 0
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-DEPOT - Updated 25-03-2022
+EPOXY - Updated 26-03-2022
