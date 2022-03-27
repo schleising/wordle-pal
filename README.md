@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜🟨⬜\
-🟩⬜⬜🟨🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.95</br>
 ## Guess Statistics</br>
     1: 0
     2: 10
-    3: 24
+    3: 25
     4: 5
     5: 0
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-EPOXY - Updated 26-03-2022
+NYMPH - Updated 27-03-2022
