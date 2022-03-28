@@ -6,14 +6,14 @@
 
 ## Got today's word in 3 attempts</br>
 ⬜⬜⬜⬜⬜\
-⬜⬜⬜🟨🟨\
+⬜⬜🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.95</br>
 ## Guess Statistics</br>
     1: 0
     2: 10
-    3: 25
+    3: 26
     4: 5
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-NYMPH - Updated 27-03-2022
+FOUND - Updated 28-03-2022
