@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟨🟩⬜⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜⬜\
+⬜🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.93</br>
 ## Guess Statistics</br>
     1: 0
     2: 11
-    3: 26
+    3: 27
     4: 5
     5: 0
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-SHALL - Updated 29-03-2022
+HARRY - Updated 30-03-2022
