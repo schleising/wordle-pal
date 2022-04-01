@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-⬜🟩🟨🟩🟩\
+🟩⬜⬜🟨⬜\
+🟩🟨🟨🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.93</br>
 ## Guess Statistics</br>
     1: 0
     2: 11
-    3: 28
+    3: 29
     4: 5
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-LOWLY - Updated 31-03-2022
+SNOUT - Updated 01-04-2022
