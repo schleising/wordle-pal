@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨🟨⬜⬜⬜\
-🟩⬜🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+🟨🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.94</br>
+## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
-    2: 11
+    2: 12
     3: 32
     4: 5
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-SHAWL - Updated 04-04-2022
+NATAL - Updated 05-04-2022
