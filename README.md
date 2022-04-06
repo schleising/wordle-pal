@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨🟩🟩⬜⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜⬜\
+🟩🟨⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 12
-    3: 32
+    3: 33
     4: 5
     5: 0
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-NATAL - Updated 05-04-2022
+COMMA - Updated 06-04-2022
