@@ -6,14 +6,14 @@
 
 ## Got today's word in 3 attempts</br>
 ⬜⬜🟨⬜⬜\
-🟩🟨⬜⬜⬜\
+⬜🟨⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 12
-    3: 33
+    3: 34
     4: 5
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-COMMA - Updated 06-04-2022
+FORAY - Updated 07-04-2022
