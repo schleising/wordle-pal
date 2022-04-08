@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟨⬜⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜🟨⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 12
+    2: 13
     3: 34
     4: 5
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-FORAY - Updated 07-04-2022
+SCARE - Updated 08-04-2022
