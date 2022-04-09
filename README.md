@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜🟨⬜🟨🟨\
+⬜🟨🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 13
+    2: 14
     3: 34
     4: 5
     5: 0
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-SCARE - Updated 08-04-2022
+STAIR - Updated 09-04-2022
