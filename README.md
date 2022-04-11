@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩🟩⬜⬜\
-⬜🟩🟩⬜🟩\
+## Got today's word in 4 attempts</br>
+🟩⬜🟨⬜⬜\
+🟩🟨⬜⬜⬜\
+🟩⬜⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 14
     3: 35
-    4: 5
+    4: 6
     5: 0
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-BLACK - Updated 10-04-2022
+SQUAD - Updated 11-04-2022
