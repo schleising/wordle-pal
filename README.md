@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟨🟨⬜⬜🟨\
-⬜🟩🟨🟩🟩\
+⬜⬜⬜⬜⬜\
+🟩⬜⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 14
-    3: 36
+    3: 37
     4: 6
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ROYAL - Updated 12-04-2022
+CHUNK - Updated 13-04-2022
