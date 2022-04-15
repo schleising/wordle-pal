@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜🟨🟩🟩\
+🟩⬜🟩⬜🟩\
+🟩🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 14
-    3: 38
+    3: 39
     4: 6
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-MINCE - Updated 14-04-2022
+SHAME - Updated 15-04-2022
