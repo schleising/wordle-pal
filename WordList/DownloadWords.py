@@ -9,7 +9,7 @@ from WordList.SolutionWords import SOLUTION_WORDS
 from WordList.ValidWords import VALID_WORDS
 
 class WordDownloader():
-    def __init__(self, url: str = 'https://www.nytimes.com/games/wordle/main.3d28acc.js', downloadWords: bool = True) -> None:
+    def __init__(self, url: str = 'https://www.nytimes.com/games/wordle/main.3d28ac0c.js', downloadWords: bool = True) -> None:
         # Set the delimiters used to extract the words from the JavaScript
         self._solutionWordsDelimiter = 'Ma='
         self._validWordsDelimiter = ',Oa='
