@@ -69,23 +69,26 @@ class WordDownloader():
                 validFile.write(f'VALID_WORDS: list[str] = {wordList}')
 
     def _SendFailureEmail(self) -> None:
-        username = os.environ['GMAIL_ENV_USER']
-        password = os.environ['GMAIL_ENV_PASS']
+        username = os.environ.get('GMAIL_ENV_USER', None)
+        password = os.environ.get('GMAIL_ENV_PASS', None)
 
-        try:
-            with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-                server.ehlo()
-                server.login(username, password)
+        if username and password:
+            try:
+                with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+                    server.ehlo()
+                    server.login(username, password)
 
-                msg = EmailMessage()
-                msg.set_content('There was a problem downloading the word lists')
-                msg['Subject'] = 'Wordlepal - There was a problem'
-                msg['From'] = 'Stephen Schleising <stephen@schleising.net>'
-                msg['To'] = 'Stephen Schleising <stephen@schleising.net>'
+                    msg = EmailMessage()
+                    msg.set_content('There was a problem downloading the word lists')
+                    msg['Subject'] = 'Wordlepal - There was a problem'
+                    msg['From'] = 'Stephen Schleising <stephen@schleising.net>'
+                    msg['To'] = 'Stephen Schleising <stephen@schleising.net>'
 
-                server.send_message(msg)
-        except:
-            print('Something went wrong')
+                    server.send_message(msg)
+            except:
+                print('Something went wrong')
+        else:
+            print('Cannot send email notification')
 
 if __name__ == '__main__':
     # Test this class
