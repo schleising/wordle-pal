@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜🟩⬜🟩\
-🟩🟩🟩⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩⬜\
+⬜⬜⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.93</br>
 ## Guess Statistics</br>
     1: 0
     2: 14
     3: 39
-    4: 6
+    4: 7
     5: 0
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-SHAME - Updated 15-04-2022
+CHEEK - Updated 16-04-2022
