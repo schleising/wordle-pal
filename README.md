@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜🟩🟩🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 15
+    2: 16
     3: 43
     4: 7
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-OXIDE - Updated 21-04-2022
+PLANT - Updated 22-04-2022
