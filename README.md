@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜🟩\
-⬜🟩🟨🟩🟩\
+⬜⬜⬜🟨🟨\
+🟨🟨🟨🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 16
-    3: 44
+    3: 45
     4: 7
     5: 0
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-OLIVE - Updated 23-04-2022
+INERT - Updated 24-04-2022
