@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟨⬜🟨⬜🟨\
+⬜⬜🟨🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 17
+    2: 18
     3: 45
     4: 7
     5: 0
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-ASKEW - Updated 25-04-2022
+HEIST - Updated 26-04-2022
