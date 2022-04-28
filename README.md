@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩🟩🟨⬜\
+## Got today's word in 2 attempts</br>
+🟨⬜⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
-    2: 18
+    2: 19
     3: 46
     4: 7
     5: 0
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-SHOWN - Updated 27-04-2022
+ZESTY - Updated 28-04-2022
