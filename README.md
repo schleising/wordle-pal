@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟨⬜⬜🟩🟨\
+⬜🟨🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.88</br>
+## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
-    2: 19
+    2: 20
     3: 46
     4: 7
     5: 0
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-ZESTY - Updated 28-04-2022
+TRASH - Updated 29-04-2022
