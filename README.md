@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟩⬜⬜🟨\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.85</br>
+## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 21
-    3: 46
+    3: 47
     4: 7
     5: 0
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-LARVA - Updated 30-04-2022
+FORGO - Updated 01-05-2022
