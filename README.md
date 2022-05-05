@@ -4,18 +4,20 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟩🟨⬜\
-🟩🟩🟩🟩🟨\
+## Got today's word in 5 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩🟩\
+⬜⬜⬜🟩🟩\
+⬜🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.85</br>
+## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 22
     3: 49
     4: 7
-    5: 0
+    5: 1
     6: 1
 </br>
 </br>
@@ -35,4 +37,4 @@
 </br>
 
 ## Today's Word
-TRAIN - Updated 04-05-2022
+HOMER - Updated 05-05-2022
