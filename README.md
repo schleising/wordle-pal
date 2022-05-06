@@ -4,10 +4,8 @@
 </br>
 </br>
 
-## Got today's word in 5 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜🟩🟩\
-⬜⬜⬜🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜🟩\
 ⬜🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
@@ -15,7 +13,7 @@
 ## Guess Statistics</br>
     1: 0
     2: 22
-    3: 49
+    3: 50
     4: 7
     5: 1
     6: 1
@@ -37,4 +35,4 @@
 </br>
 
 ## Today's Word
-HOMER - Updated 05-05-2022
+BADGE - Updated 06-05-2022
