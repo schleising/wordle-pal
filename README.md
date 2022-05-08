@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜🟨⬜\
-⬜⬜🟨🟩🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.88</br>
+## Average Number of Guesses: 2.87</br>
 ## Guess Statistics</br>
     1: 0
-    2: 22
+    2: 23
     3: 51
     4: 7
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-MIDST - Updated 07-05-2022
+CANNY - Updated 08-05-2022
