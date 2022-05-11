@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟨⬜⬜🟨🟨\
+## Got today's word in 2 attempts</br>
+⬜🟩⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.87</br>
+## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
-    2: 23
+    2: 24
     3: 53
     4: 7
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-BUTCH - Updated 10-05-2022
+FARCE - Updated 11-05-2022
