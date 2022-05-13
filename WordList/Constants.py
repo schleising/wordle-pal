@@ -16,3 +16,6 @@ GUESS_DISTRIBUTION_SIZE = (475, 50)
 BAR_SCORE_SIZE = (750, 70)
 SCORE_SIZE = (50, 70)
 BAR_SIZE = (700, 70)
+
+BASE_URL = 'https://www.nytimes.com/games/wordle/'
+INDEX_PAGE = 'index.html'
