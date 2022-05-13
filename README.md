@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩🟩⬜⬜⬜\
-🟩🟩🟩🟩⬜\
+🟨⬜⬜🟨⬜\
+⬜⬜🟨🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 24
-    3: 54
+    3: 55
     4: 7
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SLUNG - Updated 12-05-2022
+TIPSY - Updated 13-05-2022
