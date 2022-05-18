@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟨⬜🟩⬜🟨\
+⬜⬜⬜⬜🟩\
+🟨⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 25
-    3: 58
+    3: 59
     4: 7
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-BEING - Updated 17-05-2022
+SCOUR - Updated 18-05-2022
