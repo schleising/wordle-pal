@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨🟨\
-🟨🟩⬜🟨🟨\
+⬜⬜🟨⬜⬜\
+⬜🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.86</br>
+## Average Number of Guesses: 2.87</br>
 ## Guess Statistics</br>
     1: 0
     2: 26
-    3: 68
+    3: 69
     4: 7
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CREPT - Updated 28-05-2022
+BAYOU - Updated 29-05-2022
