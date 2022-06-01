@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩⬜⬜🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜🟨\
+🟨🟨🟨🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 27
-    3: 70
+    3: 71
     4: 7
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-MANOR - Updated 31-05-2022
+CREAK - Updated 01-06-2022
