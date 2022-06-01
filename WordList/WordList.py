@@ -215,8 +215,18 @@ class Words:
                         # State that this letter cannot appear in this position
                         badLetterPositions[count] = letter
 
-                        # Set the guess history in this guess line to the letter in word character
-                        guessGraphic[count] = Constants.LETTER_IN_WORD
+                        # How many times has the letter been in a good position
+                        timesLetterGood = len([goodPosLetter for goodPosLetter in goodLetterPositions if goodPosLetter == letter])
+
+                        # How many times has the letter been in a bad position
+                        timesLetterBad = len([badPosLetter for badPosLetter in badLetterPositions if badPosLetter == letter])
+
+                        # How many times is this letter in the word?
+                        timesLetterInWord = len([badPosLetter for badPosLetter in self.todaysWord if badPosLetter == letter])
+
+                        if (timesLetterGood + timesLetterBad) <= timesLetterInWord:
+                            # Set the guess history in this guess line to the letter in word character
+                            guessGraphic[count] = Constants.LETTER_IN_WORD
 
                         # Add to the string of good letters
                         goodLetters += letter
