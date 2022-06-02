@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜🟨\
-🟨🟨🟨🟨🟨\
+🟩⬜⬜⬜⬜\
+🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 27
-    3: 71
+    3: 72
     4: 7
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CREAK - Updated 01-06-2022
+SHOWY - Updated 02-06-2022
