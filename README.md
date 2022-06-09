@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜🟩🟨⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟩⬜\
+⬜🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.87</br>
 ## Guess Statistics</br>
     1: 0
     2: 28
-    3: 76
+    3: 77
     4: 8
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-TRAIT - Updated 08-06-2022
+GIRTH - Updated 09-06-2022
