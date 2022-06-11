@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩🟨\
-🟩🟨🟨🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨⬜⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.87</br>
+## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
-    2: 28
+    2: 29
     3: 78
     4: 8
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-PIETY - Updated 10-06-2022
+GOOSE - Updated 11-06-2022
