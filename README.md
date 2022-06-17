@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜🟨\
-🟩⬜🟨🟨🟩\
+⬜🟩⬜⬜⬜\
+🟩🟩🟩🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.85</br>
 ## Guess Statistics</br>
     1: 0
     2: 31
-    3: 81
+    3: 82
     4: 8
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-APRON - Updated 16-06-2022
+BLOWN - Updated 17-06-2022
