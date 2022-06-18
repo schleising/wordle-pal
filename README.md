@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
+## Got today's word in 4 attempts</br>
+⬜⬜🟨⬜⬜\
+⬜🟩⬜⬜🟨\
 ⬜🟩⬜⬜⬜\
-🟩🟩🟩🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.85</br>
+## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 31
     3: 82
-    4: 8
+    4: 9
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-BLOWN - Updated 17-06-2022
+CACAO - Updated 18-06-2022
