@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟩⬜⬜🟨\
-⬜🟩⬜⬜⬜\
+## Got today's word in 2 attempts</br>
+🟨🟨⬜⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
-    2: 31
+    2: 32
     3: 82
     4: 9
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-CACAO - Updated 18-06-2022
+LOSER - Updated 19-06-2022
