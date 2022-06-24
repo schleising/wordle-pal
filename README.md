@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟩⬜🟩⬜\
+## Got today's word in 2 attempts</br>
+🟩⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.85</br>
 ## Guess Statistics</br>
     1: 0
-    2: 33
+    2: 34
     3: 85
     4: 9
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-BRINK - Updated 23-06-2022
+SMITE - Updated 24-06-2022
