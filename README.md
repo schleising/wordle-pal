@@ -8,10 +8,10 @@
 🟩⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.85</br>
+## Average Number of Guesses: 2.84</br>
 ## Guess Statistics</br>
     1: 0
-    2: 34
+    2: 35
     3: 85
     4: 9
     5: 1
