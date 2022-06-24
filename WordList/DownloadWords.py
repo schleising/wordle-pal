@@ -70,7 +70,7 @@ class WordDownloader():
                         print('Download or parsing failed, using default word lists')
 
                         # Send an email to indicate failure
-                        self._SendFailureEmail()
+                        self._SendFailureEmail(1)
                 else:
                     # If there is any kind of download or parsing error, reset the words back to the original ones
                     self.solutionWords = SOLUTION_WORDS
@@ -80,7 +80,7 @@ class WordDownloader():
                     print('Download or parsing failed, using default word lists')
 
                     # Send an email to indicate failure
-                    self._SendFailureEmail()
+                    self._SendFailureEmail(2)
             else:
                 # If there is any kind of download or parsing error, reset the words back to the original ones
                 self.solutionWords = SOLUTION_WORDS
@@ -90,7 +90,7 @@ class WordDownloader():
                 print('Download or parsing failed, using default word lists')
 
                 # Send an email to indicate failure
-                self._SendFailureEmail()
+                self._SendFailureEmail(3)
         except:
             # If there is any kind of download or parsing error, reset the words back to the original ones
             self.solutionWords = SOLUTION_WORDS
@@ -100,7 +100,7 @@ class WordDownloader():
             print('Download or parsing failed, using default word lists')
 
             # Send an email to indicate failure
-            self._SendFailureEmail()
+            self._SendFailureEmail(4)
         else:
             # If download and parsing was successful, update the default solution and
             # valid word files in case of changes for use another day if necessary
@@ -112,7 +112,7 @@ class WordDownloader():
                 wordList = json.dumps(self.validWords)
                 validFile.write(f'VALID_WORDS: list[str] = {wordList}')
 
-    def _SendFailureEmail(self) -> None:
+    def _SendFailureEmail(self, errorCode: int) -> None:
         username = os.environ.get('GMAIL_ENV_USER', None)
         password = os.environ.get('GMAIL_ENV_PASS', None)
 
@@ -123,7 +123,7 @@ class WordDownloader():
                     server.login(username, password)
 
                     msg = EmailMessage()
-                    msg.set_content('There was a problem downloading the word lists')
+                    msg.set_content(f'There was a problem downloading the word lists: {errorCode}')
                     msg['Subject'] = 'Wordlepal - There was a problem'
                     msg['From'] = 'Stephen Schleising <stephen@schleising.net>'
                     msg['To'] = 'Stephen Schleising <stephen@schleising.net>'
