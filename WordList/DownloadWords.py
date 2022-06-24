@@ -35,7 +35,7 @@ class WordDownloader():
                 fullText = response.text
 
                 # Compile a regex to match the javascript file
-                jsRegex = re.compile(r'main\.[0-9a-z]{8}\.js')
+                jsRegex = re.compile(r'https://www\.nytimes\.com/games-assets/v2/wordle\.[a-f0-9]+\.js')
 
                 # Find the current name of the javascript file
                 jsFile = jsRegex.search(fullText)
@@ -43,7 +43,7 @@ class WordDownloader():
                 # If there is a match, download the js file
                 if jsFile:
                     # Get the JavaScript file
-                    response = requests.get(f'{BASE_URL}{jsFile.group()}')
+                    response = requests.get(f'{jsFile.group()}')
 
                     if response.status_code == requests.codes.OK:
                         # Get the text
@@ -102,6 +102,9 @@ class WordDownloader():
             # Send an email to indicate failure
             self._SendFailureEmail(4)
         else:
+            # Show that the words were downloaded OK
+            print('Downloaded words succesfully')
+
             # If download and parsing was successful, update the default solution and
             # valid word files in case of changes for use another day if necessary
             with open(Path('WordList/SolutionWords.py'), 'w', encoding='utf-8') as solutionFile:
@@ -129,6 +132,8 @@ class WordDownloader():
                     msg['To'] = 'Stephen Schleising <stephen@schleising.net>'
 
                     server.send_message(msg)
+
+                    print(f'Email sent: There was a problem downloading the word lists: {errorCode}')
             except:
                 print('Something went wrong')
         else:
