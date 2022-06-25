@@ -5,7 +5,7 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟩⬜⬜🟩🟩\
+⬜⬜🟩⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.84</br>
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-SMITE - Updated 24-06-2022
+BEADY - Updated 25-06-2022
