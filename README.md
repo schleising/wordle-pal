@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜🟩⬜🟨\
+## Got today's word in 3 attempts</br>
+🟨⬜⬜🟩⬜\
+⬜🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.84</br>
 ## Guess Statistics</br>
     1: 0
     2: 35
-    3: 85
+    3: 86
     4: 9
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-BEADY - Updated 25-06-2022
+RUSTY - Updated 26-06-2022
