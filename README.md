@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟨\
-🟨🟩⬜⬜⬜\
+⬜🟨⬜⬜⬜\
+🟩🟨🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.84</br>
 ## Guess Statistics</br>
     1: 0
     2: 35
-    3: 87
+    3: 88
     4: 9
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-RETRO - Updated 27-06-2022
+DROLL - Updated 28-06-2022
