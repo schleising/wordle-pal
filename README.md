@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜🟨⬜\
+🟨⬜⬜🟨⬜\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.84</br>
+## Average Number of Guesses: 2.85</br>
 ## Guess Statistics</br>
     1: 0
     2: 35
     3: 89
-    4: 9
+    4: 10
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-GAWKY - Updated 29-06-2022
+HUTCH - Updated 30-06-2022
