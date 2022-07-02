@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟨🟨⬜🟨\
+⬜⬜🟨🟩🟨\
+🟨⬜🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.85</br>
+## Average Number of Guesses: 2.86</br>
 ## Guess Statistics</br>
     1: 0
     2: 35
-    3: 90
+    3: 91
     4: 10
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-PINTO - Updated 01-07-2022
+EGRET - Updated 02-07-2022
