@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜⬜⬜\
-⬜🟩🟩⬜⬜\
+⬜⬜🟩⬜🟩\
+🟨⬜🟩⬜🟩\
+🟩⬜🟩🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.87</br>
@@ -15,7 +15,7 @@
     1: 0
     2: 35
     3: 94
-    4: 11
+    4: 12
     5: 1
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-FLUFF - Updated 06-07-2022
+AGAPE - Updated 07-07-2022
