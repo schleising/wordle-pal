@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟩⬜🟩\
-🟨⬜🟩⬜🟩\
-🟩⬜🟩🟨🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.87</br>
+## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 35
-    3: 94
+    3: 95
     4: 12
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-AGAPE - Updated 07-07-2022
+VOICE - Updated 08-07-2022
