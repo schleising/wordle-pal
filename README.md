@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜🟩🟩🟩\
+## Got today's word in 2 attempts</br>
+🟩⬜🟨🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.88</br>
+## Average Number of Guesses: 2.87</br>
 ## Guess Statistics</br>
     1: 0
-    2: 35
+    2: 36
     3: 95
     4: 12
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-VOICE - Updated 08-07-2022
+STEAD - Updated 09-07-2022
