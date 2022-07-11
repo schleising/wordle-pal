@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨🟨\
-🟨🟨⬜⬜🟨\
+## Got today's word in 4 attempts</br>
+⬜⬜🟨⬜⬜\
+🟩🟩⬜⬜🟨\
+🟩🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.87</br>
+## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 36
     3: 96
-    4: 12
+    4: 13
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-BERTH - Updated 10-07-2022
+MADAM - Updated 11-07-2022
