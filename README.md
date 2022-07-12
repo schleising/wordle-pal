@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟨⬜⬜\
-🟩🟩⬜⬜🟨\
-🟩🟩⬜⬜⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨⬜\
+🟨🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 36
-    3: 96
+    3: 97
     4: 13
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-MADAM - Updated 11-07-2022
+NIGHT - Updated 12-07-2022
