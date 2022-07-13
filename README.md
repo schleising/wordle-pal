@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟨🟩🟩🟩🟩\
+⬜🟩🟩⬜⬜\
+⬜🟩🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 36
-    3: 97
+    3: 98
     4: 13
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-NIGHT - Updated 12-07-2022
+BLAND - Updated 13-07-2022
