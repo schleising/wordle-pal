@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩🟩⬜⬜\
-⬜🟩🟩🟩⬜\
+## Got today's word in 2 attempts</br>
+🟩⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.88</br>
+## Average Number of Guesses: 2.87</br>
 ## Guess Statistics</br>
     1: 0
-    2: 36
+    2: 37
     3: 98
     4: 13
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-BLAND - Updated 13-07-2022
+LIVER - Updated 14-07-2022
