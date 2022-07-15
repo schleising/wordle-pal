@@ -4,16 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜⬜🟩🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜⬜⬜⬜🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.87</br>
+## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
     3: 98
-    4: 13
+    4: 14
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-LIVER - Updated 14-07-2022
+WEDGE - Updated 15-07-2022
