@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜⬜🟩\
-⬜⬜🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜🟨🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 98
+    3: 99
     4: 14
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-WEDGE - Updated 15-07-2022
+ROOMY - Updated 16-07-2022
