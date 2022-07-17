@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟨🟩⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜🟨⬜⬜\
+⬜🟩⬜⬜⬜\
+⬜🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.88</br>
+## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
     3: 99
-    4: 14
+    4: 15
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-ROOMY - Updated 16-07-2022
+WACKY - Updated 17-07-2022
