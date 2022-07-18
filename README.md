@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟩⬜⬜⬜\
-⬜🟩⬜⬜🟩\
+## Got today's word in 3 attempts</br>
+🟨⬜⬜⬜⬜\
+⬜🟨🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 99
+    3: 100
     4: 15
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-WACKY - Updated 17-07-2022
+FLOCK - Updated 18-07-2022
