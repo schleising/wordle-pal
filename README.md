@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜🟨\
-🟩⬜⬜🟩🟨\
+⬜⬜⬜🟩🟩\
+⬜🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 101
+    3: 102
     4: 15
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ANGRY - Updated 19-07-2022
+TRITE - Updated 20-07-2022
