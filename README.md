@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟨⬜🟩⬜\
+🟨⬜⬜🟨⬜\
+⬜⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 103
+    3: 104
     4: 15
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-APHID - Updated 21-07-2022
+TRYST - Updated 22-07-2022
