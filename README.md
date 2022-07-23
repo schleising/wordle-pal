@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜🟨⬜\
-⬜⬜⬜🟩🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜⬜⬜⬜🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
     3: 104
-    4: 15
+    4: 16
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-TRYST - Updated 22-07-2022
+MIDGE - Updated 23-07-2022
