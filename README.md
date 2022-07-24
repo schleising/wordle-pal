@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜⬜🟩\
-⬜⬜🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟩🟩\
+⬜⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 104
+    3: 105
     4: 16
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-MIDGE - Updated 23-07-2022
+POWER - Updated 24-07-2022
