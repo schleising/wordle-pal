@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜🟩\
-⬜🟩🟩⬜🟩\
+⬜⬜⬜⬜⬜\
+🟩⬜⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 106
+    3: 107
     4: 16
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ELOPE - Updated 25-07-2022
+CINCH - Updated 26-07-2022
