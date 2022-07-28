@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-⬜⬜🟩🟩⬜\
+⬜⬜🟨⬜⬜\
+⬜🟨⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 108
+    3: 109
     4: 16
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-MOTTO - Updated 27-07-2022
+STOMP - Updated 28-07-2022
