@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜⬜\
-🟩🟩⬜⬜⬜\
+⬜⬜🟩⬜⬜\
+🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 111
+    3: 112
     4: 16
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-BLUFF - Updated 30-07-2022
+CRAMP - Updated 31-07-2022
