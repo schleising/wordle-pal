@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟩🟨⬜\
-⬜🟨🟩⬜🟩\
+⬜🟨⬜⬜⬜\
+⬜🟩🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 37
-    3: 113
+    3: 114
     4: 16
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-QUART - Updated 01-08-2022
+COYLY - Updated 02-08-2022
