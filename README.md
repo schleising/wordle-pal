@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟨⬜🟨⬜⬜\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 39
+    2: 40
     3: 116
     4: 18
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-UNFIT - Updated 08-08-2022
+PATTY - Updated 09-08-2022
