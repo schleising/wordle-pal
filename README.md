@@ -4,16 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜🟨🟩⬜\
+## Got today's word in 4 attempts</br>
+⬜🟩⬜⬜⬜\
+⬜🟩⬜🟩⬜\
+🟩🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 40
     3: 116
-    4: 18
+    4: 19
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-PATTY - Updated 09-08-2022
+CLING - Updated 10-08-2022
