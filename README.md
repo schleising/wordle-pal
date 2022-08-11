@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜🟩⬜\
-🟩🟩⬜🟩🟩\
+## Got today's word in 2 attempts</br>
+⬜🟩🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 40
+    2: 41
     3: 116
     4: 19
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-CLING - Updated 10-08-2022
+GLEAN - Updated 11-08-2022
