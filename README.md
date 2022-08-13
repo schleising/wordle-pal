@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨🟨⬜🟨\
-🟩🟨⬜🟨🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜⬜🟨🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 41
     3: 117
-    4: 19
+    4: 20
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-LABEL - Updated 12-08-2022
+HUNKY - Updated 13-08-2022
