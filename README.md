@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟩⬜⬜\
-⬜⬜🟩⬜🟨\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩🟩\
+⬜⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 41
     3: 118
-    4: 20
+    4: 21
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-KHAKI - Updated 14-08-2022
+POKER - Updated 15-08-2022
