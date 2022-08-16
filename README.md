@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜🟩🟩\
-⬜⬜⬜🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨⬜⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 41
+    2: 42
     3: 118
     4: 21
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-POKER - Updated 15-08-2022
+GRUEL - Updated 16-08-2022
