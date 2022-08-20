@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩⬜⬜⬜\
+⬜⬜🟨🟨🟨\
+🟨🟨🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 42
-    3: 121
+    3: 122
     4: 21
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SHRUG - Updated 19-08-2022
+TREAT - Updated 20-08-2022
