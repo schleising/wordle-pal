@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨🟨\
-🟨🟨🟨⬜🟨\
+## Got today's word in 2 attempts</br>
+🟨⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 42
+    2: 43
     3: 122
     4: 21
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-TREAT - Updated 20-08-2022
+WASTE - Updated 21-08-2022
