@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨🟨\
-🟨🟨🟨⬜🟨\
+⬜⬜⬜🟩⬜\
+🟨🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 43
-    3: 123
+    3: 124
     4: 21
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-MERIT - Updated 22-08-2022
+WOVEN - Updated 23-08-2022
