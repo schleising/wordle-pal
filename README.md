@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨🟨🟩⬜\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 43
+    2: 44
     3: 130
     4: 21
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CHIEF - Updated 29-08-2022
+ONSET - Updated 30-08-2022
