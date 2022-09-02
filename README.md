@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜🟨⬜\
-🟨🟨⬜🟨⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜🟩⬜⬜\
+🟩🟨🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 44
-    3: 131
+    3: 132
     4: 22
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-FUNGI - Updated 01-09-2022
+CHARM - Updated 02-09-2022
