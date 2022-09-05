@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟨\
-🟨🟨🟨🟩⬜\
+⬜⬜⬜⬜⬜\
+⬜⬜🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 45
-    3: 133
+    3: 134
     4: 22
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-INTER - Updated 04-09-2022
+WHOOP - Updated 05-09-2022
