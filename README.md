@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 45
+    2: 46
     3: 134
     4: 22
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-WHOOP - Updated 05-09-2022
+TAUNT - Updated 06-09-2022
