@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜⬜🟨🟨⬜\
+🟩⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 46
+    2: 47
     3: 134
     4: 22
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-TAUNT - Updated 06-09-2022
+LEERY - Updated 07-09-2022
