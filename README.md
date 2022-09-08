@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜⬜🟨🟨\
+## Got today's word in 3 attempts</br>
+🟨🟩🟩⬜⬜\
+🟩🟩🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 47
-    3: 134
+    3: 135
     4: 22
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-LEERY - Updated 07-09-2022
+CLASS - Updated 08-09-2022
