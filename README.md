@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨⬜\
-🟩🟨🟨⬜⬜\
+⬜⬜⬜⬜🟩\
+⬜⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 48
-    3: 137
+    3: 138
     4: 22
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-TIBIA - Updated 11-09-2022
+BOOZE - Updated 12-09-2022
