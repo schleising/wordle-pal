@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟩🟨⬜⬜\
-🟩🟩⬜⬜⬜\
-🟩🟩⬜⬜⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨🟩\
+🟩⬜⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 48
-    3: 138
+    3: 139
     4: 23
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-ALPHA - Updated 13-09-2022
+THYME - Updated 14-09-2022
