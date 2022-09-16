@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟨🟩🟩⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜🟨⬜🟨\
+🟨🟩⬜🟩🟩\
+⬜🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 48
     3: 140
-    4: 23
+    4: 24
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-DOUBT - Updated 15-09-2022
+PARER - Updated 16-09-2022
