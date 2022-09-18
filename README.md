@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩🟩\
-⬜🟨⬜🟩🟩\
+⬜⬜🟨⬜⬜\
+⬜⬜🟩🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 48
-    3: 141
+    3: 142
     4: 24
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CHUTE - Updated 17-09-2022
+STICK - Updated 18-09-2022
