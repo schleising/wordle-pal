@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜⬜⬜🟨🟩\
+⬜🟩🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 49
+    2: 50
     3: 142
     4: 24
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-TRICE - Updated 19-09-2022
+ALIKE - Updated 20-09-2022
