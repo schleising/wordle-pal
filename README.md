@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜🟨\
-🟩🟨🟩🟨⬜\
+## Got today's word in 2 attempts</br>
+⬜🟩🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 50
+    2: 51
     3: 143
     4: 24
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-RECAP - Updated 21-09-2022
+SAINT - Updated 22-09-2022
