@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟨🟩⬜⬜\
+## Got today's word in 3 attempts</br>
+🟩⬜⬜⬜⬜\
+🟩⬜🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 53
-    3: 148
+    3: 149
     4: 24
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-SCALD - Updated 29-09-2022
+SCORN - Updated 30-09-2022
