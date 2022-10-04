@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜🟨⬜\
-🟩🟩⬜🟩⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜🟨⬜⬜\
+🟩🟨⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 54
     3: 151
-    4: 24
+    4: 25
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-STING - Updated 03-10-2022
+BOUGH - Updated 04-10-2022
