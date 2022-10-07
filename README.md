@@ -4,16 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟩⬜🟩⬜\
+## Got today's word in 4 attempts</br>
+🟨🟨⬜⬜🟩\
+⬜⬜🟨⬜🟩\
+🟩⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 55
     3: 152
-    4: 25
+    4: 26
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-SLOTH - Updated 06-10-2022
+APHIS - Updated 07-10-2022
