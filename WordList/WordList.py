@@ -145,7 +145,7 @@ class Words:
         print(f'Words:GuessWord():wordDate : {wordDate}')
 
         # Get the day number
-        self.dayNumber = (wordDate - self._startDate).days
+        self.dayNumber = (wordDate - self._startDate).days + Constants.DAY_OFFSET
 
         # Print the day number for interest
         print(f'Words:GuessWord():dayNumber: {self.dayNumber}')
