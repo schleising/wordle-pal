@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-🟨🟨⬜⬜🟩\
-⬜⬜🟨⬜🟩\
-🟩⬜⬜🟩🟩\
+⬜🟨🟨⬜⬜\
+🟨⬜🟨🟨🟨\
+⬜🟨⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -15,7 +15,7 @@
     1: 0
     2: 55
     3: 152
-    4: 26
+    4: 27
     5: 1
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-APHIS - Updated 07-10-2022
+APIAN - Updated 08-10-2022
