@@ -94,7 +94,7 @@ def RunCompleteGame() -> None:
                 break
 
             outputFile.write('===============\n')
-            outputFile.write(f'Wordle {words.dayNumber} {words.guessNumberString}/6\n')
+            outputFile.write(f'Wordle {words.dayNumber - Constants.DAY_OFFSET} {words.guessNumberString}/6\n')
             outputFile.write('\n')
 
             # Output a Wordle like graphic
