@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜⬜⬜\
+🟨🟩⬜⬜⬜\
+⬜🟩🟨🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 55
-    3: 154
+    3: 155
     4: 27
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ENJOY - Updated 10-10-2022
+VALID - Updated 11-10-2022
