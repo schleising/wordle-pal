@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜🟩⬜🟩\
-🟩⬜🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 55
+    2: 56
     3: 160
     4: 27
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-SPADE - Updated 16-10-2022
+STEIN - Updated 17-10-2022
