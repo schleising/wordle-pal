@@ -60,7 +60,7 @@ class WordDownloader():
                         self.solutionWords = json.loads(wordLists[0][0])
 
                         # The second match is the valid words
-                        self.validWords = json.loads(wordLists[1][0])
+                        # self.validWords = json.loads(wordLists[1][0])
                     else:
                         # If there is any kind of download or parsing error, reset the words back to the original ones
                         self.solutionWords = SOLUTION_WORDS
