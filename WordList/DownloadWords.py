@@ -9,7 +9,7 @@ import re
 from WordList.SolutionWords import SOLUTION_WORDS
 from WordList.ValidWords import VALID_WORDS
 
-from WordList.Constants import BASE_URL, INDEX_PAGE
+from WordList.Constants import BASE_URL, DAY_OFFSET, INDEX_PAGE
 
 class WordDownloader():
     def __init__(self, url: str = f'{BASE_URL}{INDEX_PAGE}', downloadWords: bool = True) -> None:
@@ -56,11 +56,14 @@ class WordDownloader():
                         # Find the matches
                         wordLists = wordRegex.findall(fullText)
 
-                        # The first match is the solution words
-                        self.solutionWords = json.loads(wordLists[0][0])
+                        # The first match is the list of words
+                        allWords = json.loads(wordLists[0][0])
 
-                        # The second match is the valid words
-                        # self.validWords = json.loads(wordLists[1][0])
+                        # The valid words are in the first part of the list
+                        self.validWords = allWords[:DAY_OFFSET]
+
+                        # The solutions are in the second part of the list
+                        self.solutionWords = allWords[DAY_OFFSET:]
                     else:
                         # If there is any kind of download or parsing error, reset the words back to the original ones
                         self.solutionWords = SOLUTION_WORDS

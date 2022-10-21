@@ -145,10 +145,10 @@ class Words:
         print(f'Words:GuessWord():wordDate : {wordDate}')
 
         # Get the day number
-        self.dayNumber = (wordDate - self._startDate).days + Constants.DAY_OFFSET
+        self.dayNumber = (wordDate - self._startDate).days
 
         # Print the day number for interest
-        print(f'Words:GuessWord():dayNumber: {self.dayNumber - Constants.DAY_OFFSET}')
+        print(f'Words:GuessWord():dayNumber: {self.dayNumber}')
 
         # Get today's word
         self.todaysWord = self._fullWordList[self.dayNumber]
@@ -278,7 +278,7 @@ class Words:
 
         # Output a Wordle like graphic
         print()
-        print(f'Wordle {self.dayNumber - Constants.DAY_OFFSET} {self.guessNumberString}/6')
+        print(f'Wordle {self.dayNumber} {self.guessNumberString}/6')
         print()
 
         for guessGraphic in self.guessHistory:

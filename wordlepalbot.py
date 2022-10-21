@@ -12,7 +12,6 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
-from WordList.Constants import DAY_OFFSET
 
 # Define a handler for /guess
 def guess(update: Update, context):
@@ -56,7 +55,7 @@ def guess(update: Update, context):
         msgLines: list[str] = []
 
         # Add the first line of text which shows how many guesses it took
-        msgLines.append(f'Wordle {words.dayNumber - DAY_OFFSET} {words.guessNumberString}/6')
+        msgLines.append(f'Wordle {words.dayNumber} {words.guessNumberString}/6')
 
         # Add a blank line
         msgLines.append('')
