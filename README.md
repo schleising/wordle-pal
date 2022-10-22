@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜🟩🟩⬜🟩\
+🟩🟨⬜⬜🟨\
+🟩🟩🟨🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 56
-    3: 164
+    3: 165
     4: 27
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-GROVE - Updated 21-10-2022
+SPIEL - Updated 22-10-2022
