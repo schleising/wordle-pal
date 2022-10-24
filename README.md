@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜⬜🟩\
-⬜🟩🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+🟨🟩🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 56
+    2: 57
     3: 165
     4: 28
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-MUMMY - Updated 23-10-2022
+FAULT - Updated 24-10-2022
