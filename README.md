@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟩⬜⬜⬜\
-⬜🟩🟩⬜🟩\
+## Got today's word in 3 attempts</br>
+🟩⬜🟨⬜🟨\
+🟩⬜🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 57
-    3: 166
+    3: 167
     4: 30
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-CARRY - Updated 27-10-2022
+SNEAK - Updated 28-10-2022
