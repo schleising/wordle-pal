@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨🟨🟩⬜\
+## Got today's word in 3 attempts</br>
+⬜🟨🟨🟨⬜\
+🟨⬜🟩🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 58
-    3: 168
+    3: 169
     4: 30
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-WALTZ - Updated 30-10-2022
+APTLY - Updated 31-10-2022
