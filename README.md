@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜🟩⬜\
-⬜⬜🟨🟩⬜\
-🟨🟨🟩🟩🟨\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜🟨\
+⬜🟨⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 58
-    3: 172
+    3: 173
     4: 31
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-PHOTO - Updated 04-11-2022
+DREAM - Updated 05-11-2022
