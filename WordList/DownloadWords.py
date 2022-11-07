@@ -9,7 +9,7 @@ import re
 from WordList.SolutionWords import SOLUTION_WORDS
 from WordList.ValidWords import VALID_WORDS
 
-from WordList.Constants import BASE_URL, DAY_OFFSET, INDEX_PAGE
+from WordList.Constants import BASE_URL, SOLUTION_WORD_OFFSET, INDEX_PAGE
 
 class WordDownloader():
     def __init__(self, url: str = f'{BASE_URL}{INDEX_PAGE}', downloadWords: bool = True) -> None:
@@ -60,10 +60,10 @@ class WordDownloader():
                         allWords = json.loads(wordLists[0][0])
 
                         # The valid words are in the first part of the list
-                        self.validWords = allWords[:DAY_OFFSET]
+                        self.validWords = allWords[:SOLUTION_WORD_OFFSET]
 
                         # The solutions are in the second part of the list
-                        self.solutionWords = allWords[DAY_OFFSET:]
+                        self.solutionWords = allWords[SOLUTION_WORD_OFFSET:]
 
                         # Save the Wordle JS file
                         with open(Path('WordList/Wordle.js'), 'w', encoding='utf-8') as wordleFile:

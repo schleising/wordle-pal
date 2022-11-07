@@ -119,7 +119,7 @@ class Words:
         # Sort the word scores by score, highest to lowest
         self._wordScores = dict(sorted(self._wordScores.items(), key=lambda x: x[1], reverse=True))
 
-    def _GuessWordByMethod(self, scoringMethod: Callable, wordDate: date = date.today(), verbose: bool = False):
+    def _GuessWordByMethod(self, scoringMethod: Callable, wordDate: date = date.today() + timedelta(days=Constants.DAY_OFFSET), verbose: bool = False):
         # Reset the guess number and history
         self._guessNumber = 0
         self.guessNumberString = '0'
