@@ -64,6 +64,10 @@ class WordDownloader():
 
                         # The solutions are in the second part of the list
                         self.solutionWords = allWords[DAY_OFFSET:]
+
+                        # Save the Wordle JS file
+                        with open(Path('WordList/Wordle.js'), 'w', encoding='utf-8') as wordleFile:
+                            wordleFile.write(fullText)
                     else:
                         # If there is any kind of download or parsing error, reset the words back to the original ones
                         self.solutionWords = SOLUTION_WORDS
