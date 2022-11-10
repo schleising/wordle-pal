@@ -1,4 +1,3 @@
-from base64 import encode
 from datetime import date, timedelta
 from collections import Counter
 from pathlib import Path
