@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟩\
-🟩🟨⬜⬜🟩\
+🟩🟨🟩⬜⬜\
+🟩⬜🟩🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 59
-    3: 177
+    3: 178
     4: 31
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-THERE - Updated 10-11-2022
+SNARL - Updated 11-11-2022
