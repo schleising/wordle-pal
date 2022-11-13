@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜🟨\
-⬜🟩⬜🟩🟩\
+⬜⬜⬜🟨🟩\
+🟩🟨⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 59
-    3: 179
+    3: 180
     4: 31
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-BAKER - Updated 12-11-2022
+THERE - Updated 13-11-2022
