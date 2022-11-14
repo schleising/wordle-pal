@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟩\
-🟩🟨⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜🟩⬜⬜⬜\
+⬜🟩⬜⬜⬜\
+⬜🟩⬜⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 59
     3: 180
-    4: 31
+    4: 32
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-THERE - Updated 13-11-2022
+GLYPH - Updated 14-11-2022
