@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜⬜⬜\
-⬜🟩⬜⬜🟨\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+🟨⬜🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 59
-    3: 180
+    3: 181
     4: 32
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-GLYPH - Updated 14-11-2022
+POOCH - Updated 15-11-2022
