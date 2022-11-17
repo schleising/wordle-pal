@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜⬜🟩\
-⬜⬜⬜🟩🟩\
+## Got today's word in 3 attempts</br>
+🟩🟨⬜⬜🟨\
+🟩⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 59
-    3: 181
+    3: 182
     4: 33
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-HIPPY - Updated 16-11-2022
+SPELL - Updated 17-11-2022
