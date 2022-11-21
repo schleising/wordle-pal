@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-⬜⬜🟩⬜⬜\
+⬜🟨🟨🟨⬜\
+🟨⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 60
-    3: 184
+    3: 185
     4: 33
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-GULCH - Updated 20-11-2022
+VAULT - Updated 21-11-2022
