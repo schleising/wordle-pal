@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-🟨🟩🟨🟩🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
-    2: 60
+    2: 61
     3: 186
     4: 33
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-GODLY - Updated 22-11-2022
+THREW - Updated 23-11-2022
