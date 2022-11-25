@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜🟩⬜🟨🟨\
+⬜⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 62
+    2: 63
     3: 186
     4: 33
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-FLEET - Updated 24-11-2022
+GRAVE - Updated 25-11-2022
