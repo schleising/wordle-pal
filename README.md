@@ -4,16 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
+## Got today's word in 4 attempts</br>
 ⬜⬜🟩⬜🟩\
+⬜⬜🟩⬜🟩\
+🟩⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 63
     3: 186
-    4: 33
+    4: 34
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-GRAVE - Updated 25-11-2022
+INANE - Updated 26-11-2022
