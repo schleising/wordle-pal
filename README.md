@@ -4,9 +4,8 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟩⬜🟩\
-⬜⬜🟩⬜🟩\
+## Got today's word in 3 attempts</br>
+🟩⬜⬜⬜⬜\
 🟩⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
@@ -14,7 +13,7 @@
 ## Guess Statistics</br>
     1: 0
     2: 63
-    3: 186
+    3: 187
     4: 34
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-INANE - Updated 26-11-2022
+SHOCK - Updated 27-11-2022
