@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩⬜🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 63
+    2: 64
     3: 187
     4: 34
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-SHOCK - Updated 27-11-2022
+CRAVE - Updated 28-11-2022
