@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜⬜🟩⬜🟩\
+🟩⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 64
+    2: 65
     3: 187
     4: 34
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-CRAVE - Updated 28-11-2022
+SPITE - Updated 29-11-2022
