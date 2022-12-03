@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩🟩⬜⬜\
-🟩🟩🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+⬜🟩⬜⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 65
+    2: 66
     3: 190
     4: 34
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CLAIM - Updated 02-12-2022
+RAINY - Updated 03-12-2022
