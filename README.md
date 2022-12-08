@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜🟩⬜⬜\
-⬜⬜🟩🟩⬜\
+## Got today's word in 2 attempts</br>
+🟨⬜🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 66
+    2: 67
     3: 193
     4: 35
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-QUASI - Updated 07-12-2022
+ARISE - Updated 08-12-2022
