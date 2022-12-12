@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟨🟩⬜⬜\
+⬜⬜🟨🟨🟨\
+🟨🟨🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 68
-    3: 195
+    3: 196
     4: 35
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-OPIUM - Updated 11-12-2022
+AVERT - Updated 12-12-2022
