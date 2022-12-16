@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-⬜⬜🟩⬜⬜\
+⬜⬜⬜⬜🟩\
+⬜🟨⬜🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 69
-    3: 198
+    3: 199
     4: 35
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-MULCH - Updated 15-12-2022
+GENRE - Updated 16-12-2022
