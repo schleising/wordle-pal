@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜🟨⬜🟨🟩\
+🟨⬜⬜🟨⬜\
+⬜⬜🟩🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 69
-    3: 199
+    3: 200
     4: 35
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-GENRE - Updated 16-12-2022
+PLUME - Updated 17-12-2022
