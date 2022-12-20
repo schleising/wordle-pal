@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟨🟩🟩🟨⬜\
+⬜⬜⬜⬜⬜\
+🟨🟨⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 69
-    3: 202
+    3: 203
     4: 35
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-COUNT - Updated 19-12-2022
+INCUR - Updated 20-12-2022
