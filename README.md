@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-🟨🟨⬜🟨⬜\
+## Got today's word in 2 attempts</br>
+⬜🟨🟨🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 69
+    2: 70
     3: 203
     4: 35
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-INCUR - Updated 20-12-2022
+TOTAL - Updated 21-12-2022
