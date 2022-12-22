@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜🟨🟨🟨⬜\
+🟨⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 70
+    2: 71
     3: 203
     4: 35
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-TOTAL - Updated 21-12-2022
+WREST - Updated 22-12-2022
