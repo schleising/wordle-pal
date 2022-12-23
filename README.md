@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨⬜⬜🟨🟨\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜⬜\
+🟩🟨⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 71
-    3: 203
+    3: 204
     4: 35
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-WREST - Updated 22-12-2022
+MOCHA - Updated 23-12-2022
