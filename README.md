@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜⬜🟨⬜\
-🟩🟩🟩⬜⬜\
+⬜🟨⬜⬜🟨\
+🟩🟨🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 71
-    3: 206
+    3: 207
     4: 35
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-STUDY - Updated 25-12-2022
+LOVER - Updated 26-12-2022
