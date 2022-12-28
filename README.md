@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟨🟨⬜🟨🟨\
+⬜⬜🟨🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 72
+    2: 73
     3: 207
     4: 35
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-SAFER - Updated 27-12-2022
+RIVET - Updated 28-12-2022
