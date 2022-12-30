@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜🟩🟩\
+⬜⬜🟩🟨🟩\
+🟩⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 73
-    3: 208
+    3: 209
     4: 35
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-FUNNY - Updated 29-12-2022
+SMOKE - Updated 30-12-2022
