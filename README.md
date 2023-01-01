@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜🟨🟩⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜⬜⬜🟨🟩\
+⬜🟨🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 73
     3: 210
-    4: 35
+    4: 36
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-MOUND - Updated 31-12-2022
+UNDUE - Updated 01-01-2023
