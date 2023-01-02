@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜🟨🟩\
-⬜🟨🟨⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜🟨⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 73
+    2: 74
     3: 210
     4: 36
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-UNDUE - Updated 01-01-2023
+SEDAN - Updated 02-01-2023
