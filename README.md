@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨⬜🟨⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜🟨⬜⬜\
+⬜🟩🟨⬜🟨\
+⬜🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 74
     3: 210
-    4: 36
+    4: 37
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-SEDAN - Updated 02-01-2023
+PAGAN - Updated 03-01-2023
