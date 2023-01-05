@@ -5,17 +5,17 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-🟩⬜⬜⬜🟩\
-🟩⬜⬜⬜🟩\
-🟩🟨🟨⬜🟩\
+⬜🟨⬜⬜🟩\
+⬜🟨🟨🟩🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 74
     3: 210
-    4: 38
+    4: 39
     5: 1
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-SWINE - Updated 04-01-2023
+GUILE - Updated 05-01-2023
