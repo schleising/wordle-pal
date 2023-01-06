@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟨⬜⬜🟩\
-⬜🟨🟨🟩🟩\
-⬜⬜🟩🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨⬜⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 74
+    2: 75
     3: 210
     4: 39
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-GUILE - Updated 05-01-2023
+GUSTY - Updated 06-01-2023
