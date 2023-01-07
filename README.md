@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨⬜⬜🟩⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨⬜\
+⬜⬜🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 75
-    3: 210
+    3: 211
     4: 39
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-GUSTY - Updated 06-01-2023
+EQUIP - Updated 07-01-2023
