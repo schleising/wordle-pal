@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟩⬜🟨🟨⬜\
+⬜🟩⬜🟨⬜\
+⬜🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 75
-    3: 212
+    3: 213
     4: 39
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-TOUGH - Updated 08-01-2023
+CANOE - Updated 09-01-2023
