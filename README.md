@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩🟨⬜⬜\
+## Got today's word in 2 attempts</br>
+🟨🟩🟩🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 75
+    2: 76
     3: 216
     4: 41
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-LUNCH - Updated 14-01-2023
+BLAST - Updated 15-01-2023
