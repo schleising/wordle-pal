@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟨🟩🟩🟨⬜\
+🟩⬜🟨🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 76
+    2: 77
     3: 216
     4: 41
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-BLAST - Updated 15-01-2023
+STRAY - Updated 16-01-2023
