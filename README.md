@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜🟨🟨⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜⬜\
+🟩🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 77
-    3: 216
+    3: 217
     4: 41
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-STRAY - Updated 16-01-2023
+MANGA - Updated 17-01-2023
