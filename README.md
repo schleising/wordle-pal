@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜🟩\
-⬜🟩🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜🟨⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 77
+    2: 78
     3: 218
     4: 41
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-MELEE - Updated 18-01-2023
+LEFTY - Updated 19-01-2023
