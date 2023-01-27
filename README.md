@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨🟩⬜🟨\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 80
-    3: 222
+    3: 223
     4: 42
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-LEAKY - Updated 26-01-2023
+GRIND - Updated 27-01-2023
