@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜🟩\
-⬜🟩⬜🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨🟨⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 80
+    2: 81
     3: 224
     4: 42
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CARVE - Updated 28-01-2023
+LOOSE - Updated 29-01-2023
