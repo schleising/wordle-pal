@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟨🟨⬜⬜🟩\
+🟨🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 81
+    2: 82
     3: 224
     4: 42
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-LOOSE - Updated 29-01-2023
+SADLY - Updated 30-01-2023
