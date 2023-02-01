@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟨⬜🟨⬜\
+## Got today's word in 4 attempts</br>
+⬜🟨🟨⬜🟩\
+⬜🟨⬜🟩🟩\
+🟩⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 83
     3: 224
-    4: 42
+    4: 43
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-SPILT - Updated 31-01-2023
+APPLE - Updated 01-02-2023
