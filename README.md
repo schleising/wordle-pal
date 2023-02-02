@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟨🟨⬜🟩\
-⬜🟨⬜🟩🟩\
-🟩⬜⬜🟩🟩\
+## Got today's word in 2 attempts</br>
+🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 83
+    2: 84
     3: 224
     4: 43
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-APPLE - Updated 01-02-2023
+SLACK - Updated 02-02-2023
