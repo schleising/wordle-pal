@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜🟨\
-🟩🟩🟩🟩⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜🟨⬜⬜🟩\
+⬜🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 84
     3: 227
-    4: 43
+    4: 44
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-SHEEN - Updated 05-02-2023
+EERIE - Updated 06-02-2023
