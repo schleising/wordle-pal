@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜🟨⬜⬜🟩\
-⬜🟩🟩⬜🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟩⬜\
+⬜🟩🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 84
-    3: 227
+    3: 228
     4: 44
     5: 1
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-EERIE - Updated 06-02-2023
+MINTY - Updated 07-02-2023
