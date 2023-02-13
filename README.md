@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟩⬜⬜\
-⬜⬜🟩⬜⬜\
+⬜⬜🟨🟨🟨\
+🟨🟩🟩⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 85
-    3: 232
+    3: 233
     4: 44
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-COACH - Updated 12-02-2023
+ERUPT - Updated 13-02-2023
