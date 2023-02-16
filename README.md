@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-🟩🟩⬜⬜🟩\
+⬜🟨⬜⬜⬜\
+🟩🟨🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 85
-    3: 235
+    3: 236
     4: 44
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-PRICE - Updated 15-02-2023
+SPAWN - Updated 16-02-2023
