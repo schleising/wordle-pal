@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜🟩\
-⬜🟨🟩🟩🟩\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 85
+    2: 86
     3: 240
     4: 45
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CHOSE - Updated 21-02-2023
+SLEEP - Updated 22-02-2023
