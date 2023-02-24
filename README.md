@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
+## Got today's word in 4 attempts</br>
 ⬜⬜🟨⬜⬜\
-⬜🟨⬜⬜⬜\
+⬜🟩🟩⬜⬜\
+⬜🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 86
     3: 241
-    4: 45
+    4: 46
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-ARDOR - Updated 23-02-2023
+NANNY - Updated 24-02-2023
