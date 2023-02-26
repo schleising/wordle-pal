@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜🟨🟩\
-⬜🟨🟨🟩🟩\
+⬜⬜⬜⬜⬜\
+⬜⬜🟩⬜🟩\
+⬜🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -15,7 +15,7 @@
     1: 0
     2: 86
     3: 241
-    4: 47
+    4: 48
     5: 1
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-NIECE - Updated 25-02-2023
+WOOZY - Updated 26-02-2023
