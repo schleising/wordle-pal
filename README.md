@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-⬜🟩🟩🟩⬜\
+## Got today's word in 2 attempts</br>
+🟩⬜🟩🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 87
+    2: 88
     3: 243
     4: 48
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-DITTO - Updated 01-03-2023
+STANK - Updated 02-03-2023
