@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜🟩🟨⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜🟨⬜🟨\
+⬜🟨⬜🟨🟨\
+⬜🟩🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 88
     3: 243
-    4: 48
+    4: 49
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-STANK - Updated 02-03-2023
+CREAM - Updated 03-03-2023
