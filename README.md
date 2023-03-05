@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟨🟨🟨⬜⬜\
-⬜🟨🟨🟩🟩\
+⬜⬜⬜⬜🟩\
+⬜⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 88
-    3: 244
+    3: 245
     4: 49
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-USUAL - Updated 04-03-2023
+DIODE - Updated 05-03-2023
