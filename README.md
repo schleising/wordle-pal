@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨🟨⬜🟩\
-⬜🟨⬜🟩🟩\
+⬜⬜🟨⬜⬜\
+⬜🟨🟩🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 89
-    3: 246
+    3: 247
     4: 49
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ANGLE - Updated 07-03-2023
+NINJA - Updated 08-03-2023
