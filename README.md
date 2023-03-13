@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜⬜⬜🟩\
+## Got today's word in 3 attempts</br>
+🟩🟨⬜⬜⬜\
+🟩⬜🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 91
-    3: 248
+    3: 249
     4: 50
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-PRONE - Updated 12-03-2023
+SPOIL - Updated 13-03-2023
