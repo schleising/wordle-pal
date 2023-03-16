@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜🟨⬜🟨⬜\
+⬜⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 93
+    2: 94
     3: 249
     4: 50
     5: 1
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-SHADE - Updated 15-03-2023
+DINER - Updated 16-03-2023
