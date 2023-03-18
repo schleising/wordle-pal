@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜🟨⬜⬜\
-⬜🟨🟩⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜🟨🟨⬜\
+⬜🟨🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 94
     3: 250
-    4: 50
+    4: 51
     5: 1
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-ARSON - Updated 17-03-2023
+ONION - Updated 18-03-2023
