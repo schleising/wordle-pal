@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜🟨🟨⬜\
-⬜🟨🟨⬜🟨\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 94
+    2: 95
     3: 250
     4: 51
     5: 1
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-ONION - Updated 18-03-2023
+SLEET - Updated 19-03-2023
