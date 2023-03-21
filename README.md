@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨⬜⬜🟩⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+🟩⬜🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 96
-    3: 250
+    3: 251
     4: 51
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-DOWEL - Updated 20-03-2023
+COUCH - Updated 21-03-2023
