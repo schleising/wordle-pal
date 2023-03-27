@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩🟨\
-⬜🟩⬜🟩⬜\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 99
+    2: 100
     3: 253
     4: 51
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CREEK - Updated 26-03-2023
+LANCE - Updated 27-03-2023
