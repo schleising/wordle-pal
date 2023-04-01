@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨⬜🟨⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩⬜\
+⬜⬜🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 101
     3: 256
-    4: 51
+    4: 52
     5: 1
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-BUILT - Updated 31-03-2023
+EMBED - Updated 01-04-2023
