@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟩🟩🟨⬜\
+⬜⬜🟨🟨⬜\
+🟨🟩🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 101
-    3: 260
+    3: 261
     4: 53
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-FROWN - Updated 06-04-2023
+PATIO - Updated 07-04-2023
