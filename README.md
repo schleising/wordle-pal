@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨⬜\
-🟨🟩🟨⬜⬜\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 101
+    2: 102
     3: 261
     4: 53
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-PATIO - Updated 07-04-2023
+LADEN - Updated 08-04-2023
