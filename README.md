@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟨\
-🟨🟨⬜⬜⬜\
+⬜⬜⬜🟨⬜\
+🟨🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 103
-    3: 264
+    3: 265
     4: 53
     5: 1
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-EDIFY - Updated 12-04-2023
+MIGHT - Updated 13-04-2023
