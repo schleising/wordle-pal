@@ -1,3 +1,4 @@
+
 import sys
 from datetime import date, time
 import logging
@@ -6,6 +7,8 @@ import warnings
 from zoneinfo import ZoneInfo
 
 from dateparser import parse
+
+from aiohttp import ClientSession
 
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
@@ -80,6 +83,46 @@ async def dist(update: Update, context):
         if update.message is not None:
             await update.message.reply_photo(imageFile, quote=False)
 
+async def image(update: Update, context):
+    # Check all the required data is available
+    if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Get the request from the message
+        request = ' '.join(update.message.text.split(' ')[1:])
+
+        # Log the request
+        print(f'{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
+        print(f'Request: {request}')
+
+        # Send a message to the user to let them know the image is being generated
+        await update.message.reply_text(f'OK {update.message.from_user.first_name}, generating your image of {request}, please do be patient...', quote=False)
+
+        # Open a session to the deepai API
+        async with ClientSession() as session:
+            # Post the request to the API
+            async with session.post(
+                "https://api.deepai.org/api/text2img",
+                data={
+                    'text': request,
+                },
+                headers={'api-key': deepai_token}
+            ) as response:
+                # If the response is OK
+                if response.status == 200:
+                    # Log the response
+                    print(f'Response OK: {response.status}')
+
+                    # Get the response as JSON
+                    response_json = await response.json()
+
+                    # Send the image to the user
+                    await update.message.reply_photo(response_json['output_url'], quote=False)
+                else:
+                    # If the response is not OK, log the error
+                    print(f'Error: {response.status}')
+
+                    # Send a message to the user to let them know the image could not be generated
+                    await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {request}, please try again later...', quote=False)
+
 # Log errors
 async def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -107,6 +150,9 @@ def main():
     # On receipt of a /dist command call the guess() function
     application.add_handler(CommandHandler('dist', dist))
 
+    # On receipt of a /image command call the guess() function
+    application.add_handler(CommandHandler('image', image))
+
     # Add the error handler to log errors
     application.add_error_handler(error)
 
@@ -129,6 +175,15 @@ if __name__ == '__main__':
                         level=logging.INFO)
 
     logger = logging.getLogger(__name__)
+
+    try:
+        # Get the Deep AI API key from the deep_ai_token.txt file, this is exclued from git, so may not exist
+        with open(Path('deep_ai_token.txt'), 'r', encoding='utf8') as secretFile:
+            deepai_token = secretFile.read()
+    except:
+        # If deep_ai_token.txt is not available, print some help and exit
+        print('No deep_ai_token.txt file found, you need to put your token from Deep AI in here')
+        sys.exit()
 
     # Call the main function
     main()
