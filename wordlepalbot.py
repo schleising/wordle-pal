@@ -16,6 +16,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
 
+from models import open_ai_models
+
 # Define a handler for /guess
 async def guess(update: Update, context):
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
@@ -123,6 +125,60 @@ async def image(update: Update, context):
                     # Send a message to the user to let them know the image could not be generated
                     await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {request}, please try again later...', quote=False)
 
+async def gpt(update: Update, context):
+    # Check all the required data is available
+    if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Get the request from the message
+        input_text = ' '.join(update.message.text.split(' ')[1:])
+
+        # Log the request
+        print(f'{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
+        print(f'Request: {input_text}')
+
+        # Send a message to the user to let them know the image is being generated
+        await update.message.reply_text(f'Hi {update.message.from_user.first_name}, let me have a think about that...', quote=False)
+
+        # Create the request
+        message = open_ai_models.Message(content=input_text)
+        api_request = open_ai_models.Request(messages=[message])
+
+        # Open a session to the deepai API
+        async with ClientSession() as session:
+            # Post the request to the API
+            async with session.post(
+                "https://api.openai.com/v1/chat/completions",
+                json=api_request.dict(),
+                headers={
+                    'Content-Type': 'application/json',
+                    'Authorization': f'Bearer {open_ai_token}'
+                }
+            ) as response:
+                # If the response is OK
+                if response.status == 200:
+                    # Log the response
+                    print(f'Response OK: {response.status}')
+
+                    # Get the response as a string
+                    response_str = await response.text()
+
+                    # Parse the response into a Response object
+                    api_response = open_ai_models.Response.parse_raw(response_str)
+
+                    # Get the reply from the response
+                    reply = api_response.choices[0].message.content
+
+                    # Log the reply
+                    print(f'Reply: {reply}')
+
+                    # Send the message to the user
+                    await update.message.reply_text(reply, quote=True)
+                else:
+                    # If the response is not OK, log the error
+                    print(f'Error: {response.status}')
+
+                    # Send a message to the user to let them know the image could not be generated
+                    await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not answer your query', quote=False)
+
 # Log errors
 async def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -147,11 +203,14 @@ def main():
     # On receipt of a /guess command call the guess() function
     application.add_handler(CommandHandler('guess', guess))
 
-    # On receipt of a /dist command call the guess() function
+    # On receipt of a /dist command call the dist() function
     application.add_handler(CommandHandler('dist', dist))
 
-    # On receipt of a /image command call the guess() function
+    # On receipt of a /image command call the image() function
     application.add_handler(CommandHandler('image', image))
+
+    # On receipt of a /gpt command call the gpt() function
+    application.add_handler(CommandHandler('gpt', gpt))
 
     # Add the error handler to log errors
     application.add_error_handler(error)
@@ -183,6 +242,15 @@ if __name__ == '__main__':
     except:
         # If deep_ai_token.txt is not available, print some help and exit
         print('No deep_ai_token.txt file found, you need to put your token from Deep AI in here')
+        sys.exit()
+
+    try:
+        # Get the Open AI API key from the open_ai_token.txt file, this is exclued from git, so may not exist
+        with open(Path('open_ai_key.txt'), 'r', encoding='utf8') as secretFile:
+            open_ai_token = secretFile.read()
+    except:
+        # If open_ai_token.txt is not available, print some help and exit
+        print('No open_ai_token.txt file found, you need to put your token from Open AI in here')
         sys.exit()
 
     # Call the main function
