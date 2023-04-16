@@ -13,6 +13,8 @@ from aiohttp import ClientSession
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
 
+from simple_openai import AsyncSimpleOpenai
+
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
 
@@ -88,42 +90,7 @@ async def dist(update: Update, context):
 async def image(update: Update, context):
     # Check all the required data is available
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
-        # Get the request from the message
-        request = ' '.join(update.message.text.split(' ')[1:])
-
-        # Log the request
-        print(f'{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
-        print(f'Request: {request}')
-
-        # Send a message to the user to let them know the image is being generated
-        await update.message.reply_text(f'OK {update.message.from_user.first_name}, generating your image of {request}\n\nplease do be patient...', quote=False)
-
-        # Open a session to the deepai API
-        async with ClientSession() as session:
-            # Post the request to the API
-            async with session.post(
-                "https://api.deepai.org/api/text2img",
-                data={
-                    'text': request,
-                },
-                headers={'api-key': deepai_token}
-            ) as response:
-                # If the response is OK
-                if response.status == 200:
-                    # Log the response
-                    print(f'Response OK: {response.status}')
-
-                    # Get the response as JSON
-                    response_json = await response.json()
-
-                    # Send the image to the user
-                    await update.message.reply_photo(response_json['output_url'], quote=False)
-                else:
-                    # If the response is not OK, log the error
-                    print(f'Error: {response.status}')
-
-                    # Send a message to the user to let them know the image could not be generated
-                    await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {request}, please try again later...', quote=False)
+        await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, this feature is now deprected, please use /dalle instead', quote=False)
 
 async def gpt(update: Update, context):
     # Check all the required data is available
@@ -138,46 +105,22 @@ async def gpt(update: Update, context):
         # Send a message to the user to let them know the response is being generated
         await update.message.reply_text(f'Hi {update.message.from_user.first_name}, let me have a think about that...', quote=False)
 
-        # Create the request
-        message = open_ai_models.ChatMessage(content=input_text)
-        api_request = open_ai_models.ChatRequest(messages=[message])
+        # Send the request to the OpenAI API
+        response = await simple_openai_client.get_chat_response(input_text)
 
-        # Open a session to the OpenAI API
-        async with ClientSession() as session:
-            # Post the request to the API
-            async with session.post(
-                "https://api.openai.com/v1/chat/completions",
-                json=api_request.dict(),
-                headers={
-                    'Content-Type': 'application/json',
-                    'Authorization': f'Bearer {open_ai_token}'
-                }
-            ) as response:
-                # If the response is OK
-                if response.status == 200:
-                    # Log the response
-                    print(f'Response OK: {response.status}')
+        # Check the response is valid
+        if response.success:
+            # Log the response
+            print(f'Response: {response.message}')
 
-                    # Get the response as a string
-                    response_str = await response.text()
+            # Send the response to the user
+            await update.message.reply_text(response.message, quote=False)
+        else:
+            # Log the error
+            print(f'Error: {response.message}')
 
-                    # Parse the response into a Response object
-                    api_response = open_ai_models.ChatResponse.parse_raw(response_str)
-
-                    # Get the reply from the response
-                    reply = api_response.choices[0].message.content
-
-                    # Log the reply
-                    print(f'Reply: {reply}')
-
-                    # Send the message to the user
-                    await update.message.reply_text(reply, quote=True)
-                else:
-                    # If the response is not OK, log the error
-                    print(f'Error: {response.status}')
-
-                    # Send a message to the user to let them know the response could not be generated
-                    await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not answer your query', quote=False)
+            # If the response is invalid, let the user know
+            await update.message.reply_text(f'There was a problem...\n\n{response.message}', quote=False)
 
 async def dalle(update: Update, context):
     # Check all the required data is available
@@ -192,44 +135,22 @@ async def dalle(update: Update, context):
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(f'OK {update.message.from_user.first_name}, using DALL-E to generate your image of {input_text}\n\nPlease do be patient...', quote=False)
 
-        # Create the request
-        api_request = open_ai_models.ImageRequest(prompt=input_text)
+        # Send the request to the OpenAI API
+        response = await simple_openai_client.get_image_url(input_text)
 
-        print(api_request.json(indent=2))
+        # Check the response is valid
+        if response.success:
+            # Log the response
+            print(f'Response: {response.message}')
 
-        # Open a session to the OpenAI API
-        async with ClientSession() as session:
-            # Post the request to the API
-            async with session.post(
-                "https://api.openai.com/v1/images/generations",
-                json=api_request.dict(),
-                headers={
-                    'Content-Type': 'application/json',
-                    'Authorization': f'Bearer {open_ai_token}'
-                }
-            ) as response:
-                # If the response is OK
-                if response.status == 200:
-                    # Log the response
-                    print(f'Response OK: {response.status}')
+            # Send the image to the user
+            await update.message.reply_photo(response.message, quote=True)
+        else:
+            # If the response is not OK, log the error
+            print(f'Error: {response.message}')
 
-                    # Get the response as JSON
-                    response_str = await response.text()
-
-                    # Parse the response into a ImageResponse object
-                    api_response = open_ai_models.ImageResponse.parse_raw(response_str)
-
-                    # Send the image to the user
-                    await update.message.reply_photo(api_response.data[0].url, quote=False)
-                else:
-                    # Parse the error response into a ErrorResponse object
-                    error_response = open_ai_models.ErrorResponse.parse_raw(await response.text())
-
-                    # If the response is not OK, log the error
-                    print(f'Error: {error_response.error.message}')
-
-                    # Send a message to the user to let them know the image could not be generated
-                    await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{error_response.error.message}', quote=False)
+            # Send a message to the user to let them know the image could not be generated
+            await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}', quote=False)
 
 # Log errors
 async def error(update, context):
@@ -307,6 +228,9 @@ if __name__ == '__main__':
         # If open_ai_token.txt is not available, print some help and exit
         print('No open_ai_token.txt file found, you need to put your token from Open AI in here')
         sys.exit()
+
+    # Create the Open AI API client
+    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token)
 
     # Call the main function
     main()
