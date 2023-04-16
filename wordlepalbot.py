@@ -8,8 +8,6 @@ from zoneinfo import ZoneInfo
 
 from dateparser import parse
 
-from aiohttp import ClientSession
-
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
 
@@ -17,8 +15,6 @@ from simple_openai import AsyncSimpleOpenai
 
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
-
-from models import open_ai_models
 
 # Define a handler for /guess
 async def guess(update: Update, context):
