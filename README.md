@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩⬜⬜🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 106
-    3: 267
+    3: 268
     4: 53
     5: 1
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-VAPOR - Updated 18-04-2023
+CROCK - Updated 19-04-2023
