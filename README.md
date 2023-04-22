@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-🟨⬜⬜🟨🟩\
+## Got today's word in 2 attempts</br>
+⬜🟨🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 106
+    2: 107
     3: 270
     4: 53
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-SUNNY - Updated 21-04-2023
+LOATH - Updated 22-04-2023
