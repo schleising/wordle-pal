@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.88</br>
 ## Guess Statistics</br>
     1: 0
-    2: 107
+    2: 108
     3: 271
     4: 53
     5: 1
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CHAFF - Updated 23-04-2023
+SLIDE - Updated 24-04-2023
