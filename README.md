@@ -4,17 +4,20 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟩⬜⬜🟩\
+## Got today's word in 5 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩🟩\
+⬜⬜⬜🟩🟩\
+🟨⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.88</br>
+## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 108
     3: 271
     4: 53
-    5: 1
+    5: 2
     6: 1
 </br>
 </br>
@@ -34,4 +37,4 @@
 </br>
 
 ## Today's Word
-SLIDE - Updated 24-04-2023
+QUEER - Updated 25-04-2023
