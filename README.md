@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜⬜\
-⬜⬜🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜🟩🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 108
+    2: 109
     3: 277
     4: 54
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-PUSHY - Updated 02-05-2023
+TAMER - Updated 03-05-2023
