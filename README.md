@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜⬜🟩🟨🟩\
+## Got today's word in 4 attempts</br>
+⬜🟨⬜⬜🟩\
+⬜🟨🟨🟩🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 111
     3: 280
-    4: 54
+    4: 55
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-SWIFT - Updated 08-05-2023
+EXILE - Updated 09-05-2023
