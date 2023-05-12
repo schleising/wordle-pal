@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-⬜⬜🟨⬜🟩\
+⬜⬜⬜⬜🟨\
+🟩🟨⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 111
-    3: 282
+    3: 283
     4: 55
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-LUCKY - Updated 11-05-2023
+FREER - Updated 12-05-2023
