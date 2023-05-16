@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜🟨\
-⬜🟩🟩🟩🟩\
+## Got today's word in 2 attempts</br>
+🟩🟨⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 111
+    2: 112
     3: 286
     4: 55
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-PLIER - Updated 15-05-2023
+LUNAR - Updated 16-05-2023
