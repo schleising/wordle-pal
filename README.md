@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟨⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+🟨⬜⬜🟨⬜\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 112
     3: 286
-    4: 55
+    4: 56
     5: 2
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-LUNAR - Updated 16-05-2023
+WINCH - Updated 17-05-2023
