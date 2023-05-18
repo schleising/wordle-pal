@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-🟨⬜⬜🟨⬜\
-⬜⬜🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+🟩⬜🟩⬜🟩\
+🟩⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 112
-    3: 286
+    3: 287
     4: 56
     5: 2
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-WINCH - Updated 17-05-2023
+SNARE - Updated 18-05-2023
