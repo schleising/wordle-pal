@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜🟩⬜🟩\
-🟩⬜🟩🟩🟩\
+🟨⬜⬜⬜🟩\
+🟨⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 112
-    3: 287
+    3: 288
     4: 56
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SNARE - Updated 18-05-2023
+NURSE - Updated 19-05-2023
