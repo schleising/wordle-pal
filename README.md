@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜🟩\
-⬜🟩🟩🟩🟩\
+⬜🟨⬜⬜🟨\
+🟩🟨🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 112
-    3: 289
+    3: 290
     4: 56
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-HOUSE - Updated 20-05-2023
+BORAX - Updated 21-05-2023
