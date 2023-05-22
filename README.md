@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜🟨\
-🟩🟨🟨⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩🟩\
+🟨🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 112
     3: 290
-    4: 56
+    4: 57
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-BORAX - Updated 21-05-2023
+NICER - Updated 22-05-2023
