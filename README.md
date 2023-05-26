@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨⬜\
-🟨🟨⬜⬜🟩\
+🟩⬜🟨⬜⬜\
+🟩🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 112
-    3: 293
+    3: 294
     4: 57
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ABOUT - Updated 25-05-2023
+SAVVY - Updated 26-05-2023
