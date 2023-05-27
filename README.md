@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
+## Got today's word in 4 attempts</br>
+⬜⬜⬜🟨⬜\
 🟩⬜🟨⬜⬜\
-🟩🟩🟩⬜🟩\
+🟩🟩🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 112
     3: 294
-    4: 57
+    4: 58
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-SAVVY - Updated 26-05-2023
+TOXIN - Updated 27-05-2023
