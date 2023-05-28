@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
+## Got today's word in 3 attempts</br>
 ⬜⬜⬜🟨⬜\
-🟩⬜🟨⬜⬜\
-🟩🟩🟩🟩⬜\
+🟩⬜⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 112
-    3: 294
+    3: 295
     4: 58
     5: 2
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-TOXIN - Updated 27-05-2023
+TUNIC - Updated 28-05-2023
