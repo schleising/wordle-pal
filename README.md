@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟩⬜⬜🟨⬜\
+## Got today's word in 2 attempts</br>
+⬜⬜⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 112
+    2: 113
     3: 295
     4: 58
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-TUNIC - Updated 28-05-2023
+PRIED - Updated 29-05-2023
