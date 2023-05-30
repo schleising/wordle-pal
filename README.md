@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜⬜🟩🟨\
+## Got today's word in 3 attempts</br>
+⬜🟨🟨⬜⬜\
+⬜🟨🟨🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 113
-    3: 295
+    3: 296
     4: 58
     5: 2
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-PRIED - Updated 29-05-2023
+INLAY - Updated 30-05-2023
