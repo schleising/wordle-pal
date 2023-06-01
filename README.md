@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜⬜⬜\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 113
+    2: 114
     3: 297
     4: 58
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CHUMP - Updated 31-05-2023
+LANKY - Updated 01-06-2023
