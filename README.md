@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟩⬜⬜⬜\
+## Got today's word in 3 attempts</br>
+🟨⬜⬜⬜🟨\
+⬜⬜🟨🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 114
-    3: 297
+    3: 298
     4: 58
     5: 2
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-LANKY - Updated 01-06-2023
+CRESS - Updated 02-06-2023
