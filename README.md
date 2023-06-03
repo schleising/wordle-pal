@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜🟨\
+## Got today's word in 2 attempts</br>
 ⬜⬜🟨🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
-    2: 114
+    2: 115
     3: 298
     4: 58
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CRESS - Updated 02-06-2023
+EATER - Updated 03-06-2023
