@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜🟨🟨🟨\
+## Got today's word in 3 attempts</br>
+⬜🟩⬜⬜🟩\
+⬜🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.89</br>
 ## Guess Statistics</br>
     1: 0
     2: 115
-    3: 298
+    3: 299
     4: 58
     5: 2
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-EATER - Updated 03-06-2023
+ELUDE - Updated 04-06-2023
