@@ -4,17 +4,18 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜🟩\
-⬜🟩⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜🟨⬜⬜🟩\
+⬜🟨🟨🟩🟩\
+⬜⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.89</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 115
     3: 299
-    4: 58
+    4: 59
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-ELUDE - Updated 04-06-2023
+CYCLE - Updated 05-06-2023
