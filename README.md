@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟨⬜⬜🟩\
-⬜🟨🟨🟩🟩\
-⬜⬜⬜🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟩⬜\
+⬜🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 115
-    3: 299
+    3: 300
     4: 59
     5: 2
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-CYCLE - Updated 05-06-2023
+KITTY - Updated 06-06-2023
