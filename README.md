@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-⬜🟩⬜🟩⬜\
+⬜🟨⬜⬜🟩\
+🟩🟨🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 115
-    3: 300
+    3: 301
     4: 59
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-KITTY - Updated 06-06-2023
+BOULE - Updated 07-06-2023
