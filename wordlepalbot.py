@@ -94,6 +94,11 @@ async def gpt(update: Update, context):
         # Get the request from the message
         input_text = ' '.join(update.message.text.split(' ')[1:])
 
+        # Something special for Tim
+        if update.message.from_user.first_name == 'Tim':
+            # Prepend the request with "Explain like I'm a five year old: "
+            input_text = f'Explain like I\'m a five year old: {input_text}'
+
         # Log the request
         print(f'{date.today()} GPT Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
         print(f'Request: {input_text}')
