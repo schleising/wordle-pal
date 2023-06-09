@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟨🟨🟨⬜\
-🟩⬜🟨🟩🟨\
+## Got today's word in 2 attempts</br>
+⬜⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 115
+    2: 116
     3: 301
     4: 60
     5: 2
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-MORON - Updated 08-06-2023
+TENET - Updated 09-06-2023
