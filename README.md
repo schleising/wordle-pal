@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟩🟩⬜🟩\
-⬜🟩🟩⬜🟩\
+⬜🟨⬜⬜⬜\
+⬜🟩🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 116
-    3: 302
+    3: 303
     4: 60
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-PLACE - Updated 10-06-2023
+LOBBY - Updated 11-06-2023
