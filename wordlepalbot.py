@@ -5,6 +5,7 @@ import logging
 from pathlib import Path
 import warnings
 from zoneinfo import ZoneInfo
+from random import randrange
 
 from dateparser import parse
 
@@ -96,15 +97,23 @@ async def gpt(update: Update, context):
 
         # Something special for Tim
         if update.message.from_user.first_name == 'Tim':
-            # Prepend the request with "Explain like I'm a five year old: "
-            input_text = f'Explain like I\'m a five year old: {input_text}'
+            random_number = randrange(10)
+            if random_number == 1:
+                # Prepend the request with "Explain like I'm a five year old: "
+                input_text = f'Explain like I\'m a five year old: {input_text}'
+            elif random_number == 2:
+                # Prepend the request with something heroic
+                input_text = f'My name is "El Supremo: {input_text}'
+            else:
+                # Prepend the request with the user's name
+                input_text = f'{update.message.from_user.first_name}: {input_text}'
+        else:
+            # Prepend the request with the user's name
+            input_text = f'{update.message.from_user.first_name}: {input_text}'
 
         # Log the request
         print(f'{date.today()} GPT Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
         print(f'Request: {input_text}')
-
-        # Send a message to the user to let them know the response is being generated
-        await update.message.reply_text(f'Hi {update.message.from_user.first_name}, let me have a think about that...', quote=False)
 
         # Send the request to the OpenAI API
         response = await simple_openai_client.get_chat_response(input_text)
@@ -115,7 +124,7 @@ async def gpt(update: Update, context):
             print(f'Response: {response.message}')
 
             # Send the response to the user
-            await update.message.reply_text(response.message, quote=False)
+            await update.message.reply_text(response.message, quote=True)
         else:
             # Log the error
             print(f'Error: {response.message}')
