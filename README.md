@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-⬜🟩🟨⬜🟩\
+## Got today's word in 2 attempts</br>
+🟨🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 116
+    2: 117
     3: 303
     4: 60
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-LOBBY - Updated 11-06-2023
+PLUSH - Updated 12-06-2023
