@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-🟨⬜⬜🟩⬜\
+⬜🟩⬜⬜⬜\
+🟩🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 117
-    3: 305
+    3: 306
     4: 60
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-INDEX - Updated 14-06-2023
+BLINK - Updated 15-06-2023
