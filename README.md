@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
+## Got today's word in 4 attempts</br>
 ⬜🟩⬜⬜⬜\
-🟩🟩⬜🟩⬜\
+⬜🟩⬜🟩⬜\
+⬜🟩🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 117
     3: 306
-    4: 60
+    4: 61
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-BLINK - Updated 15-06-2023
+CLUNG - Updated 16-06-2023
