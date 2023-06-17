@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜🟩⬜\
-⬜🟩🟩🟩⬜\
+⬜🟨🟩⬜⬜\
+⬜⬜🟩⬜🟨\
+⬜⬜🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -15,7 +15,7 @@
     1: 0
     2: 117
     3: 306
-    4: 61
+    4: 62
     5: 2
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-CLUNG - Updated 16-06-2023
+QUALM - Updated 17-06-2023
