@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜🟩⬜⬜⬜\
+⬜🟩⬜🟩⬜\
+⬜🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 117
     3: 307
-    4: 62
+    4: 63
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-CROUP - Updated 18-06-2023
+CLINK - Updated 19-06-2023
