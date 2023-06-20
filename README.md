@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜🟩⬜\
-⬜🟩⬜🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+🟨⬜⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 117
-    3: 307
+    3: 308
     4: 63
     5: 2
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-CLINK - Updated 19-06-2023
+JUICY - Updated 20-06-2023
