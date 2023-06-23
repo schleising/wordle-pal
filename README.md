@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜🟨⬜\
-⬜⬜🟨🟨🟨\
+⬜⬜⬜⬜🟩\
+⬜🟨⬜🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 118
-    3: 309
+    3: 310
     4: 63
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-DECAY - Updated 22-06-2023
+NERVE - Updated 23-06-2023
