@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩⬜⬜🟨\
+## Got today's word in 3 attempts</br>
+🟩⬜🟩🟨⬜\
+🟩🟨🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 119
-    3: 310
+    3: 311
     4: 63
     5: 2
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-FLIER - Updated 24-06-2023
+SHAFT - Updated 25-06-2023
