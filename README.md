@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜🟩🟨⬜\
-🟩🟨🟩⬜⬜\
+⬜⬜⬜⬜⬜\
+🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 119
-    3: 311
+    3: 312
     4: 63
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SHAFT - Updated 25-06-2023
+CROOK - Updated 26-06-2023
