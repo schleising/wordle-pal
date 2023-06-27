@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+⬜🟩🟨⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 119
+    2: 120
     3: 312
     4: 63
     5: 2
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CROOK - Updated 26-06-2023
+CLEAN - Updated 27-06-2023
