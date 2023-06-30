@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜🟨⬜⬜🟩\
-⬜🟨🟨🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨⬜⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 120
+    2: 121
     3: 313
     4: 64
     5: 2
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-RIDGE - Updated 29-06-2023
+VOWEL - Updated 30-06-2023
