@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜🟩🟨🟩\
+⬜⬜⬜⬜⬜\
+🟨⬜⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 121
-    3: 314
+    3: 315
     4: 64
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-GNOME - Updated 01-07-2023
+SNUCK - Updated 02-07-2023
