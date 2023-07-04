@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-🟨⬜⬜🟩⬜\
+🟩⬜⬜⬜⬜\
+🟩🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
     2: 121
-    3: 316
+    3: 317
     4: 64
     5: 2
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ICING - Updated 03-07-2023
+SPINY - Updated 04-07-2023
