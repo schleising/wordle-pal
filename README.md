@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩⬜⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜🟨🟨⬜⬜\
+⬜⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 121
     3: 317
-    4: 64
+    4: 65
     5: 2
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-SPINY - Updated 04-07-2023
+RIGOR - Updated 05-07-2023
