@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟨🟨⬜⬜\
-⬜⬜🟨🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨🟨⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 0
-    2: 121
+    2: 122
     3: 317
     4: 65
     5: 2
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-RIGOR - Updated 05-07-2023
+SNAIL - Updated 06-07-2023
