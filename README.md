@@ -4,18 +4,20 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟩🟨⬜\
-⬜⬜🟩🟩🟨\
+## Got today's word in 5 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜🟨⬜🟩\
+⬜🟩⬜⬜🟩\
+⬜🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.90</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 122
     3: 321
     4: 65
-    5: 2
+    5: 3
     6: 1
 </br>
 </br>
@@ -35,4 +37,4 @@
 </br>
 
 ## Today's Word
-THANK - Updated 10-07-2023
+POPPY - Updated 11-07-2023
