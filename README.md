@@ -4,11 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 5 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜🟨⬜🟩\
-⬜🟩⬜⬜🟩\
-⬜🟩⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜⬜⬜⬜🟩\
+⬜🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -16,7 +15,7 @@
     1: 0
     2: 122
     3: 321
-    4: 65
+    4: 66
     5: 3
     6: 1
 </br>
@@ -37,4 +36,4 @@
 </br>
 
 ## Today's Word
-POPPY - Updated 11-07-2023
+BUDGE - Updated 12-07-2023
