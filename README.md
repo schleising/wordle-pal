@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜⬜🟩\
-⬜🟩🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜🟨\
+🟩🟨⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 122
-    3: 321
+    3: 322
     4: 66
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-BUDGE - Updated 12-07-2023
+FIBER - Updated 13-07-2023
