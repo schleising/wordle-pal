@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜🟨\
-🟨🟨⬜⬜🟩\
+⬜⬜⬜⬜⬜\
+⬜⬜⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 122
-    3: 327
+    3: 328
     4: 67
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-QUELL - Updated 19-07-2023
+DUMPY - Updated 20-07-2023
