@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜⬜🟩\
+## Got today's word in 2 attempts</br>
+🟨🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 122
+    2: 123
     3: 328
     4: 67
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-DUMPY - Updated 20-07-2023
+PALER - Updated 21-07-2023
