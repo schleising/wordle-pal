@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜🟩\
-🟩⬜🟩🟩🟩\
+⬜⬜🟨⬜🟨\
+⬜🟨⬜🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 123
-    3: 329
+    3: 330
     4: 67
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SWORE - Updated 22-07-2023
+REBAR - Updated 23-07-2023
