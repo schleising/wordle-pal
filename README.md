@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟨⬜⬜🟩🟩\
-⬜⬜🟨🟩🟩\
+⬜⬜⬜⬜⬜\
+⬜🟨🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 124
-    3: 332
+    3: 333
     4: 67
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-FLYER - Updated 26-07-2023
+HORNY - Updated 27-07-2023
