@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟩⬜⬜\
-⬜🟨🟩⬜⬜\
+🟨⬜⬜🟨🟨\
+⬜⬜🟨🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 125
-    3: 337
+    3: 338
     4: 68
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-OVARY - Updated 02-08-2023
+BESET - Updated 03-08-2023
