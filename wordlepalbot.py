@@ -101,7 +101,7 @@ async def gpt(update: Update, context):
             if random_number in [0, 1, 2]:
                 # Set name to El Supremo
                 name = 'El Supremo'
-            elif random_number in [3, 4, 5]:
+            elif random_number in [3, 4]:
                 # Set name to Timmy
                 name = 'Timmy'
             else:
@@ -120,7 +120,7 @@ async def gpt(update: Update, context):
         elif random_number == 2:
             # 1 tenth of the time prepend the request with "Answer in a sarcastic manner: "
             input_text = f'My name is {name}, your name is Botto. Answer in a sarcastic manner: {input_text}'
-        elif random_number == 3 and name == 'Timmy':
+        elif name == 'Timmy':
             # Add explain like I'm 5 to Timmy's requests
             input_text = f'My name is {name}, your name is Botto. Explain like I\'m a 5 year old: {input_text}'
         else:
