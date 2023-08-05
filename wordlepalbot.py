@@ -101,7 +101,7 @@ async def gpt(update: Update, context):
             if random_number == 1:
                 # Prepend the request with "Explain like I'm a five year old: "
                 input_text = f'Explain like I\'m a five year old: {input_text}'
-            elif random_number == 2 or random_number == 3 or random_number == 4 or random_number == 5 or random_number == 6:
+            elif random_number in [2, 3, 4, 5, 6]:
                 # Prepend the request with something heroic
                 input_text = f'My name is "El Supremo". {input_text}'
             else:
@@ -110,6 +110,14 @@ async def gpt(update: Update, context):
         else:
             # Prepend the request with the user's name
             input_text = f'My name is {update.message.from_user.first_name}. {input_text}'
+
+        # 2 fifths of the time prepend the request with "Answer in an irritated manner: "
+        if randrange(5) < 2:
+            input_text = f'Answer in an irritated manner: {input_text}'
+
+        # 2 fifths of the time prepend the request with "Answer in a sarcastic manner: "
+        if randrange(5) < 2:
+            input_text = f'Answer in a sarcastic manner: {input_text}'
 
         # Log the request
         print(f'{date.today()} GPT Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
