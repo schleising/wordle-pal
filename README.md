@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜⬜🟩\
-⬜🟩⬜⬜🟩\
+⬜🟩⬜⬜⬜\
+⬜🟩⬜⬜⬜\
+🟩🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -15,7 +15,7 @@
     1: 0
     2: 125
     3: 338
-    4: 69
+    4: 70
     5: 3
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-QUEUE - Updated 04-08-2023
+CLIFF - Updated 05-08-2023
