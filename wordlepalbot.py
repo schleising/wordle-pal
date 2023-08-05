@@ -98,26 +98,34 @@ async def gpt(update: Update, context):
         # Something special for Tim
         if update.message.from_user.first_name == 'Tim':
             random_number = randrange(10)
-            if random_number == 1:
-                # Prepend the request with "Explain like I'm a five year old: "
-                input_text = f'Explain like I\'m a five year old: {input_text}'
-            elif random_number in [2, 3, 4, 5, 6]:
-                # Prepend the request with something heroic
-                input_text = f'My name is "El Supremo". {input_text}'
+            if random_number in [0, 1, 2]:
+                # Set name to El Supremo
+                name = 'El Supremo'
+            elif random_number in [3, 4, 5]:
+                # Set name to Timmy
+                name = 'Timmy'
             else:
-                # Prepend the request with the user's name
-                input_text = f'My name is {update.message.from_user.first_name}. {input_text}'
+                # Set name to Tim
+                name = 'Tim'
+        else:
+            # Set the name to the user's name
+            name = update.message.from_user.first_name
+
+        # 1 in 5 times prepend the request with something special
+        random_number = randrange(10)
+
+        if random_number == 1:
+            # 1 tenth of the time prepend the request with "Answer in an irritated manner: "
+            input_text = f'My name is {name}, your name is Botto. Answer in an irritated manner: {input_text}'
+        elif random_number == 2:
+            # 1 tenth of the time prepend the request with "Answer in a sarcastic manner: "
+            input_text = f'My name is {name}, your name is Botto. Answer in a sarcastic manner: {input_text}'
+        elif random_number == 3 and name == 'Timmy':
+            # Add explain like I'm 5 to Timmy's requests
+            input_text = f'My name is {name}, your name is Botto. Explain like I\'m a 5 year old: {input_text}'
         else:
             # Prepend the request with the user's name
-            input_text = f'My name is {update.message.from_user.first_name}. {input_text}'
-
-        # 2 fifths of the time prepend the request with "Answer in an irritated manner: "
-        if randrange(5) < 2:
-            input_text = f'Answer in an irritated manner: {input_text}'
-
-        # 2 fifths of the time prepend the request with "Answer in a sarcastic manner: "
-        if randrange(5) < 2:
-            input_text = f'Answer in a sarcastic manner: {input_text}'
+            input_text = f'My name is {name}, your name is Botto. {input_text}'
 
         # Log the request
         print(f'{date.today()} GPT Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
