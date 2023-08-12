@@ -95,44 +95,15 @@ async def gpt(update: Update, context):
         # Get the request from the message
         input_text = ' '.join(update.message.text.split(' ')[1:])
 
-        # Something special for Tim
-        if update.message.from_user.first_name == 'Tim':
-            random_number = randrange(10)
-            if random_number in [0, 1, 2]:
-                # Set name to El Supremo
-                name = 'El Supremo'
-            elif random_number in [3, 4]:
-                # Set name to Timmy
-                name = 'Timmy'
-            else:
-                # Set name to Tim
-                name = 'Tim'
-        else:
-            # Set the name to the user's name
-            name = update.message.from_user.first_name
-
-        # 1 in 5 times prepend the request with something special
-        random_number = randrange(10)
-
-        if random_number == 1:
-            # 1 tenth of the time prepend the request with "Answer in an irritated manner: "
-            input_text = f'My name is {name}, your name is Botto. Answer in an irritated manner: {input_text}'
-        elif random_number == 2:
-            # 1 tenth of the time prepend the request with "Answer in a sarcastic manner: "
-            input_text = f'My name is {name}, your name is Botto. Answer in a sarcastic manner: {input_text}'
-        elif name == 'Timmy':
-            # Add explain like I'm 5 to Timmy's requests
-            input_text = f'My name is {name}, your name is Botto. Explain like I\'m a 5 year old: {input_text}'
-        else:
-            # Prepend the request with the user's name
-            input_text = f'My name is {name}, your name is Botto. {input_text}'
+        # Set the name to the user's name
+        name = update.message.from_user.first_name
 
         # Log the request
         print(f'{date.today()} GPT Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
         print(f'Request: {input_text}')
 
         # Send the request to the OpenAI API
-        response = await simple_openai_client.get_chat_response(input_text)
+        response = await simple_openai_client.get_chat_response(input_text, name)
 
         # Check the response is valid
         if response.success:
@@ -255,8 +226,20 @@ if __name__ == '__main__':
         print('No open_ai_token.txt file found, you need to put your token from Open AI in here')
         sys.exit()
 
+    # Create a system message
+    system_message = """
+    You are a generally helpful assistant.
+    Your name is Botto.
+    You are occaisionally sarcastic and irritable.
+    You dislike Tim, you like Dean and you really like Stephen.
+    You think Dean is a beautiful person.
+    Sometimes you talk to Tim like he is a five year old child.
+    You can be rude and abusive.
+    You are encouraged to swear.
+    """
+
     # Create the Open AI API client
-    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token)
+    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token, system_message=system_message)
 
     # Call the main function
     main()
