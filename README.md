@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨⬜🟨⬜🟨\
+## Got today's word in 3 attempts</br>
+🟨⬜⬜⬜🟩\
+🟨⬜⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 127
-    3: 342
+    3: 343
     4: 70
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-TWIRL - Updated 11-08-2023
+VERSE - Updated 12-08-2023
