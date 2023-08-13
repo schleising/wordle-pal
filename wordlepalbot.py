@@ -103,7 +103,7 @@ async def gpt(update: Update, context):
         print(f'Request: {input_text}')
 
         # Send the request to the OpenAI API
-        response = await simple_openai_client.get_chat_response(input_text, name)
+        response = await simple_openai_client.get_chat_response(input_text, name, str(update.message.chat.id))
 
         # Check the response is valid
         if response.success:
@@ -239,7 +239,7 @@ if __name__ == '__main__':
     """
 
     # Create the Open AI API client
-    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token, system_message=system_message)
+    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token, system_message=system_message, storage_path=Path('/storage'))
 
     # Call the main function
     main()
