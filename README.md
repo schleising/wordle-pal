@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜🟩🟩⬜\
+⬜🟨⬜⬜🟨\
+🟨🟨🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 128
-    3: 346
+    3: 347
     4: 70
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-WHISK - Updated 16-08-2023
+HOVEL - Updated 17-08-2023
