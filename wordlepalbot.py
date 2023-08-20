@@ -5,7 +5,8 @@ import logging
 from pathlib import Path
 import warnings
 from zoneinfo import ZoneInfo
-from random import randrange
+
+import aiohttp
 
 from dateparser import parse
 
@@ -13,9 +14,13 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
 
 from simple_openai import AsyncSimpleOpenai
+from simple_openai.models import open_ai_models
 
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
+
+FOOTBALL_API_BASE_URL  = 'https://schleising.net'
+FOOTBALL_API_MATCH_URL = '/football/api'
 
 # Define a handler for /guess
 async def guess(update: Update, context):
@@ -149,6 +154,34 @@ async def dalle(update: Update, context):
             # Send a message to the user to let them know the image could not be generated
             await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}', quote=False)
 
+async def scores():
+    """Returns the football scores for today's matches"""
+    print("Getting Matches...")
+
+    headers = {
+        'Content-Type': 'application/json',
+    }
+
+    # Open a session
+    async with aiohttp.ClientSession(headers=headers, base_url=FOOTBALL_API_BASE_URL) as session:
+        # Send the request
+        async with session.get(FOOTBALL_API_MATCH_URL) as response:
+            # Check the status code
+            if response.status == 200:
+                # Get the response content
+                content = await response.text()
+
+                # Print success
+                print("Got Matches")
+            else:
+                # Return an error
+                content = f"Error: {response.status}"
+
+                # Print the error
+                print(content)
+
+    return content
+
 # Log errors
 async def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -248,6 +281,20 @@ if __name__ == '__main__':
 
     # Create the Open AI API client
     simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token, system_message=system_message, storage_path=Path('/storage'), timezone='Europe/London')
+
+    # Create the Open AI function to get today's football scores
+    func = open_ai_models.OpenAIFunction(
+        name="football_scores_and_fixtures",
+        description="Gets the football scores and fixtures for today's matches",
+        parameters=open_ai_models.OpenAIParameters(
+            properties={
+            },
+            required=[],
+        )
+    )
+
+    # Add the function to the client
+    simple_openai_client.add_function(func, scores)
 
     # Call the main function
     main()
