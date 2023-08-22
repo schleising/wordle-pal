@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜🟨⬜\
-🟩🟨🟨⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟩\
+⬜🟨⬜⬜🟩\
+🟩🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 129
     3: 350
-    4: 70
+    4: 71
     5: 3
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-SPOUT - Updated 21-08-2023
+VERVE - Updated 22-08-2023
