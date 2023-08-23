@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜🟨⬜⬜🟩\
-🟩🟩🟩⬜🟩\
+🟩⬜⬜⬜⬜\
+🟩⬜⬜⬜⬜\
+🟩⬜🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -15,7 +15,7 @@
     1: 0
     2: 129
     3: 350
-    4: 71
+    4: 72
     5: 3
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-VERVE - Updated 22-08-2023
+SUSHI - Updated 23-08-2023
