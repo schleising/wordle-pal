@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜🟩🟨\
+⬜⬜⬜🟨🟨\
+⬜🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 129
-    3: 351
+    3: 352
     4: 72
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-DYING - Updated 24-08-2023
+FETID - Updated 25-08-2023
