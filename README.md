@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜⬜🟩\
-⬜🟩🟩⬜🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨⬜\
+🟩⬜⬜🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 129
-    3: 353
+    3: 354
     4: 73
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-BUDDY - Updated 27-08-2023
+THUMP - Updated 28-08-2023
