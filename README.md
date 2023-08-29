@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟩⬜⬜🟨⬜\
+🟩⬜⬜⬜⬜\
+🟩⬜🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 129
-    3: 354
+    3: 355
     4: 73
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-THUMP - Updated 28-08-2023
+SCION - Updated 29-08-2023
