@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-🟩🟨🟩⬜⬜\
+🟨⬜🟨⬜⬜\
+⬜🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 129
-    3: 357
+    3: 358
     4: 73
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CHORD - Updated 31-08-2023
+BASIN - Updated 01-09-2023
