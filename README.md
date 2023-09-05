@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟨⬜🟩⬜\
+## Got today's word in 4 attempts</br>
+⬜🟨🟨⬜⬜\
+⬜🟩⬜⬜🟨\
+⬜🟩🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 129
     3: 361
-    4: 73
+    4: 74
     5: 3
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-ARBOR - Updated 04-09-2023
+GAYLY - Updated 05-09-2023
