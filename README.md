@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜🟨🟨⬜⬜\
-⬜🟩⬜⬜🟨\
-⬜🟩🟨🟩🟩\
+## Got today's word in 3 attempts</br>
+🟨⬜⬜⬜⬜\
+🟩⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 129
-    3: 361
+    3: 362
     4: 74
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-GAYLY - Updated 05-09-2023
+MUSKY - Updated 06-09-2023
