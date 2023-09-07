@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜⬜\
-🟩⬜🟩⬜🟩\
+## Got today's word in 2 attempts</br>
+🟩⬜🟩🟨⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
-    2: 129
+    2: 130
     3: 362
     4: 74
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-MUSKY - Updated 06-09-2023
+STAIN - Updated 07-09-2023
