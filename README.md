@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨🟩⬜⬜🟨\
+## Got today's word in 4 attempts</br>
+⬜⬜🟩⬜⬜\
+⬜🟩🟩⬜⬜\
+⬜🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 131
     3: 363
-    4: 74
+    4: 75
     5: 3
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-BLESS - Updated 09-09-2023
+BRAVO - Updated 10-09-2023
