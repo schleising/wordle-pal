@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟩⬜⬜\
-⬜🟩🟩⬜⬜\
-⬜🟩🟩⬜⬜\
+## Got today's word in 3 attempts</br>
+🟩⬜⬜🟨⬜\
+🟩🟩🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 131
-    3: 363
+    3: 364
     4: 75
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-BRAVO - Updated 10-09-2023
+STUNG - Updated 11-09-2023
