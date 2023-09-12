@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜🟨⬜\
-🟩🟩🟩🟩⬜\
+## Got today's word in 2 attempts</br>
+⬜🟨⬜🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
-    2: 131
+    2: 132
     3: 364
     4: 75
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-STUNG - Updated 11-09-2023
+TITLE - Updated 12-09-2023
