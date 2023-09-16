@@ -240,7 +240,10 @@ if __name__ == '__main__':
                         level=logging.INFO)
 
     logger = logging.getLogger(__name__)
-
+    
+    # Set the logging level for httpx to warning to stop it logging every request
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    
     try:
         # Get the Deep AI API key from the deep_ai_token.txt file, this is exclued from git, so may not exist
         with open(Path('deep_ai_token.txt'), 'r', encoding='utf8') as secretFile:
