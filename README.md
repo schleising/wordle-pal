@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩⬜⬜⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜⬜⬜\
+🟩🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
@@ -13,7 +15,7 @@
     1: 0
     2: 133
     3: 366
-    4: 75
+    4: 76
     5: 3
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-BLOND - Updated 15-09-2023
+ENNUI - Updated 16-09-2023
