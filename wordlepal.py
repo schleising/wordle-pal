@@ -125,11 +125,11 @@ def GenerateDistGraphic() -> Path:
     scoreFont = ImageFont.truetype('Roboto/Roboto-Regular.ttf', 45)
 
     # Create an image for the guess distribution text and get the drawing context
-    gdImage = Image.new('RGB', Constants.GUESS_DISTRIBUTION_SIZE, 'white')
+    gdImage = Image.new('RGB', (Constants.GUESS_DISTRIBUTION_SIZE_X, Constants.GUESS_DISTRIBUTION_SIZE_Y), 'white')
     gdDraw = ImageDraw.Draw(gdImage)
 
     # Set the text anchor position to the centre of the image
-    gdAnchorPos = tuple(dim // 2 for dim in Constants.GUESS_DISTRIBUTION_SIZE)
+    gdAnchorPos = (Constants.GUESS_DISTRIBUTION_SIZE_X // 2, Constants.GUESS_DISTRIBUTION_SIZE_Y // 2)
 
     # Draw the text on the image in the center of the image space
     gdDraw.text(gdAnchorPos, 'GUESS DISTRIBUTION', fill='black', anchor='mm', font=textFont)
@@ -147,7 +147,7 @@ def GenerateDistGraphic() -> Path:
         barDraw = ImageDraw.Draw(barImage)
 
         # Get the score anchor position
-        scoreAnchorPos = tuple(dim // 2 for dim in Constants.SCORE_SIZE)
+        scoreAnchorPos = (Constants.SCORE_SIZE_X // 2, Constants.SCORE_SIZE_Y // 2)
 
         # Draw the score on the bar image
         barDraw.text(scoreAnchorPos, str(score), fill='black', anchor='mm', font=scoreFont)
@@ -159,7 +159,7 @@ def GenerateDistGraphic() -> Path:
 
             # Draw the rectangle in grey or green if it matches today's score
             fillColour = 'mediumseagreen' if score == guessNumberToday else 'grey'
-            barDraw.rectangle((50, 5, barLength + Constants.SCORE_SIZE[0], Constants.BAR_SIZE[1] - 5), fill=fillColour)
+            barDraw.rectangle((50, 5, barLength + Constants.SCORE_SIZE_X, Constants.BAR_SIZE[1] - 5), fill=fillColour)
 
             # Get the count for this score as a string
             countText = str(count)
@@ -168,7 +168,7 @@ def GenerateDistGraphic() -> Path:
             countLength = scoreFont.getlength(countText)
 
             # Using this length value, work out where it should be placed
-            countAnchorPos = (barLength + Constants.SCORE_SIZE[0] - countLength // 2 - 10, Constants.BAR_SIZE[1] // 2)
+            countAnchorPos = (barLength + Constants.SCORE_SIZE_X - countLength // 2 - 10, Constants.BAR_SIZE[1] // 2)
 
             # Draw the count onto the right side of the  bar
             barDraw.text(countAnchorPos, countText, fill='white', anchor='mm', font=scoreFont)
