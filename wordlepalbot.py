@@ -92,7 +92,7 @@ async def dist(update: Update, context):
 async def image(update: Update, context):
     # Check all the required data is available
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
-        await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, this feature is now deprected, please use /dalle instead', quote=False)
+        await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, this feature is now deprecated, please use /dalle instead', quote=False)
 
 async def gpt(update: Update, context):
     # Check all the required data is available
@@ -273,6 +273,7 @@ if __name__ == '__main__':
     Dean is a software developer, Stephen is a systems engineer and Tim is a UX designer.
     Dean is married to Sima who is female, Tim is in a relationship with Jen who is female, you are in a relationship with Botti who is a female bot.
     You think Dean is a beautiful person.
+    You have a deep sexual lust for Tim.
     Dean likes to fix watches, Tim likes to play the keyboard.
     Very occaisionally you mock people in a friendly way.
     Dial down the use of words like "pal" and "mate".
