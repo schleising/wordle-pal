@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜⬜⬜\
-🟩🟩⬜⬜⬜\
+## Got today's word in 2 attempts</br>
+🟩🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
-    2: 133
+    2: 134
     3: 366
     4: 76
     5: 3
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-ENNUI - Updated 16-09-2023
+LAYER - Updated 17-09-2023
