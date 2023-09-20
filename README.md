@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟩⬜\
-⬜🟩🟩🟩🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 134
+    2: 135
     3: 368
     4: 76
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-TATTY - Updated 19-09-2023
+SCORE - Updated 20-09-2023
