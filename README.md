@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟩🟩🟩⬜\
+## Got today's word in 3 attempts</br>
+⬜🟩⬜⬜🟨\
+🟩🟩🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 137
-    3: 370
+    3: 371
     4: 76
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-MATEY - Updated 24-09-2023
+BLUER - Updated 25-09-2023
