@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜🟨\
-🟩🟩🟨🟩⬜\
+## Got today's word in 2 attempts</br>
+⬜🟨⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
-    2: 137
+    2: 138
     3: 371
     4: 76
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-BLUER - Updated 25-09-2023
+AIDER - Updated 26-09-2023
