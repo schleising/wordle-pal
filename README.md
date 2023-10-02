@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜⬜\
-⬜🟨🟨🟩⬜\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜🟨🟨⬜\
+🟩⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 138
     3: 375
-    4: 77
+    4: 78
     5: 3
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-FRISK - Updated 01-10-2023
+BONGO - Updated 02-10-2023
