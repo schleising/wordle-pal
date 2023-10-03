@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜🟨🟨⬜\
-🟩⬜🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨⬜\
+🟨⬜⬜⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 0
     2: 138
-    3: 375
+    3: 376
     4: 78
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-BONGO - Updated 02-10-2023
+BEGUN - Updated 03-10-2023
