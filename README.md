@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟨⬜🟩\
-⬜🟨⬜⬜🟩\
-🟩⬜⬜🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜🟩⬜🟩\
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 138
-    3: 376
+    3: 377
     4: 79
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-AZURE - Updated 04-10-2023
+WEAVE - Updated 05-10-2023
