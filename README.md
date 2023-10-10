@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟩⬜⬜\
-⬜🟩🟩⬜🟩\
+🟩⬜⬜⬜🟩\
+🟩🟨🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 139
-    3: 380
+    3: 381
     4: 79
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-BRAID - Updated 09-10-2023
+SCOPE - Updated 10-10-2023
