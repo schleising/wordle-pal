@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜🟩\
-🟩🟨🟩⬜🟩\
+🟨⬜⬜⬜🟨\
+⬜⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 139
-    3: 381
+    3: 382
     4: 79
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-SCOPE - Updated 10-10-2023
+WRYLY - Updated 11-10-2023
