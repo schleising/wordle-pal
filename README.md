@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜🟨\
-⬜⬜🟨🟩🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩🟩\
+⬜🟩🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
@@ -14,7 +15,7 @@
     1: 0
     2: 139
     3: 382
-    4: 79
+    4: 80
     5: 3
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-WRYLY - Updated 11-10-2023
+ROVER - Updated 12-10-2023
