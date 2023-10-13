@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜🟩🟩\
-⬜🟩🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+🟨⬜🟨⬜⬜\
+⬜🟨🟩🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 139
-    3: 382
+    3: 383
     4: 80
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-ROVER - Updated 12-10-2023
+ASSAY - Updated 13-10-2023
