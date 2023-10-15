@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟨⬜🟨\
-⬜🟨⬜🟨⬜\
+⬜🟩⬜⬜⬜\
+⬜🟩⬜🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
     2: 139
-    3: 384
+    3: 385
     4: 80
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-OCEAN - Updated 14-10-2023
+BLOOM - Updated 15-10-2023
