@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜⬜\
-⬜🟩⬜🟨🟨\
+## Got today's word in 2 attempts</br>
+⬜⬜🟩🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.92</br>
 ## Guess Statistics</br>
     1: 0
-    2: 139
+    2: 140
     3: 385
     4: 80
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-BLOOM - Updated 15-10-2023
+IRATE - Updated 16-10-2023
