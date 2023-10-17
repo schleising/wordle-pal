@@ -4,13 +4,12 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜⬜🟩🟩🟩\
+## Got today's word in 1 attempts</br>
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.92</br>
+## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
-    1: 0
+    1: 1
     2: 140
     3: 385
     4: 80
@@ -34,4 +33,4 @@
 </br>
 
 ## Today's Word
-IRATE - Updated 16-10-2023
+LATER - Updated 17-10-2023
