@@ -4,14 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 1 attempts</br>
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟩⬜\
+🟨🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 1
     2: 140
-    3: 385
+    3: 386
     4: 80
     5: 3
     6: 1
@@ -33,4 +35,4 @@
 </br>
 
 ## Today's Word
-LATER - Updated 17-10-2023
+WOKEN - Updated 18-10-2023
