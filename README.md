@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-🟨🟩⬜🟩⬜\
+🟩🟨⬜⬜⬜\
+🟩⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 1
     2: 140
-    3: 386
+    3: 387
     4: 80
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-WOKEN - Updated 18-10-2023
+SILKY - Updated 19-10-2023
