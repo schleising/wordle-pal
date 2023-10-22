@@ -4,14 +4,12 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟨⬜🟨🟨\
-⬜⬜🟨🟨🟨\
+## Got today's word in 1 attempts</br>
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
-    1: 1
+    1: 2
     2: 140
     3: 389
     4: 80
@@ -35,4 +33,4 @@
 </br>
 
 ## Today's Word
-DWELT - Updated 21-10-2023
+SLATE - Updated 22-10-2023
