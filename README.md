@@ -4,14 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 1 attempts</br>
+## Got today's word in 3 attempts</br>
+🟩⬜🟩⬜⬜\
+🟩⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 140
-    3: 389
+    3: 390
     4: 80
     5: 3
     6: 1
@@ -33,4 +35,4 @@
 </br>
 
 ## Today's Word
-SLATE - Updated 22-10-2023
+SMACK - Updated 23-10-2023
