@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨🟨🟨🟨\
+## Got today's word in 3 attempts</br>
+🟨⬜⬜⬜⬜\
+⬜⬜🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 141
-    3: 392
+    3: 393
     4: 80
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-HAZEL - Updated 26-10-2023
+WRIST - Updated 27-10-2023
