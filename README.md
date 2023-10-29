@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜🟩⬜\
-⬜⬜🟩🟩🟩\
-⬜⬜🟩🟩🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜🟨🟩\
+🟨⬜🟨🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 141
-    3: 393
+    3: 394
     4: 81
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-JOLLY - Updated 28-10-2023
+GLOBE - Updated 29-10-2023
