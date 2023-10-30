@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟩\
-🟨⬜🟨🟨🟩\
+## Got today's word in 2 attempts</br>
+⬜🟩🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
-    2: 141
+    2: 142
     3: 394
     4: 81
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-GLOBE - Updated 29-10-2023
+FLINT - Updated 30-10-2023
