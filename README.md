@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟨⬜⬜⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜🟨⬜\
+⬜🟨⬜⬜⬜\
+🟨⬜⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -13,7 +15,7 @@
     1: 2
     2: 143
     3: 394
-    4: 81
+    4: 82
     5: 3
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-ROUSE - Updated 31-10-2023
+CIVIL - Updated 01-11-2023
