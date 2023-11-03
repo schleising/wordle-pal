@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟨⬜🟨⬜⬜\
-⬜🟨🟩⬜⬜\
+⬜⬜🟨🟨🟨\
+🟩🟩⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 143
-    3: 395
+    3: 396
     4: 82
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-VISTA - Updated 02-11-2023
+RELAX - Updated 03-11-2023
