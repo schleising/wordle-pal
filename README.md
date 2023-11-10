@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜🟨🟨⬜\
-🟨🟩⬜🟩🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟩🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
-    2: 144
+    2: 145
     3: 400
     4: 83
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-VOCAL - Updated 09-11-2023
+OFTEN - Updated 10-11-2023
