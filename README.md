@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-🟩⬜🟩🟩🟩\
+## Got today's word in 4 attempts</br>
+⬜🟨⬜⬜🟨\
+🟨🟨⬜⬜🟨\
+🟩🟨🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -14,7 +15,7 @@
     1: 2
     2: 145
     3: 401
-    4: 83
+    4: 84
     5: 3
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-DOLLY - Updated 11-11-2023
+EIGHT - Updated 12-11-2023
