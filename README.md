@@ -5,9 +5,9 @@
 </br>
 
 ## Got today's word in 4 attempts</br>
-⬜🟨⬜⬜🟨\
-🟨🟨⬜⬜🟨\
-🟩🟨🟨⬜⬜\
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩🟩\
+⬜🟩⬜🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -15,7 +15,7 @@
     1: 2
     2: 145
     3: 401
-    4: 84
+    4: 85
     5: 3
     6: 1
 </br>
@@ -36,4 +36,4 @@
 </br>
 
 ## Today's Word
-EIGHT - Updated 12-11-2023
+JOKER - Updated 13-11-2023
