@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟨\
-⬜🟨⬜🟨⬜\
+🟨⬜⬜⬜🟩\
+⬜⬜⬜🟨🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 145
-    3: 403
+    3: 404
     4: 85
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-EVENT - Updated 15-11-2023
+ENSUE - Updated 16-11-2023
