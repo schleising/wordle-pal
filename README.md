@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩🟩\
-⬜🟩🟨🟩🟩\
+## Got today's word in 2 attempts</br>
+🟨⬜⬜⬜🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
-    2: 145
+    2: 146
     3: 406
     4: 85
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-DIVER - Updated 18-11-2023
+POSER - Updated 19-11-2023
