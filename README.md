@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩🟩⬜🟩⬜\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜🟨\
+🟨🟨⬜🟩🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 147
-    3: 408
+    3: 409
     4: 85
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-ALLEY - Updated 22-11-2023
+CREED - Updated 23-11-2023
