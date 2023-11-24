@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟨\
-🟨🟨⬜🟩🟨\
+⬜⬜🟨⬜🟩\
+⬜🟨🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 147
-    3: 409
+    3: 410
     4: 85
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CREED - Updated 23-11-2023
+ANIME - Updated 24-11-2023
