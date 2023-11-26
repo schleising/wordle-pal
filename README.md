@@ -5,7 +5,7 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜🟩🟨🟨\
+🟨⬜⬜⬜⬜\
 🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
@@ -13,7 +13,7 @@
 ## Guess Statistics</br>
     1: 2
     2: 147
-    3: 411
+    3: 412
     4: 85
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-LEAFY - Updated 25-11-2023
+BOSOM - Updated 26-11-2023
