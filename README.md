@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟨⬜⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+⬜⬜⬜⬜🟩\
+⬜⬜⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 147
-    3: 412
+    3: 413
     4: 85
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-BOSOM - Updated 26-11-2023
+DUNCE - Updated 27-11-2023
