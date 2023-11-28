@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜🟩\
-⬜⬜⬜⬜🟩\
+## Got today's word in 2 attempts</br>
+🟩⬜🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
-    2: 147
+    2: 148
     3: 413
     4: 85
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-DUNCE - Updated 27-11-2023
+STARE - Updated 28-11-2023
