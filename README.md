@@ -4,8 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜🟩⬜🟩\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜⬜\
+⬜⬜⬜⬜🟩\
+🟩🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -13,7 +15,7 @@
     1: 2
     2: 148
     3: 413
-    4: 85
+    4: 86
     5: 3
     6: 1
 </br>
@@ -34,4 +36,4 @@
 </br>
 
 ## Today's Word
-STARE - Updated 28-11-2023
+PUDGY - Updated 29-11-2023
