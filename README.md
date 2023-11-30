@@ -4,16 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜⬜⬜⬜🟩\
-🟩🟩⬜⬜🟩\
+## Got today's word in 2 attempts</br>
+⬜⬜🟨⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
-    2: 148
+    2: 149
     3: 413
     4: 86
     5: 3
@@ -36,4 +34,4 @@
 </br>
 
 ## Today's Word
-PUDGY - Updated 29-11-2023
+WAIVE - Updated 30-11-2023
