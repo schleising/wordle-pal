@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+🟩⬜⬜⬜🟩\
+🟩🟩⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
     2: 150
-    3: 414
+    3: 415
     4: 86
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-STOOD - Updated 02-12-2023
+SPOKE - Updated 03-12-2023
