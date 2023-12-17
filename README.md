@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨⬜\
-🟩🟩⬜🟩🟩\
+⬜🟨🟨⬜⬜\
+🟩🟩🟩⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 155
-    3: 423
+    3: 424
     4: 86
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-NOOSE - Updated 16-12-2023
+HARDY - Updated 17-12-2023
