@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨🟨⬜⬜\
-🟩🟩🟩⬜🟩\
+🟩🟩⬜⬜🟨\
+🟩🟩🟨🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 155
-    3: 424
+    3: 425
     4: 86
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-HARDY - Updated 17-12-2023
+SHIED - Updated 18-12-2023
