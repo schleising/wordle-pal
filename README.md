@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟨⬜🟩⬜\
+## Got today's word in 2 attempts</br>
+⬜🟨🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
-## Average Number of Guesses: 2.91</br>
+## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
-    2: 155
+    2: 156
     3: 430
     4: 86
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-BURNT - Updated 23-12-2023
+TULIP - Updated 24-12-2023
