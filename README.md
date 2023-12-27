@@ -4,9 +4,10 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜🟩⬜\
-🟨⬜🟨🟩🟨\
+## Got today's word in 4 attempts</br>
+⬜⬜⬜⬜🟨\
+⬜🟨⬜🟩⬜\
+⬜⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
@@ -14,7 +15,7 @@
     1: 2
     2: 156
     3: 431
-    4: 87
+    4: 88
     5: 3
     6: 1
 </br>
@@ -35,4 +36,4 @@
 </br>
 
 ## Today's Word
-IDYLL - Updated 26-12-2023
+VIXEN - Updated 27-12-2023
