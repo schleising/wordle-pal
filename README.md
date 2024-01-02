@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-🟩🟩🟨🟨⬜\
+🟩⬜⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.91</br>
 ## Guess Statistics</br>
     1: 2
-    2: 157
+    2: 158
     3: 435
     4: 88
     5: 3
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-SHOAL - Updated 01-01-2024
+STORK - Updated 02-01-2024
