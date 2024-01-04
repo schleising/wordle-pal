@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨🟨⬜🟩\
+## Got today's word in 3 attempts</br>
+⬜⬜🟨⬜⬜\
+⬜🟨🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 159
-    3: 435
+    3: 436
     4: 88
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-BATHE - Updated 03-01-2024
+AUNTY - Updated 04-01-2024
