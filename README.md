@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜🟩⬜⬜🟨\
-🟩🟩🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+⬜⬜⬜⬜🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
-    2: 159
+    2: 160
     3: 437
     4: 88
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-CHECK - Updated 05-01-2024
+PRIME - Updated 06-01-2024
