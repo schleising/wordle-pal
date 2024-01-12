@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜⬜⬜🟨🟨\
-🟨🟨⬜🟨⬜\
+⬜⬜🟨🟨⬜\
+⬜⬜🟩🟨🟨\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 162
-    3: 440
+    3: 441
     4: 88
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-ELECT - Updated 11-01-2024
+EVICT - Updated 12-01-2024
