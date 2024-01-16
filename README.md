@@ -4,17 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 4 attempts</br>
-⬜⬜🟨⬜⬜\
-⬜🟨⬜🟨⬜\
-🟨⬜🟩⬜⬜\
+## Got today's word in 3 attempts</br>
+⬜🟨🟨⬜🟨\
+🟩🟩⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 163
-    3: 442
+    3: 443
     4: 89
     5: 3
     6: 1
@@ -36,4 +35,4 @@
 </br>
 
 ## Today's Word
-QUOTA - Updated 15-01-2024
+HAVEN - Updated 16-01-2024
