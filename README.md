@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-🟩⬜🟨⬜🟨\
+## Got today's word in 3 attempts</br>
+⬜⬜⬜⬜⬜\
+🟩🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 164
-    3: 444
+    3: 445
     4: 89
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-SWEAR - Updated 18-01-2024
+CRUMP - Updated 19-01-2024
