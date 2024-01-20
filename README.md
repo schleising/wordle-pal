@@ -6,14 +6,14 @@
 
 ## Got today's word in 3 attempts</br>
 ⬜⬜⬜⬜⬜\
-🟩🟩⬜⬜⬜\
+⬜🟩⬜⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 164
-    3: 445
+    3: 446
     4: 89
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-CRUMP - Updated 19-01-2024
+DOUGH - Updated 20-01-2024
