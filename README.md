@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-⬜⬜⬜⬜⬜\
-⬜🟩⬜⬜⬜\
+## Got today's word in 2 attempts</br>
+🟨🟨⬜🟩⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
-    2: 164
+    2: 165
     3: 446
     4: 89
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-DOUGH - Updated 20-01-2024
+GAVEL - Updated 21-01-2024
