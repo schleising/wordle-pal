@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜🟨🟨⬜🟨\
+⬜⬜🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
-    2: 167
+    2: 168
     3: 448
     4: 89
     5: 3
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-HAREM - Updated 25-01-2024
+PITCH - Updated 26-01-2024
