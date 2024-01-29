@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-⬜🟨⬜⬜⬜\
-🟨⬜🟨⬜⬜\
+⬜🟨⬜🟩⬜\
+⬜⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 168
-    3: 450
+    3: 451
     4: 89
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-PUPIL - Updated 28-01-2024
+EXCEL - Updated 29-01-2024
