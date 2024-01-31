@@ -5,15 +5,15 @@
 </br>
 
 ## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+⬜⬜🟨⬜⬜\
+⬜🟩🟨⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 168
-    3: 452
+    3: 453
     4: 89
     5: 3
     6: 1
@@ -35,4 +35,4 @@
 </br>
 
 ## Today's Word
-STONY - Updated 30-01-2024
+CABIN - Updated 31-01-2024
