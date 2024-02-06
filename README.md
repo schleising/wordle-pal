@@ -4,15 +4,16 @@
 </br>
 </br>
 
-## Got today's word in 2 attempts</br>
-⬜🟨🟨⬜🟨\
+## Got today's word in 3 attempts</br>
+🟩⬜⬜⬜⬜\
+🟩🟩🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
     2: 169
-    3: 456
+    3: 457
     4: 90
     5: 3
     6: 1
@@ -34,4 +35,4 @@
 </br>
 
 ## Today's Word
-EARTH - Updated 05-02-2024
+STORM - Updated 06-02-2024
