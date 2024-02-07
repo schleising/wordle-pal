@@ -4,15 +4,14 @@
 </br>
 </br>
 
-## Got today's word in 3 attempts</br>
-🟩⬜⬜⬜⬜\
-🟩🟩🟩⬜⬜\
+## Got today's word in 2 attempts</br>
+⬜🟨🟩⬜⬜\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
-    2: 169
+    2: 170
     3: 457
     4: 90
     5: 3
@@ -35,4 +34,4 @@
 </br>
 
 ## Today's Word
-STORM - Updated 06-02-2024
+UNTIL - Updated 07-02-2024
