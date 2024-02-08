@@ -5,13 +5,13 @@
 </br>
 
 ## Got today's word in 2 attempts</br>
-⬜🟨🟩⬜⬜\
+🟨⬜🟨🟩🟩\
 🟩🟩🟩🟩🟩\
 </br>
 ## Average Number of Guesses: 2.90</br>
 ## Guess Statistics</br>
     1: 2
-    2: 170
+    2: 171
     3: 457
     4: 90
     5: 3
@@ -34,4 +34,4 @@
 </br>
 
 ## Today's Word
-UNTIL - Updated 07-02-2024
+TAPER - Updated 08-02-2024
