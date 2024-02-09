@@ -221,13 +221,6 @@ def main():
     # Add the error handler to log errors
     application.add_error_handler(error)
 
-    # Get the JobQueue
-    jq = application.job_queue
-
-    # Start a daily job to run the game to keep the stats up to date
-    if jq is not None:
-        jq.run_daily(RunGameHandler, time(0, 0, 5, tzinfo=ZoneInfo('Europe/London')))
-
     # Start the bot polling
     application.run_polling()
 
