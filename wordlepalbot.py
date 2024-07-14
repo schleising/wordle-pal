@@ -295,8 +295,12 @@ if __name__ == '__main__':
         )
     )
 
+    tool = open_ai_models.OpenAITool(
+        function=func,
+    )
+
     # Add the function to the client
-    simple_openai_client.add_function(func, scores)
+    simple_openai_client.add_tool(tool, scores)
 
     # Call the main function
     main()
