@@ -1,0 +1,12 @@
+services:
+  wordlepal:
+    build: .
+    container_name: wordlepal
+    hostname: wordlepal
+    restart: unless-stopped
+    volumes:
+      - .:/code/:ro
+      - wordlepal:/storage:rw
+
+volumes:
+  wordlepal:

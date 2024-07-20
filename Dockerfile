@@ -5,11 +5,10 @@ ENV PYTHONUNBUFFERED 1
 # RUN apt update && apt install -y build-essential libgdal-dev
 
 # Make the code directory
-RUN mkdir /code
 WORKDIR /code
 
 # Install requirements for the covid charts script
-COPY . /code/
+COPY ./requirements.txt /code/
 RUN pip install -r ./requirements.txt
 
 # Run a command to ensure the container does not exit
