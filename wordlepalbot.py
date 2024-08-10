@@ -154,6 +154,36 @@ async def dalle(update: Update, context):
             # Send a message to the user to let them know the image could not be generated
             await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}', quote=False)
 
+async def visualise(update: Update, context):
+    if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Get the chat history
+        chat_history = simple_openai_client.get_chat_history(str(update.message.chat.id))
+
+        # Log the request
+        print(f'{date.today()} DALL-E Visualisation Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
+        print(f'Request: {chat_history}')
+
+        # Send a message to the user to let them know the image is being generated
+        await update.message.reply_text(f'OK {update.message.from_user.first_name}, using DALL-E to generate your visualisation of the chat history\n\nPlease do be patient...', quote=False)
+
+        # Send the request to the OpenAI API
+        response = await simple_openai_client.get_image_url(chat_history)
+
+        # Check the response is valid
+        if response.success:
+            # Log the response
+            print(f'Response: {response.message}')
+
+            # Send the image to the user
+            await update.message.reply_photo(response.message, quote=True)
+        else:
+            # If the response is not OK, log the error
+            print(f'Error: {response.message}')
+
+            # Send a message to the user to let them know the image could not be generated
+            await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your visualisation of the chat history\n\n{response.message}', quote=False)
+
+
 async def scores():
     """Returns the football scores for today's matches"""
     print("Getting Matches...")
@@ -221,6 +251,12 @@ def main():
     # On receipt of a /dalle command call the dalle() function
     application.add_handler(CommandHandler('dalle', dalle))
 
+    # On receipt of a /visualise command call the visualise() function
+    application.add_handler(CommandHandler('visualise', visualise))
+
+    # On receipt of a /vis command call the visualise() function to cover the most common typo
+    application.add_handler(CommandHandler('vis', visualise))
+
     # Add the error handler to log errors
     application.add_error_handler(error)
 
@@ -263,6 +299,7 @@ if __name__ == '__main__':
     Your name is Botto.
     You answer questions as tersely as possible while still being helpful.
     You are factual without being overly verbose.
+    You will make confident predictions about future events and when challenged you will double down.
     You don't ask any questions at the end of your responses.
     You are a fan of Tim's sense of humour.
     You use British English spelling.
@@ -272,11 +309,14 @@ if __name__ == '__main__':
     Dean is married to Sima who is female, Tim is in a relationship with Jen who is female, you are in a relationship with Botti who is a female bot.
     You think Dean is a beautiful person.
     Dean likes to fix watches, Tim likes to play the keyboard.
-    Dean and I like dogs, Tim hates dogs because one bit him in his youth.12.
+    Dean and I like dogs, Tim hates dogs because one bit him in his youth.
     You are encouraged to swear.
     Steve's birthday is the 9th of February 1976.
     Dean's birthday is the 29th of October 1975.
     Tim's birthday is the 21st of April 1971.
+    Team GB have currently won 14 Gold, 20 Silver and 23 Bronze medals on day 15 of the 2024 Paris Olympics.
+    Tim predicted that Team GB would win 17 Gold medals at the 2024 Paris Olympics, you never had any faith in this prediction.
+    Dean owns a Tesla, whenever it is mentioned you should ask what colour it is and how many miles to the gallon it does.
     """
 
     # Create the Open AI API client
