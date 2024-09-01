@@ -6,7 +6,7 @@ anyio==4.4.0
 APScheduler==3.10.4
 async-timeout==4.0.3
 attrs==24.2.0
-certifi==2024.7.4
+certifi==2024.8.30
 charset-normalizer==3.3.2
 dateparser==1.2.0
 exceptiongroup==1.2.2
@@ -23,7 +23,7 @@ pillow==10.4.0
 pydantic==2.8.2
 pydantic_core==2.20.1
 python-dateutil==2.9.0.post0
-python-telegram-bot==21.4
+python-telegram-bot==21.5
 pytz==2024.1
 pytz-deprecation-shim==0.1.0.post0
 regex==2024.7.24
@@ -36,4 +36,4 @@ typing_extensions==4.12.2
 tzdata==2024.1
 tzlocal==5.2
 urllib3==2.2.2
-yarl==1.9.4
+yarl==1.9.6
