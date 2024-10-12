@@ -1,10 +1,10 @@
 
+import json
 import sys
-from datetime import date, time
+from datetime import date
 import logging
 from pathlib import Path
 import warnings
-from zoneinfo import ZoneInfo
 
 import aiohttp
 
@@ -22,8 +22,20 @@ from wordlepal import RunGame, GenerateDistGraphic
 FOOTBALL_API_BASE_URL  = 'https://schleising.net'
 FOOTBALL_API_MATCH_URL = '/football/api'
 
-# Store the last dalle request per user
-last_dalle_request: dict[int, str] = {}
+# Define the storage path
+storage_path = Path('/storage')
+
+# File containing the last dalle request per user
+last_dalle_request_file = storage_path / 'last_dalle_request.json'
+
+# Load the last dalle request per user
+if last_dalle_request_file.exists():
+    with open(last_dalle_request_file, 'r') as file:
+        last_dalle_requests = json.load(file)
+        print(f'Loaded last dalle requests: {last_dalle_requests}')
+else:
+    last_dalle_requests: dict[str, str] = {}
+    print('No last dalle requests found')
 
 # Define a handler for /guess
 async def guess(update: Update, context):
@@ -138,7 +150,11 @@ async def dalle(update: Update, context):
         print(f'Request: {input_text}')
 
         # Store the last dalle request per user
-        last_dalle_request[update.message.from_user.id] = input_text
+        last_dalle_requests[f'{update.message.from_user.id}-{update.message.chat_id}'] = input_text
+
+        # Save the last dalle request per user
+        with open(last_dalle_request_file, 'w') as file:
+            json.dump(last_dalle_requests, file)
 
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(f'OK {update.message.from_user.first_name}, using DALL-E to generate your image of {input_text}\n\nPlease do be patient...', quote=False)
@@ -164,14 +180,12 @@ async def remix(update: Update, context):
     # Check all the required data is available
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
         # Get the request from the message
-        input_text = last_dalle_request.get(update.message.from_user.id, "A creepy cat")
+        input_text = last_dalle_requests.get(f'{update.message.from_user.id}-{update.message.chat_id}', "A creepy cat")
 
         # Log the request
         print(f'{date.today()} DALL-E Remix Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
         print(f'Request: {input_text}')
-
-        # Store the last dalle request per user
-        last_dalle_request[update.message.from_user.id] = input_text
+        print(f'User ID: {update.message.from_user.id}')
 
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(f'OK {update.message.from_user.first_name}, using DALL-E to remix your image of {input_text}\n\nPlease do be patient...', quote=False)
@@ -364,7 +378,7 @@ if __name__ == '__main__':
     """
 
     # Create the Open AI API client
-    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token, system_message=system_message, storage_path=Path('/storage'), timezone='Europe/London')
+    simple_openai_client = AsyncSimpleOpenai(api_key=open_ai_token, system_message=system_message, storage_path=storage_path, timezone='Europe/London')
 
     # Create the Open AI function to get today's football scores
     func = open_ai_models.OpenAIFunction(
