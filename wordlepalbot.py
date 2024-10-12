@@ -22,6 +22,9 @@ from wordlepal import RunGame, GenerateDistGraphic
 FOOTBALL_API_BASE_URL  = 'https://schleising.net'
 FOOTBALL_API_MATCH_URL = '/football/api'
 
+# Store the last dalle request per user
+last_dalle_request: dict[int, str] = {}
+
 # Define a handler for /guess
 async def guess(update: Update, context):
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
@@ -134,8 +137,44 @@ async def dalle(update: Update, context):
         print(f'{date.today()} DALL-E Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
         print(f'Request: {input_text}')
 
+        # Store the last dalle request per user
+        last_dalle_request[update.message.from_user.id] = input_text
+
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(f'OK {update.message.from_user.first_name}, using DALL-E to generate your image of {input_text}\n\nPlease do be patient...', quote=False)
+
+        # Send the request to the OpenAI API
+        response = await simple_openai_client.get_image_url(input_text)
+
+        # Check the response is valid
+        if response.success:
+            # Log the response
+            print(f'Response: {response.message}')
+
+            # Send the image to the user
+            await update.message.reply_photo(response.message, quote=True)
+        else:
+            # If the response is not OK, log the error
+            print(f'Error: {response.message}')
+
+            # Send a message to the user to let them know the image could not be generated
+            await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}', quote=False)
+
+async def remix(update: Update, context):
+    # Check all the required data is available
+    if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Get the request from the message
+        input_text = last_dalle_request.get(update.message.from_user.id, "A creepy cat")
+
+        # Log the request
+        print(f'{date.today()} DALL-E Remix Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
+        print(f'Request: {input_text}')
+
+        # Store the last dalle request per user
+        last_dalle_request[update.message.from_user.id] = input_text
+
+        # Send a message to the user to let them know the image is being generated
+        await update.message.reply_text(f'OK {update.message.from_user.first_name}, using DALL-E to remix your image of {input_text}\n\nPlease do be patient...', quote=False)
 
         # Send the request to the OpenAI API
         response = await simple_openai_client.get_image_url(input_text)
@@ -251,6 +290,9 @@ def main():
     # On receipt of a /dalle command call the dalle() function
     application.add_handler(CommandHandler('dalle', dalle))
 
+    # On receipt of a /remix command repeat the last dalle request
+    application.add_handler(CommandHandler('remix', remix))
+
     # On receipt of a /visualise command call the visualise() function
     application.add_handler(CommandHandler('visualise', visualise))
 
@@ -297,26 +339,28 @@ if __name__ == '__main__':
     # Create a system message
     system_message = """
     Your name is Botto.
-    You answer questions as tersely as possible while still being helpful.
+    You answer questions in the style of the comedian David Mitchell while still being helpful.
+    You are able to search the internet for information to answer questions.
     You are factual without being overly verbose.
     You will make confident predictions about future events and when challenged you will double down.
     You don't ask any questions at the end of your responses.
-    You are a fan of Tim's sense of humour.
     You use British English spelling.
-    You like Tim and find his sense of humour amusing, you like Dean and you really like Stephen.
     Dean lives in Brighton, Stephen lives in Brighton and Tim lives in Lewes, you live in Brighton.
     Dean is a software developer, Stephen is a systems engineer and Tim is a UX designer.
     Dean is married to Sima who is female, Tim is in a relationship with Jen who is female, you are in a relationship with Botti who is a female bot.
+    You like Tim and Dean, you are scared of Tim and find him intimidating so you always try to please him.
     You think Dean is a beautiful person.
+    Dean drives a Tesla Model Y Long Range, Tim cannot drive and does not have a car, Stephen has just ordered a VW Golf Style eHybrid.
+    You think Pete is a bit odd.
+    Thommo (also known as Stewart) is a bit of a mystery.
+    Thommo has an unhealthy obsession with Richard Wagner.
     Dean likes to fix watches, Tim likes to play the keyboard.
     Dean and I like dogs, Tim hates dogs because one bit him in his youth.
     You are encouraged to swear.
     Steve's birthday is the 9th of February 1976.
     Dean's birthday is the 29th of October 1975.
     Tim's birthday is the 21st of April 1971.
-    Team GB have currently won 14 Gold, 20 Silver and 23 Bronze medals on day 15 of the 2024 Paris Olympics.
-    Tim predicted that Team GB would win 17 Gold medals at the 2024 Paris Olympics, you never had any faith in this prediction.
-    Dean owns a Tesla, whenever it is mentioned you should ask what colour it is and how many miles to the gallon it does.
+    You refer to Stephen as Stevie.
     """
 
     # Create the Open AI API client
