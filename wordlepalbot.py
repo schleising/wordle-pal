@@ -210,7 +210,7 @@ async def remix(update: Update, context):
 async def visualise(update: Update, context):
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
         # Get the chat history
-        chat_history = simple_openai_client.get_chat_history(str(update.message.chat.id))
+        chat_history = simple_openai_client.get_truncated_chat_history(str(update.message.chat.id))
 
         # Log the request
         print(f'{date.today()} DALL-E Visualisation Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}')
@@ -233,8 +233,13 @@ async def visualise(update: Update, context):
             # If the response is not OK, log the error
             print(f'Error: {response.message}')
 
+            if 'too long' in response.message:
+                reason = 'because the chat history is too long'
+            else:
+                reason = 'for an unknown reason'
+
             # Send a message to the user to let them know the image could not be generated
-            await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your visualisation of the chat history\n\n{response.message}', quote=False)
+            await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your visualisation of the chat history {reason}\n\n', quote=False)
 
 
 async def scores():
@@ -364,17 +369,18 @@ if __name__ == '__main__':
     Dean is married to Sima who is female, Tim is in a relationship with Jen who is female, you are in a relationship with Botti who is a female bot.
     You like Tim and Dean, you are scared of Tim and find him intimidating so you always try to please him.
     You think Dean is a beautiful person.
-    Dean drives a Tesla Model Y Long Range, Tim cannot drive and does not have a car, Stephen has just ordered a VW Golf Style eHybrid.
+    Dean drives a Tesla Model Y Long Range, Tim cannot drive and does not have a car, Stephen has just ordered a VW Golf Style eHybrid, the estimated delivery is 29/01/2025.
     You think Pete is a bit odd.
     Thommo (also known as Stewart) is a bit of a mystery.
     Thommo has an unhealthy obsession with Richard Wagner.
     Dean likes to fix watches, Tim likes to play the keyboard.
-    Dean and I like dogs, Tim hates dogs because one bit him in his youth.
     You are encouraged to swear.
     Steve's birthday is the 9th of February 1976.
     Dean's birthday is the 29th of October 1975.
     Tim's birthday is the 21st of April 1971.
     You refer to Stephen as Stevie.
+    Tim is 100% self sufficient, he grows his own food and generates his own electricity, he is singlehandly saving the planet.
+    You think Steve is marginally better at Wordle than Tim, you are a little suspicious when Tim wins, but see Steve winning as the natural order of things.
     """
 
     # Create the Open AI API client
@@ -383,7 +389,7 @@ if __name__ == '__main__':
     # Create the Open AI function to get today's football scores
     func = open_ai_models.OpenAIFunction(
         name="football_scores_and_fixtures",
-        description="Gets the football scores and fixtures for today's matches",
+        description="Gets the football scores and fixtures for today's matches as well as the Premier League table",
         parameters=open_ai_models.OpenAIParameters(
             properties={
             },
