@@ -248,13 +248,13 @@ async def visualise(update: Update, context):
             if 'too long' in response.message:
                 reason = 'because the chat history is too long'
             else:
-                reason = 'for an unknown reason'
+                reason = response.message
 
             # Send a message to the user to let them know the image could not be generated
             await update.message.reply_text(f'Sorry {update.message.from_user.first_name}, I could not generate your visualisation of the chat history {reason}\n\n', quote=False)
 
 
-async def scores():
+async def scores() -> str:
     """Returns the football scores for today's matches"""
     print("Getting Matches...")
 
@@ -281,6 +281,59 @@ async def scores():
                 print(content)
 
     return content
+
+async def search(query: str) -> str:
+    """Searches the internet for information"""
+    print(f"Searching for {query}...")
+
+    # Create the URL
+    url = f'{search_url_base}{query}'
+
+    print(f"URL: {url}")
+
+
+    headers = {
+        'Content-Type': 'application/json',
+    }
+
+    # Open a session
+    async with aiohttp.ClientSession(headers=headers) as session:
+        # Send the request
+        async with session.get(url) as response:
+            # Check the status code
+            if response.status == 200:
+                # Get the response content
+                response_json = await response.json()
+
+                # Get the items from the response
+                items = response_json.get('items', [])
+
+                # Create a list to hold the results
+                results = []
+
+                # Loop through the items
+                for item in items:
+                    # Get the title and snippet
+                    title = item.get('title', '')
+                    snippet = item.get('snippet', '')
+
+                    # Add the title and snippet to the results
+                    results.append(f'{title}\n{snippet}\n')
+
+                # Join the results into a string
+                content = '\n'.join(results)
+
+                # Print success
+                print("Got search results")
+            else:
+                # Return an error
+                content = f"Error: {response.status}"
+
+                # Print the error
+                print(content)
+
+    return content
+
 
 # Log errors
 async def error(update, context):
@@ -367,6 +420,16 @@ if __name__ == '__main__':
         print('No open_ai_token.txt file found, you need to put your token from Open AI in here')
         sys.exit()
 
+    try:
+        with open(Path('google-search-key.json'), 'r', encoding='utf8') as secretFile:
+            data = json.load(secretFile)
+            google_api_key = data['key']
+            google_cx = data['cx']
+            search_url_base = f'https://www.googleapis.com/customsearch/v1?key={google_api_key}&cx={google_cx}&q='
+    except:
+        print('No google-search-key.json file found, you need to put your Google API key and Custom Search Engine ID in here')
+        sys.exit()
+
     # Create a system message
     system_message = """
     Your name is Botto.
@@ -415,6 +478,28 @@ if __name__ == '__main__':
 
     # Add the function to the client
     simple_openai_client.add_tool(tool, scores)
+
+    # Create the Open AI function to search the internet
+    func = open_ai_models.OpenAIFunction(
+        name="internet_search",
+        description="Searches the internet for information if it is not available in the system",
+        parameters=open_ai_models.OpenAIParameters(
+            properties={
+                "query": open_ai_models.OpenAIParameter(
+                    type="string",
+                    description="The search query",
+                ),
+            },
+            required=["query"],
+        )
+    )
+
+    tool = open_ai_models.OpenAITool(
+        function=func,
+    )
+
+    # Add the function to the client
+    simple_openai_client.add_tool(tool, search)
 
     # Call the main function
     main()
