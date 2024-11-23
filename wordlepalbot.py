@@ -112,6 +112,9 @@ async def image(update: Update, context):
 async def gpt(update: Update, context):
     # Check all the required data is available
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Send a typing action to the user
+        await update.get_bot().send_chat_action(update.message.chat.id, 'typing')
+
         # Get the request from the message
         input_text = ' '.join(update.message.text.split(' ')[1:])
 
@@ -142,6 +145,9 @@ async def gpt(update: Update, context):
 async def dalle(update: Update, context):
     # Check all the required data is available
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Send an upload photo action to the user
+        await update.get_bot().send_chat_action(update.message.chat.id, 'upload_photo')
+
         # Get the request from the message
         input_text = ' '.join(update.message.text.split(' ')[1:])
 
@@ -179,6 +185,9 @@ async def dalle(update: Update, context):
 async def remix(update: Update, context):
     # Check all the required data is available
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Send an upload photo action to the user
+        await update.get_bot().send_chat_action(update.message.chat.id, 'upload_photo')
+
         # Get the request from the message
         input_text = last_dalle_requests.get(f'{update.message.from_user.id}-{update.message.chat_id}', "A creepy cat")
 
@@ -209,6 +218,9 @@ async def remix(update: Update, context):
 
 async def visualise(update: Update, context):
     if update.message is not None and update.message.from_user is not None and update.message.text is not None:
+        # Send an upload photo action to the user
+        await update.get_bot().send_chat_action(update.message.chat.id, 'upload_photo')
+
         # Get the chat history
         chat_history = simple_openai_client.get_truncated_chat_history(str(update.message.chat.id))
 
