@@ -289,9 +289,10 @@ async def search(query: str) -> str:
     # Create the URL
     url = f'{search_url_base}{query}'
 
+    # Print the URL
     print(f"URL: {url}")
 
-
+    # Set the headers
     headers = {
         'Content-Type': 'application/json',
     }
@@ -318,13 +319,13 @@ async def search(query: str) -> str:
                     snippet = item.get('snippet', '')
 
                     # Add the title and snippet to the results
-                    results.append(f'{title}\n{snippet}\n')
+                    results.append(f'{snippet}\n{title}\n')
 
                 # Join the results into a string
                 content = '\n'.join(results)
 
                 # Print success
-                print("Got search results")
+                print(f"Got search results\n{content}\n\n")
             else:
                 # Return an error
                 content = f"Error: {response.status}"
