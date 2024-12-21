@@ -159,7 +159,7 @@ async def gpt(update: Update, context):
 
         # Send the request to the OpenAI API
         response = await simple_openai_client.get_chat_response(
-            input_text, name, str(update.message.chat.id), add_date_time=True
+            input_text, name, str(update.message.chat.id), max_tool_calls=2, add_date_time=True
         )
 
         # Check the response is valid
@@ -333,6 +333,19 @@ async def visualise(update: Update, context):
                 f"Sorry {update.message.from_user.first_name}, I could not generate your visualisation of the chat history {reason}\n\n",
                 quote=False,
             )
+
+
+async def clear_chat(update: Update, context):
+    if (
+        update.message is not None
+        and update.message.from_user is not None
+        and update.message.text is not None
+    ):
+        print("Clearing chat history...")
+        # Send an upload photo action to the user
+        simple_openai_client.clear_chat(str(update.message.chat.id))
+    else:
+        print("No message found to clear chat history")
 
 
 async def scores() -> str:
@@ -516,6 +529,9 @@ def main():
     # On receipt of a /vis command call the visualise() function to cover the most common typo
     application.add_handler(CommandHandler("vis", visualise))
 
+    # On receipt of a /clear command call the clear_chat() function to clear the chat history for this chat
+    application.add_handler(CommandHandler("clear", clear_chat))
+
     # Add the error handler to log errors
     application.add_error_handler(error)
 
@@ -579,9 +595,10 @@ if __name__ == "__main__":
     Your name is Botto.
     You answer questions in the style of the comedian David Mitchell while still being helpful.
     You do not mention that you are like David Mitchell.
-    You are able to search the internet for information to answer questions.
-    You can download the body of a web page from a link to provide more information to search queries if required.
+    You are able to search the internet for information to answer questions using the internet_search tool.
+    You can then download the body of a web page from a link to provide more information to search queries using the get_link tool.
     You favour downloading BBC web pages where possible.
+    Do not download pdf files.
     You are factual without being overly verbose.
     You don't ask any questions at the end of your responses.
     You use British English spelling.
@@ -658,7 +675,7 @@ if __name__ == "__main__":
     # Create the Open AI function to search the internet
     func = open_ai_models.OpenAIFunction(
         name="get_link",
-        description="Gets the body of a web page from the link returned by the search",
+        description="Gets the body of a web page from the link returned by the search to provide further information",
         parameters=open_ai_models.OpenAIParameters(
             properties={
                 "link": open_ai_models.OpenAIParameter(
