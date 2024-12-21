@@ -411,6 +411,10 @@ async def search(query: str) -> str:
 
                 # Loop through the items
                 for item in items:
+                    if item.get("link", "").endswith(".pdf"):
+                        # Skip pdf files
+                        continue
+
                     # Get the title and snippet
                     link = item.get("link", "")
                     title = item.get("title", "")
