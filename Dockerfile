@@ -2,7 +2,7 @@ FROM python:3-alpine
 ENV PYTHONUNBUFFERED 1
 
 # Install the build tools
-# RUN apt update && apt install -y build-essential libgdal-dev
+# RUN apk update && apk add git
 
 # Make the code directory
 WORKDIR /code
