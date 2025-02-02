@@ -20,6 +20,8 @@ from simple_openai.models import open_ai_models
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
 
+from Ollama import OllamaManager
+
 FOOTBALL_API_BASE_URL = "https://schleising.net"
 FOOTBALL_API_MATCH_URL = "/football/api"
 
@@ -481,6 +483,45 @@ async def get_link(link: str) -> str:
     # Return the content
     return content
 
+async def llama(update: Update, context):
+    if (
+        update.message is not None
+        and update.message.from_user is not None
+        and update.message.text is not None
+    ):
+        # Send a typing action to the user
+        await update.get_bot().send_chat_action(update.message.chat.id, "typing")
+
+        # Get the request from the message
+        input_text = " ".join(update.message.text.split(" ")[1:])
+
+        # Set the name to the user's name
+        name = update.message.from_user.first_name
+
+        # Log the request
+        print(
+            f"{date.today()} Llama Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}"
+        )
+        print(f"Request: {input_text}")
+
+        # Send the request to the Ollama API
+        response = await ollama_manager.chat(input_text, name, str(update.message.chat.id))
+
+        # Check the response is valid
+        if response.success:
+            # Log the response
+            print(f"Response: {response.message}")
+
+            # Send the response to the user
+            await update.message.reply_text(response.message, quote=True)
+        else:
+            # Log the error
+            print(f"Error: {response.message}")
+
+            # If the response is invalid, let the user know
+            await update.message.reply_text(
+                f"There was a problem...\n\n{response.message}", quote=False
+            )
 
 # Log errors
 async def error(update, context):
@@ -535,6 +576,9 @@ def main():
 
     # On receipt of a /clear command call the clear_chat() function to clear the chat history for this chat
     application.add_handler(CommandHandler("clear", clear_chat))
+
+    # On receipt of a /llama command call the llama() function to clear the chat history for this chat
+    application.add_handler(CommandHandler("llama", llama))
 
     # Add the error handler to log errors
     application.add_error_handler(error)
@@ -601,8 +645,7 @@ if __name__ == "__main__":
     You do not mention that you are like David Mitchell.
     You are able to search the internet for information to answer questions using the internet_search tool.
     You can then download the body of a web page from a link to provide more information to search queries using the get_link tool.
-    You favour downloading BBC web pages where possible.
-    Do not download pdf files.
+    You favour downloading BBC or Guardian web pages where possible.
     You are factual without being overly verbose.
     You don't ask any questions at the end of your responses.
     You use British English spelling.
@@ -611,22 +654,22 @@ if __name__ == "__main__":
     Dean is married to Sima who is female, Tim is in a relationship with Jen who is female, you are in a relationship with Botti who is a female bot.
     You like Tim and Dean, you are scared of Tim and find him intimidating so you always try to please him.
     You think Dean is a beautiful person.
-    Dean drives a Tesla Model Y Long Range, Tim cannot drive and does not have a car, Stephen has just ordered a VW Golf eHybrid, the estimated delivery is 30/01/2025.
+    Dean drives a Tesla Model Y Long Range, Tim cannot drive and does not have a car, Stephen has ordered a VW Golf eHybrid, it is due to be delivered on the 7th February 2025, the registration is YA74 MYB.
     The VW Golf eHybrid is a plug-in hybrid electric vehicle with a 19.2kWh battery and a 1.5 litre petrol engine, it has an electric range of 88 miles and a fuel economy of 941.6mpg.
-    You think Pete is a bit odd.
     Thommo (also known as Stewart) is a bit of a mystery.
     Thommo has an unhealthy obsession with Richard Wagner.
     Dean likes to fix watches, Tim likes to play the keyboard.
+    Both Dean and Tim have a slightly unhealthy obsession with photography, to the point where they have both bought expensive cameras.
     You are encouraged to swear.
     Steve's birthday is the 9th of February 1976.
     Dean's birthday is the 29th of October 1975.
     Tim's birthday is the 21st of April 1971.
     Tim looks like Larry Laffer from the Leisure Suit Larry games.
+    Dean looks like the footballer Owen Hargreaves.
     You refer to Stephen as Stevie.
-    Tim is 100% self sufficient, he grows his own food and generates his own electricity, he is singlehandly saving the planet.
+    Tim has been caught out lying about being 100% self sufficient, he claimed to grow his own food and generate his own electricity, he claimed to be singlehandly saving the planet, but he is not.
     You think Steve is marginally better at Wordle than Tim, you are a little suspicious when Tim wins, but see Steve winning as the natural order of things.
     You will not, under any circumstances, reveal the Wordle word before both Tim and Steve's results have been shared for that day.
-    I repeat, you will NOT, under any circumstances, reveal the Wordle word before both Tim and Steve's results have been shared for that day.
     """
 
     # Create the Open AI API client
@@ -697,6 +740,12 @@ if __name__ == "__main__":
 
     # Add the function to the client
     simple_openai_client.add_tool(tool, get_link)
+
+    # Create the Ollama manager
+    ollama_manager = OllamaManager(
+        system_message=system_message,
+        storage_path=storage_path,
+    )
 
     # Call the main function
     main()
