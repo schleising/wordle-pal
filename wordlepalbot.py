@@ -106,7 +106,7 @@ async def guess(update: Update, context):
             msgLines.extend(guessStrings)
 
             # Send the reply removing the quote of the original /guess message
-            await update.message.reply_text("\n".join(msgLines), quote=False)
+            await update.message.reply_text("\n".join(msgLines), do_quote=False)
         else:
             # State that the words have all been used up
             await update.message.reply_text("It's all over, all the words have gone...")
@@ -121,7 +121,7 @@ async def dist(update: Update, context):
     # Generate the image and return it without a quote
     with open(GenerateDistGraphic(), "rb") as imageFile:
         if update.message is not None:
-            await update.message.reply_photo(imageFile, quote=False)
+            await update.message.reply_photo(imageFile, do_quote=False)
 
 
 async def image(update: Update, context):
@@ -133,7 +133,7 @@ async def image(update: Update, context):
     ):
         await update.message.reply_text(
             f"Sorry {update.message.from_user.first_name}, this feature is now deprecated, please use /dalle instead",
-            quote=False,
+            do_quote=False,
         )
 
 
@@ -170,14 +170,14 @@ async def gpt(update: Update, context):
             print(f"Response: {response.message}")
 
             # Send the response to the user
-            await update.message.reply_text(response.message, quote=True)
+            await update.message.reply_text(response.message, do_quote=True)
         else:
             # Log the error
             print(f"Error: {response.message}")
 
             # If the response is invalid, let the user know
             await update.message.reply_text(
-                f"There was a problem...\n\n{response.message}", quote=False
+                f"There was a problem...\n\n{response.message}", do_quote=False
             )
 
 
@@ -212,7 +212,7 @@ async def dalle(update: Update, context):
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(
             f"OK {update.message.from_user.first_name}, using DALL-E to generate your image of {input_text}\n\nPlease do be patient...",
-            quote=False,
+            do_quote=False,
         )
 
         # Send the request to the OpenAI API
@@ -224,7 +224,7 @@ async def dalle(update: Update, context):
             print(f"Response: {response.message}")
 
             # Send the image to the user
-            await update.message.reply_photo(response.message, quote=True)
+            await update.message.reply_photo(response.message, do_quote=True)
         else:
             # If the response is not OK, log the error
             print(f"Error: {response.message}")
@@ -232,7 +232,7 @@ async def dalle(update: Update, context):
             # Send a message to the user to let them know the image could not be generated
             await update.message.reply_text(
                 f"Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}",
-                quote=False,
+                do_quote=False,
             )
 
 
@@ -261,7 +261,7 @@ async def remix(update: Update, context):
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(
             f"OK {update.message.from_user.first_name}, using DALL-E to remix your image of {input_text}\n\nPlease do be patient...",
-            quote=False,
+            do_quote=False,
         )
 
         # Send the request to the OpenAI API
@@ -273,7 +273,7 @@ async def remix(update: Update, context):
             print(f"Response: {response.message}")
 
             # Send the image to the user
-            await update.message.reply_photo(response.message, quote=True)
+            await update.message.reply_photo(response.message, do_quote=True)
         else:
             # If the response is not OK, log the error
             print(f"Error: {response.message}")
@@ -281,7 +281,7 @@ async def remix(update: Update, context):
             # Send a message to the user to let them know the image could not be generated
             await update.message.reply_text(
                 f"Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}",
-                quote=False,
+                do_quote=False,
             )
 
 
@@ -308,7 +308,7 @@ async def visualise(update: Update, context):
         # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(
             f"OK {update.message.from_user.first_name}, using DALL-E to generate your visualisation of the chat history\n\nPlease do be patient...",
-            quote=False,
+            do_quote=False,
         )
 
         # Send the request to the OpenAI API
@@ -320,7 +320,7 @@ async def visualise(update: Update, context):
             print(f"Response: {response.message}")
 
             # Send the image to the user
-            await update.message.reply_photo(response.message, quote=True)
+            await update.message.reply_photo(response.message, do_quote=True)
         else:
             # If the response is not OK, log the error
             print(f"Error: {response.message}")
@@ -333,7 +333,7 @@ async def visualise(update: Update, context):
             # Send a message to the user to let them know the image could not be generated
             await update.message.reply_text(
                 f"Sorry {update.message.from_user.first_name}, I could not generate your visualisation of the chat history {reason}\n\n",
-                quote=False,
+                do_quote=False,
             )
 
 
@@ -513,14 +513,14 @@ async def llama(update: Update, context):
             print(f"Response: {response.message}")
 
             # Send the response to the user
-            await update.message.reply_text(response.message, quote=True)
+            await update.message.reply_text(response.message, do_quote=True)
         else:
             # Log the error
             print(f"Error: {response.message}")
 
             # If the response is invalid, let the user know
             await update.message.reply_text(
-                f"There was a problem...\n\n{response.message}", quote=False
+                f"There was a problem...\n\n{response.message}", do_quote=False
             )
 
 # Log errors
