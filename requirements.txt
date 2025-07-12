@@ -1,12 +1,12 @@
 aiohappyeyeballs==2.6.1
-aiohttp==3.12.13
+aiohttp==3.12.14
 aiosignal==1.4.0
 annotated-types==0.7.0
 anyio==4.9.0
 attrs==25.3.0
 beautifulsoup4==4.13.4
 bs4==0.0.2
-certifi==2025.6.15
+certifi==2025.7.9
 charset-normalizer==3.4.2
 dateparser==1.2.2
 frozenlist==1.7.0
