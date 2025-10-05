@@ -20,8 +20,6 @@ from simple_openai.models import open_ai_models
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
 
-from Ollama import OllamaManager
-
 FOOTBALL_API_BASE_URL = "https://schleising.net"
 FOOTBALL_API_MATCH_URL = "/football/api"
 
@@ -161,7 +159,11 @@ async def gpt(update: Update, context):
 
         # Send the request to the OpenAI API
         response = await simple_openai_client.get_chat_response(
-            input_text, name, str(update.message.chat.id), max_tool_calls=2, add_date_time=True
+            input_text,
+            name,
+            str(update.message.chat.id),
+            max_tool_calls=2,
+            add_date_time=True,
         )
 
         # Check the response is valid
@@ -483,45 +485,6 @@ async def get_link(link: str) -> str:
     # Return the content
     return content
 
-async def llama(update: Update, context):
-    if (
-        update.message is not None
-        and update.message.from_user is not None
-        and update.message.text is not None
-    ):
-        # Send a typing action to the user
-        await update.get_bot().send_chat_action(update.message.chat.id, "typing")
-
-        # Get the request from the message
-        input_text = " ".join(update.message.text.split(" ")[1:])
-
-        # Set the name to the user's name
-        name = update.message.from_user.first_name
-
-        # Log the request
-        print(
-            f"{date.today()} Llama Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}"
-        )
-        print(f"Request: {input_text}")
-
-        # Send the request to the Ollama API
-        response = await ollama_manager.chat(input_text, name, str(update.message.chat.id))
-
-        # Check the response is valid
-        if response.success:
-            # Log the response
-            print(f"Response: {response.message}")
-
-            # Send the response to the user
-            await update.message.reply_text(response.message, do_quote=True)
-        else:
-            # Log the error
-            print(f"Error: {response.message}")
-
-            # If the response is invalid, let the user know
-            await update.message.reply_text(
-                f"There was a problem...\n\n{response.message}", do_quote=False
-            )
 
 # Log errors
 async def error(update, context):
@@ -576,9 +539,6 @@ def main():
 
     # On receipt of a /clear command call the clear_chat() function to clear the chat history for this chat
     application.add_handler(CommandHandler("clear", clear_chat))
-
-    # On receipt of a /llama command call the llama() function to clear the chat history for this chat
-    application.add_handler(CommandHandler("llama", llama))
 
     # Add the error handler to log errors
     application.add_error_handler(error)
@@ -670,6 +630,7 @@ if __name__ == "__main__":
     Tim has been caught out lying about being 100% self sufficient, he claimed to grow his own food and generate his own electricity, he claimed to be singlehandly saving the planet, but he is not.
     You think Steve is marginally better at Wordle than Tim, you are a little suspicious when Tim wins, but see Steve winning as the natural order of things.
     You will not, under any circumstances, reveal the Wordle word before both Tim and Steve's results have been shared for that day.
+    Tim says he came up with the new bet format, Thommo says he did, you are not sure who to believe, but you are fairly certain it was neither of them.
     """
 
     # Create the Open AI API client
@@ -740,12 +701,6 @@ if __name__ == "__main__":
 
     # Add the function to the client
     simple_openai_client.add_tool(tool, get_link)
-
-    # Create the Ollama manager
-    ollama_manager = OllamaManager(
-        system_message=system_message,
-        storage_path=storage_path,
-    )
 
     # Call the main function
     main()
