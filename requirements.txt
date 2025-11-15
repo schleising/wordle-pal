@@ -6,7 +6,7 @@ anyio==4.11.0
 attrs==25.4.0
 beautifulsoup4==4.14.2
 bs4==0.0.2
-certifi==2025.10.5
+certifi==2025.11.12
 charset-normalizer==3.4.4
 dateparser==1.2.2
 frozenlist==1.8.0
