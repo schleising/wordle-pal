@@ -171,8 +171,41 @@ async def gpt(update: Update, context):
             # Log the response
             print(f"Response: {response.message}")
 
+            # Split into chunks of 4096 characters or less, breaking at newlines to avoid cutting sentences in half
+            chunks = []
+            message = response.message
+            while len(message) > 0:
+                if len(message) <= 4096:
+                    chunks.append(message)
+                    break
+                else:
+                    # Find the last newline before the 4096 character limit
+                    split_index = message.rfind("\n", 0, 4096)
+
+                    if split_index == -1:
+                        # If there is no newline, split at the last space
+                        split_index = message.rfind(" ", 0, 4096)
+
+                        if split_index == -1:
+                            # If there is no space, split at 4096 characters
+                            split_index = 4096
+
+                    # Add the chunk to the list
+                    chunks.append(message[:split_index])
+
+                    # Remove the chunk from the message
+                    message = message[split_index:].lstrip()
+
             # Send the response to the user
-            await update.message.reply_text(response.message, do_quote=True)
+            first_chunk = True
+
+            for chunk in chunks:
+                # Send each chunk, quoting only the first one
+                await update.message.reply_text(chunk, do_quote=first_chunk)
+
+                # Set first_chunk to False after the first iteration
+                first_chunk = False
+
         else:
             # Log the error
             print(f"Error: {response.message}")
