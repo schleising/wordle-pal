@@ -130,7 +130,7 @@ async def image(update: Update, context):
         and update.message.text is not None
     ):
         await update.message.reply_text(
-            f"Sorry {update.message.from_user.first_name}, this feature is now deprecated, please use /dalle instead",
+            f"Sorry {update.message.from_user.first_name}, this feature has been disabled for now.",
             do_quote=False,
         )
 
@@ -223,52 +223,10 @@ async def dalle(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
-        # Send an upload photo action to the user
-        await update.get_bot().send_chat_action(update.message.chat.id, "upload_photo")
-
-        # Get the request from the message
-        input_text = " ".join(update.message.text.split(" ")[1:])
-
-        # Log the request
-        print(
-            f"{date.today()} DALL-E Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}"
-        )
-        print(f"Request: {input_text}")
-
-        # Store the last dalle request per user
-        last_dalle_requests[
-            f"{update.message.from_user.id}-{update.message.chat_id}"
-        ] = input_text
-
-        # Save the last dalle request per user
-        with open(last_dalle_request_file, "w") as file:
-            json.dump(last_dalle_requests, file)
-
-        # Send a message to the user to let them know the image is being generated
         await update.message.reply_text(
-            f"OK {update.message.from_user.first_name}, using DALL-E to generate your image of {input_text}\n\nPlease do be patient...",
+            f"Sorry {update.message.from_user.first_name}, this feature has been disabled for now.",
             do_quote=False,
         )
-
-        # Send the request to the OpenAI API
-        response = await simple_openai_client.get_image_url(input_text)
-
-        # Check the response is valid
-        if response.success:
-            # Log the response
-            print(f"Response: {response.message}")
-
-            # Send the image to the user
-            await update.message.reply_photo(response.message, do_quote=True)
-        else:
-            # If the response is not OK, log the error
-            print(f"Error: {response.message}")
-
-            # Send a message to the user to let them know the image could not be generated
-            await update.message.reply_text(
-                f"Sorry {update.message.from_user.first_name}, I could not generate your image of {input_text}\n\n{response.message}",
-                do_quote=False,
-            )
 
 
 async def remix(update: Update, context):
