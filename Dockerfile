@@ -1,5 +1,5 @@
 FROM python:3-alpine
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED=1
 
 # Install the build tools
 # RUN apk update && apk add git
