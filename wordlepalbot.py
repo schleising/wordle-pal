@@ -23,6 +23,11 @@ from wordlepal import RunGame, GenerateDistGraphic
 FOOTBALL_API_BASE_URL = "https://schleising.net"
 FOOTBALL_API_MATCH_URL = "/football/api"
 
+VALID_CHAT_IDS = [
+    -709419375, # Test chat
+    -417681459, # Tim and Dean
+]
+
 # Define the storage path
 storage_path = Path("/storage")
 
@@ -39,6 +44,16 @@ else:
     print("No last dalle requests found")
 
 
+# Function to check that the request comes from a valid chat
+def is_valid_chat(update: Update) -> bool:
+    # Check the chat ID is in the list of valid chat IDs
+    if update.message is not None and update.message.chat_id in VALID_CHAT_IDS:
+        print(f"Valid chat ID: {update.message.chat_id}")
+        return True
+    else:
+        print(f"Invalid chat ID: {update.message.chat_id if update.message else 'No message'}")
+        return False
+
 # Define a handler for /guess
 async def guess(update: Update, context):
     if (
@@ -46,6 +61,13 @@ async def guess(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # First check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         # Print the date and user to the log
         print(
             f"{date.today()} Instigated by {update.message.from_user.first_name} {update.message.from_user.last_name} in chat {update.message.chat.title}"
@@ -119,6 +141,13 @@ async def dist(update: Update, context):
     # Generate the image and return it without a quote
     with open(GenerateDistGraphic(), "rb") as imageFile:
         if update.message is not None:
+            # Check the request comes from a valid chat
+            if not is_valid_chat(update):
+                await update.message.reply_text(
+                    "Sorry, this command is not available in this chat", do_quote=False
+                )
+                return
+
             await update.message.reply_photo(imageFile, do_quote=False)
 
 
@@ -129,6 +158,13 @@ async def image(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # Check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         await update.message.reply_text(
             f"Sorry {update.message.from_user.first_name}, this feature has been disabled for now.",
             do_quote=False,
@@ -142,6 +178,13 @@ async def gpt(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # Check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         # Send a typing action to the user
         await update.get_bot().send_chat_action(update.message.chat.id, "typing")
 
@@ -223,6 +266,13 @@ async def dalle(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # Check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         await update.message.reply_text(
             f"Sorry {update.message.from_user.first_name}, this feature has been disabled for now.",
             do_quote=False,
@@ -236,6 +286,13 @@ async def remix(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # Check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         # Send an upload photo action to the user
         await update.get_bot().send_chat_action(update.message.chat.id, "upload_photo")
 
@@ -284,6 +341,13 @@ async def visualise(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # Check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         # Send an upload photo action to the user
         await update.get_bot().send_chat_action(update.message.chat.id, "upload_photo")
 
@@ -336,6 +400,13 @@ async def clear_chat(update: Update, context):
         and update.message.from_user is not None
         and update.message.text is not None
     ):
+        # Check the request comes from a valid chat
+        if not is_valid_chat(update):
+            await update.message.reply_text(
+                "Sorry, this command is not available in this chat", do_quote=False
+            )
+            return
+
         print("Clearing chat history...")
         # Send an upload photo action to the user
         simple_openai_client.clear_chat(str(update.message.chat.id))
