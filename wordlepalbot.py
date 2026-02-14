@@ -20,7 +20,7 @@ from simple_openai.models import open_ai_models
 from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
 
-FOOTBALL_API_BASE_URL = "https://schleising.net"
+FOOTBALL_API_BASE_URL = "https://www.schleising.net"
 FOOTBALL_API_MATCH_URL = "/football/api"
 
 VALID_CHAT_IDS = [
