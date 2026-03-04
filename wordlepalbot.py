@@ -10,6 +10,7 @@ import aiohttp
 from dateparser import parse
 
 from telegram import Update
+from telegram.constants import ParseMode
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
 
 from bs4 import BeautifulSoup
@@ -214,24 +215,24 @@ async def gpt(update: Update, context):
             # Log the response
             print(f"Response: {response.message}")
 
-            # Split into chunks of 4096 characters or less, breaking at newlines to avoid cutting sentences in half
+            # Split into chunks of 3072 characters or less, breaking at newlines to avoid cutting sentences in half
             chunks = []
             message = response.message
             while len(message) > 0:
-                if len(message) <= 4096:
+                if len(message) <= 3072:
                     chunks.append(message)
                     break
                 else:
-                    # Find the last newline before the 4096 character limit
-                    split_index = message.rfind("\n", 0, 4096)
+                    # Find the last newline before the 3072 character limit
+                    split_index = message.rfind("\n", 0, 3072)
 
                     if split_index == -1:
                         # If there is no newline, split at the last space
-                        split_index = message.rfind(" ", 0, 4096)
+                        split_index = message.rfind(" ", 0, 3072)
 
                         if split_index == -1:
-                            # If there is no space, split at 4096 characters
-                            split_index = 4096
+                            # If there is no space, split at 3072 characters
+                            split_index = 3072
 
                     # Add the chunk to the list
                     chunks.append(message[:split_index])
@@ -244,7 +245,7 @@ async def gpt(update: Update, context):
 
             for chunk in chunks:
                 # Send each chunk, quoting only the first one
-                await update.message.reply_text(chunk, do_quote=first_chunk)
+                await update.message.reply_text(chunk, do_quote=first_chunk, parse_mode=ParseMode.MARKDOWN)
 
                 # Set first_chunk to False after the first iteration
                 first_chunk = False
@@ -665,6 +666,7 @@ if __name__ == "__main__":
     Your name is Botto.
     You answer questions in the style of the comedian David Mitchell while still being helpful.
     You do not mention that you are like David Mitchell.
+    If you use Markdown in your responses, you use the syntax for Telegram's MarkdownV1 formatting.
     You are able to search the internet for information to answer questions using the internet_search tool.
     You can then download the body of a web page from a link to provide more information to search queries using the get_link tool.
     You favour downloading BBC or Guardian web pages where possible.
