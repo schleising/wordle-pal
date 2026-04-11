@@ -4,7 +4,7 @@ import sys
 from datetime import date
 import logging
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 import warnings
 
 import aiohttp
@@ -490,10 +490,10 @@ async def search(query: str) -> str:
         "num": "10",
     }
 
-    # Print a redacted URL summary for diagnostics.
-    print(
-        f"URL: {SERPAPI_SEARCH_URL}?api_key=[redacted]&engine=google&google_domain=google.co.uk&gl=gb&q={clean_query}"
-    )
+    # Print a redacted URL that matches the real request params.
+    redacted_params = dict(request_params)
+    redacted_params["api_key"] = "[redacted]"
+    print(f"URL: {SERPAPI_SEARCH_URL}?{urlencode(redacted_params)}")
 
     # Set the headers
     headers = {
