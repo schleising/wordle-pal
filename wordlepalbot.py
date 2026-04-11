@@ -481,15 +481,18 @@ async def search(query: str) -> str:
     request_params = {
         "api_key": serpapi_api_key,
         "engine": "google",
+        "google_domain": "google.co.uk",
         "q": clean_query,
         "hl": "en",
-        "gl": "uk",
+        "gl": "gb",
+        "location": "United Kingdom",
+        "lr": "lang_en",
         "num": "10",
     }
 
     # Print a redacted URL summary for diagnostics.
     print(
-        f"URL: {SERPAPI_SEARCH_URL}?api_key=[redacted]&engine=google&q={clean_query}"
+        f"URL: {SERPAPI_SEARCH_URL}?api_key=[redacted]&engine=google&google_domain=google.co.uk&gl=gb&q={clean_query}"
     )
 
     # Set the headers
