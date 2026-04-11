@@ -1,8 +1,10 @@
 import json
+import re
 import sys
 from datetime import date
 import logging
 from pathlib import Path
+from urllib.parse import urlparse
 import warnings
 
 import aiohttp
@@ -511,9 +513,97 @@ async def get_link(link: str) -> str:
     """Gets the body of a web page from the link returned by the search"""
     print(f"Getting link {link}...")
 
+    def normalise_whitespace(value: str) -> str:
+        return re.sub(r"\s+", " ", value).strip()
+
+    def is_boilerplate(text: str) -> bool:
+        lowered = text.lower()
+        blocked_phrases = [
+            "skip to content",
+            "cookie",
+            "privacy policy",
+            "advertisement",
+            "advertising",
+            "sign up for",
+            "newsletter",
+            "follow us",
+            "all rights reserved",
+            "share this",
+        ]
+        return any(phrase in lowered for phrase in blocked_phrases)
+
+    def extract_text_from_container(container) -> list[str]:
+        lines: list[str] = []
+        for node in container.select("h1, h2, h3, p, li, blockquote"):
+            text = normalise_whitespace(node.get_text(" ", strip=True))
+            if not text or is_boilerplate(text):
+                continue
+            lines.append(text)
+        return lines
+
+    def parse_page_content(html: str, page_url: str) -> str:
+        bs = BeautifulSoup(html, "html.parser")
+
+        # Remove common non-content sections before extraction.
+        for removable in bs.select(
+            "script, style, noscript, svg, nav, footer, header, aside, form, button"
+        ):
+            removable.decompose()
+
+        hostname = urlparse(page_url).netloc.lower()
+        selectors: list[str]
+
+        if "bbc." in hostname:
+            selectors = [
+                "main#main-content article",
+                "main[role='main'] article",
+                "article",
+                "main#main-content",
+            ]
+        elif "theguardian.com" in hostname or "guardian.co.uk" in hostname:
+            selectors = [
+                "div[data-gu-name='body']",
+                ".article-body-commercial-selector",
+                "main article",
+                "article",
+            ]
+        else:
+            selectors = ["article", "main", "[role='main']"]
+
+        extracted_lines: list[str] = []
+
+        for selector in selectors:
+            container = bs.select_one(selector)
+            if container is None:
+                continue
+            extracted_lines = extract_text_from_container(container)
+            if len(extracted_lines) >= 5:
+                break
+
+        if not extracted_lines:
+            # Final fallback if we can't find a useful article/main container.
+            extracted_lines = extract_text_from_container(bs)
+
+        # De-duplicate while preserving order.
+        deduped_lines: list[str] = []
+        seen: set[str] = set()
+        for line in extracted_lines:
+            if line in seen:
+                continue
+            seen.add(line)
+            deduped_lines.append(line)
+
+        return "\n".join(deduped_lines)
+
     # Set the headers
     headers = {
-        "Content-Type": "application/json",
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/133.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-GB,en;q=0.9",
     }
 
     # Open a session
@@ -525,15 +615,8 @@ async def get_link(link: str) -> str:
                 # Get the response content
                 response_text = await response.text()
 
-                # Create a BeautifulSoup object
-                bs = BeautifulSoup(response_text, "html.parser")
-
-                # Get the paragraphs
-                paragraphs = bs.find_all("p")
-                paragraphs = [paragraph.get_text() for paragraph in paragraphs]
-
-                # Join the paragraphs into a string
-                content = "\n".join(paragraphs)
+                # Parse and clean the article text.
+                content = parse_page_content(response_text, link)
 
                 # Print success
                 print(f"Got Content\n{content}\n\n")
