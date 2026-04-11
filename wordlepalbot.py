@@ -4,7 +4,7 @@ import sys
 from datetime import date
 import logging
 from pathlib import Path
-from urllib.parse import quote_plus, urlparse
+from urllib.parse import urlparse
 import warnings
 
 import aiohttp
@@ -25,6 +25,7 @@ from wordlepal import RunGame, GenerateDistGraphic
 
 FOOTBALL_API_BASE_URL = "https://www.schleising.net"
 FOOTBALL_API_MATCH_URL = "/football/api"
+SERPAPI_SEARCH_URL = "https://serpapi.com/search.json"
 
 VALID_CHAT_IDS = [
     -709419375, # Test chat
@@ -477,11 +478,19 @@ async def search(query: str) -> str:
             ensure_ascii=True,
         )
 
-    # Create the URL
-    url = f"{search_url_base}{quote_plus(clean_query)}"
+    request_params = {
+        "api_key": serpapi_api_key,
+        "engine": "google",
+        "q": clean_query,
+        "hl": "en",
+        "gl": "uk",
+        "num": "10",
+    }
 
-    # Print the URL
-    print(f"URL: {url}")
+    # Print a redacted URL summary for diagnostics.
+    print(
+        f"URL: {SERPAPI_SEARCH_URL}?api_key=[redacted]&engine=google&q={clean_query}"
+    )
 
     # Set the headers
     headers = {
@@ -509,14 +518,30 @@ async def search(query: str) -> str:
     try:
         async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
             # Send the request
-            async with session.get(url) as response:
+            async with session.get(SERPAPI_SEARCH_URL, params=request_params) as response:
                 # Check the status code
                 if response.status == 200:
                     # Get the response content
                     response_json = await response.json(content_type=None)
 
-                    # Get the items from the response
-                    items = response_json.get("items", [])
+                    # SerpApi can return error payloads with HTTP 200.
+                    if isinstance(response_json, dict) and response_json.get("error"):
+                        content = json.dumps(
+                            {
+                                "ok": False,
+                                "query": clean_query,
+                                "error": str(response_json.get("error", "unknown SerpApi error")),
+                                "results": [],
+                            },
+                            ensure_ascii=True,
+                        )
+                        pretty_log_json(content, "SerpApi returned an error")
+                        return content
+
+                    # Collect result candidates from multiple SerpApi sections.
+                    organic_results = response_json.get("organic_results", [])
+                    news_results = response_json.get("news_results", [])
+                    items = organic_results + news_results
 
                     # Filter and score results.
                     filtered_items = []
@@ -524,7 +549,17 @@ async def search(query: str) -> str:
                     for item in items:
                         link = item.get("link", "").strip()
                         title = compact_text(item.get("title", ""), limit=180)
-                        snippet = compact_text(item.get("snippet", ""), limit=320)
+                        snippet_source = item.get("snippet", "")
+                        if not snippet_source:
+                            highlights = item.get("snippet_highlighted_words", [])
+                            if isinstance(highlights, list):
+                                snippet_source = " ".join(str(word) for word in highlights)
+                            else:
+                                snippet_source = str(highlights)
+                        snippet = compact_text(
+                            str(snippet_source),
+                            limit=320,
+                        )
 
                         if not link.startswith("http"):
                             continue
@@ -598,12 +633,24 @@ async def search(query: str) -> str:
                     # Print success
                     pretty_log_json(content, "Got search results")
                 else:
+                    error_message = f"HTTP {response.status}"
+                    try:
+                        error_payload = await response.json(content_type=None)
+                        if isinstance(error_payload, dict):
+                            api_message = str(error_payload.get("error", "")).strip()
+                            if api_message:
+                                error_message = f"HTTP {response.status}: {api_message}"
+                    except (ValueError, json.JSONDecodeError):
+                        raw_error = (await response.text()).strip()
+                        if raw_error:
+                            error_message = f"HTTP {response.status}: {raw_error[:400]}"
+
                     # Return an error
                     content = json.dumps(
                         {
                             "ok": False,
                             "query": clean_query,
-                            "error": f"HTTP {response.status}",
+                            "error": error_message,
                             "results": [],
                         },
                         ensure_ascii=True,
@@ -862,12 +909,10 @@ if __name__ == "__main__":
     try:
         with open(Path("google-search-key.json"), "r", encoding="utf8") as secretFile:
             data = json.load(secretFile)
-            google_api_key = data["key"]
-            google_cx = data["cx"]
-            search_url_base = f"https://www.googleapis.com/customsearch/v1?key={google_api_key}&cx={google_cx}&q="
+            serpapi_api_key = data["key"]
     except:
         print(
-            "No google-search-key.json file found, you need to put your Google API key and Custom Search Engine ID in here"
+            "No google-search-key.json file found, you need to put your SerpApi key in the 'key' field"
         )
         sys.exit()
 
