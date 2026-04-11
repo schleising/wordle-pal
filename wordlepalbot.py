@@ -4,7 +4,7 @@ import sys
 from datetime import date
 import logging
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote_plus, urlparse
 import warnings
 
 import aiohttp
@@ -452,8 +452,12 @@ async def search(query: str) -> str:
     """Searches the internet for information"""
     print(f"Searching for {query}...")
 
+    clean_query = query.strip()
+    if not clean_query:
+        return "Error: empty search query"
+
     # Create the URL
-    url = f"{search_url_base}{query}"
+    url = f"{search_url_base}{quote_plus(clean_query)}"
 
     # Print the URL
     print(f"URL: {url}")
@@ -461,50 +465,118 @@ async def search(query: str) -> str:
     # Set the headers
     headers = {
         "Content-Type": "application/json",
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/133.0.0.0 Safari/537.36"
+        ),
+        "Accept": "application/json",
+        "Accept-Language": "en-GB,en;q=0.9",
     }
 
+    timeout = aiohttp.ClientTimeout(total=20)
+
+    def source_priority(link: str) -> int:
+        hostname = urlparse(link).netloc.lower()
+        if "bbc." in hostname:
+            return 2
+        if "theguardian.com" in hostname or "guardian.co.uk" in hostname:
+            return 1
+        return 0
+
     # Open a session
-    async with aiohttp.ClientSession(headers=headers) as session:
-        # Send the request
-        async with session.get(url) as response:
-            # Check the status code
-            if response.status == 200:
-                # Get the response content
-                response_json = await response.json()
+    try:
+        async with aiohttp.ClientSession(headers=headers, timeout=timeout) as session:
+            # Send the request
+            async with session.get(url) as response:
+                # Check the status code
+                if response.status == 200:
+                    # Get the response content
+                    response_json = await response.json(content_type=None)
 
-                # Get the items from the response
-                items = response_json.get("items", [])
+                    # Get the items from the response
+                    items = response_json.get("items", [])
 
-                # Create a list to hold the results
-                results = []
+                    # Filter and score results.
+                    filtered_items = []
+                    seen_links: set[str] = set()
+                    for item in items:
+                        link = item.get("link", "").strip()
+                        title = item.get("title", "").strip()
+                        snippet = item.get("snippet", "").strip()
 
-                # Loop through the items
-                for item in items:
-                    if item.get("link", "").endswith(".pdf"):
-                        # Skip pdf files
-                        continue
+                        if not link.startswith("http"):
+                            continue
 
-                    # Get the title and snippet
-                    link = item.get("link", "")
-                    title = item.get("title", "")
-                    snippet = item.get("snippet", "")
+                        if link.lower().endswith(".pdf"):
+                            continue
 
-                    # Add the title and snippet to the results
-                    results.append(
-                        f"Link: {link}\nTitle: {title}\nSnippet: {snippet}\n"
+                        if link in seen_links:
+                            continue
+                        seen_links.add(link)
+
+                        filtered_items.append(
+                            {
+                                "link": link,
+                                "title": title,
+                                "snippet": snippet,
+                                "priority": source_priority(link),
+                            }
+                        )
+
+                    # Prefer BBC/Guardian links while preserving stability for equal scores.
+                    ranked_items = sorted(
+                        enumerate(filtered_items),
+                        key=lambda pair: (-pair[1]["priority"], pair[0]),
                     )
 
-                # Join the results into a string
-                content = "\n".join(results)
+                    # Create a list to hold the results
+                    results = []
+                    max_results = 6
+                    for idx, (_, item) in enumerate(ranked_items[:max_results], start=1):
+                        hostname = urlparse(item["link"]).netloc.lower()
+                        if "bbc." in hostname:
+                            source = "BBC"
+                        elif (
+                            "theguardian.com" in hostname
+                            or "guardian.co.uk" in hostname
+                        ):
+                            source = "Guardian"
+                        else:
+                            source = hostname or "Unknown"
 
-                # Print success
-                print(f"Got search results\n{content}\n\n")
-            else:
-                # Return an error
-                content = f"Error: {response.status}"
+                        results.append(
+                            "\n".join(
+                                [
+                                    f"Result {idx}",
+                                    f"Source: {source}",
+                                    f"Title: {item['title'] or 'No title'}",
+                                    f"Link: {item['link']}",
+                                    f"Snippet: {item['snippet'] or 'No snippet'}",
+                                ]
+                            )
+                        )
 
-                # Print the error
-                print(content)
+                    if results:
+                        # Join the results into a string
+                        content = "\n\n".join(results)
+                    else:
+                        content = "No suitable search results found."
+
+                    # Print success
+                    print(f"Got search results\n{content}\n\n")
+                else:
+                    # Return an error
+                    content = f"Error: {response.status}"
+
+                    # Print the error
+                    print(content)
+    except aiohttp.ClientError as exc:
+        content = f"Error: failed to fetch search results ({exc})"
+        print(content)
+    except ValueError as exc:
+        content = f"Error: unexpected search response format ({exc})"
+        print(content)
 
     return content
 
