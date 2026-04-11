@@ -452,9 +452,30 @@ async def search(query: str) -> str:
     """Searches the internet for information"""
     print(f"Searching for {query}...")
 
+    def compact_text(value: str, limit: int = 280) -> str:
+        clean = re.sub(r"\s+", " ", value).strip()
+        if len(clean) <= limit:
+            return clean
+        return f"{clean[: limit - 3].rstrip()}..."
+
+    def pretty_log_json(content: str, prefix: str) -> None:
+        try:
+            formatted = json.dumps(json.loads(content), indent=2, ensure_ascii=True)
+            print(f"{prefix}\n{formatted}\n")
+        except json.JSONDecodeError:
+            print(f"{prefix}\n{content}\n")
+
     clean_query = query.strip()
     if not clean_query:
-        return "Error: empty search query"
+        return json.dumps(
+            {
+                "ok": False,
+                "query": "",
+                "error": "empty search query",
+                "results": [],
+            },
+            ensure_ascii=True,
+        )
 
     # Create the URL
     url = f"{search_url_base}{quote_plus(clean_query)}"
@@ -502,8 +523,8 @@ async def search(query: str) -> str:
                     seen_links: set[str] = set()
                     for item in items:
                         link = item.get("link", "").strip()
-                        title = item.get("title", "").strip()
-                        snippet = item.get("snippet", "").strip()
+                        title = compact_text(item.get("title", ""), limit=180)
+                        snippet = compact_text(item.get("snippet", ""), limit=320)
 
                         if not link.startswith("http"):
                             continue
@@ -527,14 +548,18 @@ async def search(query: str) -> str:
                     # Prefer BBC/Guardian links while preserving stability for equal scores.
                     ranked_items = sorted(
                         enumerate(filtered_items),
-                        key=lambda pair: (-pair[1]["priority"], pair[0]),
+                        key=lambda pair: (-int(pair[1]["priority"]), pair[0]),
                     )
 
-                    # Create a list to hold the results
+                    # Build deterministic JSON output for tool-call consumption.
                     results = []
                     max_results = 6
                     for idx, (_, item) in enumerate(ranked_items[:max_results], start=1):
-                        hostname = urlparse(item["link"]).netloc.lower()
+                        link_value = str(item["link"])
+                        title_value = str(item["title"])
+                        snippet_value = str(item["snippet"])
+
+                        hostname = urlparse(link_value).netloc.lower()
                         if "bbc." in hostname:
                             source = "BBC"
                         elif (
@@ -546,37 +571,67 @@ async def search(query: str) -> str:
                             source = hostname or "Unknown"
 
                         results.append(
-                            "\n".join(
-                                [
-                                    f"Result {idx}",
-                                    f"Source: {source}",
-                                    f"Title: {item['title'] or 'No title'}",
-                                    f"Link: {item['link']}",
-                                    f"Snippet: {item['snippet'] or 'No snippet'}",
-                                ]
-                            )
+                            {
+                                "rank": idx,
+                                "source": source,
+                                "title": title_value or "No title",
+                                "link": link_value,
+                                "snippet": snippet_value or "No snippet",
+                                "is_preferred_source": source in {"BBC", "Guardian"},
+                            }
                         )
 
-                    if results:
-                        # Join the results into a string
-                        content = "\n\n".join(results)
-                    else:
-                        content = "No suitable search results found."
+                    content = json.dumps(
+                        {
+                            "ok": True,
+                            "query": clean_query,
+                            "result_count": len(results),
+                            "results": results,
+                            "guidance": (
+                                "Prefer rank 1 unless another result is clearly more relevant. "
+                                "Use get_link with the chosen result link for full page content."
+                            )
+                        },
+                        ensure_ascii=True,
+                    )
 
                     # Print success
-                    print(f"Got search results\n{content}\n\n")
+                    pretty_log_json(content, "Got search results")
                 else:
                     # Return an error
-                    content = f"Error: {response.status}"
+                    content = json.dumps(
+                        {
+                            "ok": False,
+                            "query": clean_query,
+                            "error": f"HTTP {response.status}",
+                            "results": [],
+                        },
+                        ensure_ascii=True,
+                    )
 
-                    # Print the error
-                    print(content)
+                    pretty_log_json(content, "Search API returned an error")
     except aiohttp.ClientError as exc:
-        content = f"Error: failed to fetch search results ({exc})"
-        print(content)
+        content = json.dumps(
+            {
+                "ok": False,
+                "query": clean_query,
+                "error": f"failed to fetch search results ({exc})",
+                "results": [],
+            },
+            ensure_ascii=True,
+        )
+        pretty_log_json(content, "Search request failed")
     except ValueError as exc:
-        content = f"Error: unexpected search response format ({exc})"
-        print(content)
+        content = json.dumps(
+            {
+                "ok": False,
+                "query": clean_query,
+                "error": f"unexpected search response format ({exc})",
+                "results": [],
+            },
+            ensure_ascii=True,
+        )
+        pretty_log_json(content, "Search response parsing failed")
 
     return content
 
