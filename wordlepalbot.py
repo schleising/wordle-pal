@@ -1,6 +1,7 @@
 import json
 import re
 import sys
+from typing import Any
 from datetime import date
 import logging
 from pathlib import Path
@@ -24,7 +25,7 @@ from WordList.WordList import Words
 from wordlepal import RunGame, GenerateDistGraphic
 
 FOOTBALL_API_BASE_URL = "https://www.schleising.net"
-FOOTBALL_API_MATCH_URL = "/football/api"
+FOOTBALL_API_HISTORY_QUERY_URL = "/football/api/history/query/"
 SERPAPI_SEARCH_URL = "https://serpapi.com/search.json"
 
 VALID_CHAT_IDS = [
@@ -418,33 +419,110 @@ async def clear_chat(update: Update, context):
         print("No message found to clear chat history")
 
 
-async def scores() -> str:
-    """Returns the football scores for today's matches"""
-    print("Getting Matches...")
+async def query_football_history(request: dict[str, Any]) -> str:
+    """Queries historical football data using the Football History API."""
+    print("Querying football history...")
+
+    def pretty_log_json(content: str, prefix: str) -> None:
+        try:
+            formatted = json.dumps(json.loads(content), indent=2, ensure_ascii=True)
+            print(f"{prefix}\n{formatted}\n")
+        except json.JSONDecodeError:
+            print(f"{prefix}\n{content}\n")
+
+    if not isinstance(request, dict):
+        content = json.dumps(
+            {
+                "ok": False,
+                "error": "request must be an object",
+            },
+            ensure_ascii=True,
+        )
+        pretty_log_json(content, "Football history query validation failed")
+        return content
+
+    print(f"URL: {FOOTBALL_API_BASE_URL}{FOOTBALL_API_HISTORY_QUERY_URL}")
+    pretty_log_json(
+        json.dumps({"request": request}, ensure_ascii=True),
+        "Football history query request",
+    )
 
     headers = {
         "Content-Type": "application/json",
+        "Authorization": f"Bearer {football_api_key}",
     }
 
-    # Open a session
-    async with aiohttp.ClientSession(
-        headers=headers, base_url=FOOTBALL_API_BASE_URL
-    ) as session:
-        # Send the request
-        async with session.get(FOOTBALL_API_MATCH_URL) as response:
-            # Check the status code
-            if response.status == 200:
-                # Get the response content
-                content = await response.text()
+    timeout = aiohttp.ClientTimeout(total=30)
 
-                # Print success
-                print("Got Matches")
-            else:
-                # Return an error
-                content = f"Error: {response.status}"
+    try:
+        async with aiohttp.ClientSession(
+            headers=headers,
+            base_url=FOOTBALL_API_BASE_URL,
+            timeout=timeout,
+        ) as session:
+            async with session.post(
+                FOOTBALL_API_HISTORY_QUERY_URL,
+                json={"request": request},
+            ) as response:
+                if response.status == 200:
+                    try:
+                        response_json = await response.json(content_type=None)
+                        content = json.dumps(response_json, ensure_ascii=True)
+                    except (ValueError, json.JSONDecodeError):
+                        content = json.dumps(
+                            {
+                                "ok": True,
+                                "raw_response": await response.text(),
+                            },
+                            ensure_ascii=True,
+                        )
 
-                # Print the error
-                print(content)
+                    print("Got football history response")
+                    pretty_log_json(content, "Football history query response")
+                else:
+                    error_message = f"HTTP {response.status}"
+
+                    try:
+                        error_payload = await response.json(content_type=None)
+                        if isinstance(error_payload, dict):
+                            api_message = str(error_payload.get("error", "")).strip()
+                            if api_message:
+                                error_message = f"HTTP {response.status}: {api_message}"
+                    except (ValueError, json.JSONDecodeError):
+                        raw_error = (await response.text()).strip()
+                        if raw_error:
+                            error_message = (
+                                f"HTTP {response.status}: {raw_error[:400]}"
+                            )
+
+                    content = json.dumps(
+                        {
+                            "ok": False,
+                            "error": error_message,
+                        },
+                        ensure_ascii=True,
+                    )
+
+                    print(f"Football history API returned an error: {error_message}")
+                    pretty_log_json(content, "Football history query error response")
+    except aiohttp.ClientError as exc:
+        content = json.dumps(
+            {
+                "ok": False,
+                "error": f"failed to fetch football history ({exc})",
+            },
+            ensure_ascii=True,
+        )
+        pretty_log_json(content, "Football history query request failed")
+    except ValueError as exc:
+        content = json.dumps(
+            {
+                "ok": False,
+                "error": f"unexpected football history response format ({exc})",
+            },
+            ensure_ascii=True,
+        )
+        pretty_log_json(content, "Football history query parsing failed")
 
     return content
 
@@ -919,6 +997,18 @@ if __name__ == "__main__":
         )
         sys.exit()
 
+    try:
+        with open(Path("football-api-key.txt"), "r", encoding="utf8") as secretFile:
+            football_api_key = secretFile.read().strip()
+
+        if football_api_key == "":
+            raise ValueError("Football API key is empty")
+    except:
+        print(
+            "No football-api-key.txt file found, you need to put your Football History API key in here"
+        )
+        sys.exit()
+
     # Create a system message
     system_message = """
     Your name is Botto.
@@ -961,13 +1051,119 @@ if __name__ == "__main__":
         timezone="Europe/London",
     )
 
-    # Create the Open AI function to get today's football scores
+    # Create the Open AI function for football history queries
     func = open_ai_models.OpenAIFunction(
-        name="football_scores_and_fixtures",
-        description="Gets the football scores and fixtures for today's matches as well as the Premier League table",
+        name="query_football_history",
+        description="Query historical football data from the Football History API using one action-based schema.",
         parameters=open_ai_models.OpenAIParameters(
-            properties={},
-            required=[],
+            properties={
+                "request": open_ai_models.OpenAIParameter(
+                    type="object",
+                    description="Football history query request.",
+                    properties={
+                        "action": open_ai_models.OpenAIParameter(
+                            type="string",
+                            description="Query action to run.",
+                            enum=[
+                                "get_aggregate_stats",
+                                "get_head_to_head",
+                                "get_league_table",
+                                "get_match_results",
+                            ],
+                        ),
+                        "filters": open_ai_models.OpenAIParameter(
+                            type="object",
+                            description="Query filters.",
+                            properties={
+                                "teams": open_ai_models.OpenAIParameter(
+                                    type="array",
+                                    description="Team names.",
+                                    items=open_ai_models.OpenAIParameter(
+                                        type="string",
+                                        description="Team name.",
+                                    ),
+                                ),
+                                "competitions": open_ai_models.OpenAIParameter(
+                                    type="array",
+                                    description="Competition names.",
+                                    items=open_ai_models.OpenAIParameter(
+                                        type="string",
+                                        description="Competition name.",
+                                    ),
+                                ),
+                                "season_start": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description="Start season in YYYY/YY format.",
+                                    pattern=r"^\\d{4}/\\d{2}$",
+                                ),
+                                "season_end": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description="End season in YYYY/YY format.",
+                                    pattern=r"^\\d{4}/\\d{2}$",
+                                ),
+                                "venue": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description="Venue filter.",
+                                    enum=["home", "away", "both"],
+                                    default="both",
+                                ),
+                            },
+                        ),
+                        "metrics": open_ai_models.OpenAIParameter(
+                            type="array",
+                            description="Metrics to return.",
+                            items=open_ai_models.OpenAIParameter(
+                                type="string",
+                                description="Metric name.",
+                                enum=[
+                                    "goals_for",
+                                    "goals_against",
+                                    "goal_difference",
+                                    "wins",
+                                    "draws",
+                                    "losses",
+                                    "points",
+                                    "matches_played",
+                                ],
+                            ),
+                        ),
+                        "group_by": open_ai_models.OpenAIParameter(
+                            type="array",
+                            description="Fields to group by.",
+                            items=open_ai_models.OpenAIParameter(
+                                type="string",
+                                description="Grouping field.",
+                                enum=["team", "season", "competition", "manager"],
+                            ),
+                        ),
+                        "limit": open_ai_models.OpenAIParameter(
+                            type="integer",
+                            description="Max number of rows.",
+                            minimum=1,
+                        ),
+                        "sort_by": open_ai_models.OpenAIParameter(
+                            type="object",
+                            description="Sort settings.",
+                            properties={
+                                "field": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description="Field to sort by.",
+                                ),
+                                "order": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description="Sort order.",
+                                    enum=["asc", "desc"],
+                                ),
+                            },
+                            required=["field", "order"],
+                        ),
+                    },
+                    required=["action", "filters"],
+                    additionalProperties=False,
+                )
+            },
+            required=["request"],
+            additionalProperties=False,
         ),
     )
 
@@ -976,7 +1172,7 @@ if __name__ == "__main__":
     )
 
     # Add the function to the client
-    simple_openai_client.add_tool(tool, scores)
+    simple_openai_client.add_tool(tool, query_football_history)
 
     # Create the Open AI function to search the internet
     func = open_ai_models.OpenAIFunction(
