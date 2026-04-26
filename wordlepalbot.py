@@ -14,6 +14,7 @@ from dateparser import parse
 
 from telegram import Update
 from telegram.constants import ParseMode
+from telegram.error import BadRequest
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackContext
 
 from bs4 import BeautifulSoup
@@ -246,10 +247,29 @@ async def gpt(update: Update, context):
 
             # Send the response to the user
             first_chunk = True
+            use_markdown = True
 
             for chunk in chunks:
-                # Send each chunk, quoting only the first one
-                await update.message.reply_text(chunk, do_quote=first_chunk, parse_mode=ParseMode.MARKDOWN)
+                # Send each chunk, quoting only the first one.
+                # If Telegram rejects Markdown entities, fall back to plain text.
+                try:
+                    if use_markdown:
+                        await update.message.reply_text(
+                            chunk,
+                            do_quote=first_chunk,
+                            parse_mode=ParseMode.MARKDOWN,
+                        )
+                    else:
+                        await update.message.reply_text(chunk, do_quote=first_chunk)
+                except BadRequest as exc:
+                    if use_markdown and "Can't parse entities" in str(exc):
+                        print(
+                            "Telegram markdown parse failed, retrying as plain text"
+                        )
+                        await update.message.reply_text(chunk, do_quote=first_chunk)
+                        use_markdown = False
+                    else:
+                        raise
 
                 # Set first_chunk to False after the first iteration
                 first_chunk = False
