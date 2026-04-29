@@ -439,9 +439,9 @@ async def clear_chat(update: Update, context):
         print("No message found to clear chat history")
 
 
-async def query_football_history(request: dict[str, Any]) -> str:
-    """Queries historical football data using the Football History API."""
-    print("Querying football history...")
+async def query_football(request: dict[str, Any]) -> str:
+    """Queries football data using the Football API."""
+    print("Querying football data...")
 
     def pretty_log_json(content: str, prefix: str) -> None:
         try:
@@ -458,13 +458,13 @@ async def query_football_history(request: dict[str, Any]) -> str:
             },
             ensure_ascii=True,
         )
-        pretty_log_json(content, "Football history query validation failed")
+        pretty_log_json(content, "Football query validation failed")
         return content
 
     print(f"URL: {FOOTBALL_API_BASE_URL}{FOOTBALL_API_HISTORY_QUERY_URL}")
     pretty_log_json(
         json.dumps({"request": request}, ensure_ascii=True),
-        "Football history query request",
+        "Football query request",
     )
 
     headers = {
@@ -497,8 +497,8 @@ async def query_football_history(request: dict[str, Any]) -> str:
                             ensure_ascii=True,
                         )
 
-                    print("Got football history response")
-                    pretty_log_json(content, "Football history query response")
+                    print("Got football response")
+                    pretty_log_json(content, "Football query response")
                 else:
                     error_message = f"HTTP {response.status}"
 
@@ -523,26 +523,26 @@ async def query_football_history(request: dict[str, Any]) -> str:
                         ensure_ascii=True,
                     )
 
-                    print(f"Football history API returned an error: {error_message}")
-                    pretty_log_json(content, "Football history query error response")
+                    print(f"Football API returned an error: {error_message}")
+                    pretty_log_json(content, "Football query error response")
     except aiohttp.ClientError as exc:
         content = json.dumps(
             {
                 "ok": False,
-                "error": f"failed to fetch football history ({exc})",
+                "error": f"failed to fetch football data ({exc})",
             },
             ensure_ascii=True,
         )
-        pretty_log_json(content, "Football history query request failed")
+        pretty_log_json(content, "Football query request failed")
     except ValueError as exc:
         content = json.dumps(
             {
                 "ok": False,
-                "error": f"unexpected football history response format ({exc})",
+                "error": f"unexpected football data response format ({exc})",
             },
             ensure_ascii=True,
         )
-        pretty_log_json(content, "Football history query parsing failed")
+        pretty_log_json(content, "Football query parsing failed")
 
     return content
 
@@ -1071,15 +1071,15 @@ if __name__ == "__main__":
         timezone="Europe/London",
     )
 
-    # Create the Open AI function for football history queries
+    # Create the Open AI function for football queries
     func = open_ai_models.OpenAIFunction(
-        name="query_football_history",
-        description="Query historical football data from the Football History API using one action-based schema.",
+        name="query_football",
+        description="Query football data from the Football API using one action-based schema.",
         parameters=open_ai_models.OpenAIParameters(
             properties={
                 "request": open_ai_models.OpenAIParameter(
                     type="object",
-                    description="Football history query request.",
+                    description="Football query request.",
                     properties={
                         "action": open_ai_models.OpenAIParameter(
                             type="string",
@@ -1192,7 +1192,7 @@ if __name__ == "__main__":
     )
 
     # Add the function to the client
-    simple_openai_client.add_tool(tool, query_football_history)
+    simple_openai_client.add_tool(tool, query_football)
 
     # Create the Open AI function to search the internet
     func = open_ai_models.OpenAIFunction(
