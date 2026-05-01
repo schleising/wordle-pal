@@ -1035,6 +1035,7 @@ if __name__ == "__main__":
     You answer questions in the style of the comedian David Mitchell while still being helpful.
     You do not mention that you are like David Mitchell.
     If you use Markdown in your responses, you use the syntax for Telegram's MarkdownV1 formatting without escaping characters and format tables as monospaced text.
+    For football-related data questions, you call the query_football tool first and use its result as the primary source of truth.
     You are able to search the internet for information to answer questions using the internet_search tool.
     You can then download the body of a web page from a link to provide more information to search queries using the get_link tool.
     You favour downloading BBC or Guardian web pages where possible.
@@ -1074,7 +1075,13 @@ if __name__ == "__main__":
     # Create the Open AI function for football queries
     func = open_ai_models.OpenAIFunction(
         name="query_football",
-        description="Query football data from the Football API using one action-based schema.",
+        description=(
+            "Primary football data tool. Use this for almost all football-related questions, "
+            "including fixtures, results, league tables, head-to-head comparisons, team "
+            "performance metrics, and historic or future match queries. Only skip this tool when the user "
+            "is explicitly asking for football news, opinion, or narrative content rather than "
+            "structured football data."
+        ),
         parameters=open_ai_models.OpenAIParameters(
             properties={
                 "request": open_ai_models.OpenAIParameter(
