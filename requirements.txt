@@ -7,7 +7,7 @@ attrs==26.1.0
 beautifulsoup4==4.15.0
 bs4==0.0.2
 certifi==2026.6.17
-charset-normalizer==3.4.7
+charset-normalizer==3.4.9
 dateparser==1.4.1
 frozenlist==1.8.0
 h11==0.16.0
@@ -22,7 +22,7 @@ pydantic_core==2.46.4
 python-dateutil==2.9.0.post0
 python-telegram-bot==22.8
 pytz==2026.2
-regex==2026.6.28
+regex==2026.7.10
 requests==2.34.2
 simple-openai==5.6.0
 six==1.17.0
