@@ -1,15 +1,18 @@
 FROM python:3-alpine
 ENV PYTHONUNBUFFERED=1
 
-# Install the build tools
-# RUN apk update && apk add git
-
 # Make the code directory
 WORKDIR /code
 
-# Install requirements for the covid charts script
+# Install requirements
 COPY ./requirements.txt /code/
-RUN pip install -r ./requirements.txt
+RUN pip install --no-cache-dir -r ./requirements.txt
 
-# Run a command to ensure the container does not exit
+# Run as a non-root user; /storage must be writable at runtime
+RUN adduser -D -u 1000 appuser \
+    && mkdir -p /storage \
+    && chown -R appuser:appuser /storage /code
+
+USER appuser
+
 CMD [ "python", "wordlepalbot.py" ]
