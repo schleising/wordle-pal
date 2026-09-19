@@ -6,7 +6,9 @@ WORKDIR /code
 
 # Install requirements
 COPY ./requirements.txt /code/
-RUN pip install --no-cache-dir -r ./requirements.txt
+RUN apk add --no-cache --virtual .build-deps git \
+    && pip install --no-cache-dir -r ./requirements.txt \
+    && apk del .build-deps
 
 # Run as a non-root user; /storage must be writable at runtime
 RUN adduser -D -u 1000 appuser \
