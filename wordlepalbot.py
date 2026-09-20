@@ -1121,12 +1121,28 @@ if __name__ == "__main__":
                                 "season_start": open_ai_models.OpenAIParameter(
                                     type="string",
                                     description="Start season in YYYY/YY format.",
-                                    pattern=r"^\\d{4}/\\d{2}$",
+                                    pattern=r"^\d{4}/\d{2}$",
                                 ),
                                 "season_end": open_ai_models.OpenAIParameter(
                                     type="string",
                                     description="End season in YYYY/YY format.",
-                                    pattern=r"^\\d{4}/\\d{2}$",
+                                    pattern=r"^\d{4}/\d{2}$",
+                                ),
+                                "date_from": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description=(
+                                        "Inclusive start calendar date (YYYY-MM-DD). "
+                                        "Use with date_to for a range, or omit date_to for a single day."
+                                    ),
+                                    pattern=r"^\d{4}-\d{2}-\d{2}$",
+                                ),
+                                "date_to": open_ai_models.OpenAIParameter(
+                                    type="string",
+                                    description=(
+                                        "Inclusive end calendar date (YYYY-MM-DD). "
+                                        "Use with date_from for a range, or omit date_from for a single day."
+                                    ),
+                                    pattern=r"^\d{4}-\d{2}-\d{2}$",
                                 ),
                                 "venue": open_ai_models.OpenAIParameter(
                                     type="string",
