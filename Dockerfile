@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED=1
 # Make the code directory
 WORKDIR /code
 
-# Install requirements
+# requirements.txt is exported by uv on a dev machine. Install it with pip.
 COPY ./requirements.txt /code/
 RUN apk add --no-cache --virtual .build-deps git \
     && pip install --no-cache-dir -r ./requirements.txt \

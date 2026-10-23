@@ -1,0 +1,23 @@
+[project]
+name = "wordle-pal"
+version = "0.0.0"
+description = "Help with Wordle words"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp",
+    "beautifulsoup4",
+    "dateparser",
+    "pillow",
+    "python-telegram-bot",
+    "requests",
+    "simple-openai",
+]
+
+# This project is a set of scripts. uv manages the lock on a dev machine;
+# Docker installs the exported requirements.txt with pip.
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+simple-openai = { git = "https://github.com/schleising/simple-openai.git", tag = "v6.3.0" }
