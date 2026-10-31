@@ -16,11 +16,11 @@ idna==3.20
 multidict==7.2.1
 pillow==13.0.0
 propcache==0.5.4
-pydantic==2.14.1
-pydantic-core==2.50.1
+pydantic==2.14.2
+pydantic-core==2.50.2
 python-dateutil==3.0.0
 python-telegram-bot==22.8
-pytz==2026.5
+pytz==2026.6
 regex==2026.9.29
 requests==2.34.2
 simple-openai @ git+https://github.com/schleising/simple-openai.git@739cd01cf34b6062d7eab4209285090fc99799a8
@@ -28,7 +28,7 @@ six==1.17.0
 soupsieve==3.0.4
 typing-extensions==4.16.0
 typing-inspection==0.4.4
-tzdata==2026.5
+tzdata==2026.6
 tzlocal==5.4.5
 urllib3==2.8.0
 yarl==1.25.1
