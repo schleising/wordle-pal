@@ -21,10 +21,10 @@ pydantic-core==2.50.4
 python-dateutil==4.0.0
 python-telegram-bot==22.8
 pytz==2026.6
-regex==2026.11.7
+regex==2026.11.9
 requests==2.34.2
 simple-openai @ git+https://github.com/schleising/simple-openai.git@739cd01cf34b6062d7eab4209285090fc99799a8
-soupsieve==4.0.1
+soupsieve==4.1
 typing-extensions==4.16.0
 typing-inspection==0.4.5
 tzdata==2026.6
