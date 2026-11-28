@@ -532,8 +532,8 @@ wheels = [
 
 [[package]]
 name = "simple-openai"
-version = "6.4.0"
-source = { git = "https://github.com/schleising/simple-openai.git?tag=v6.4.0#6197ad20cc260e283fcc2861276fab99ded701b2" }
+version = "6.5.0"
+source = { git = "https://github.com/schleising/simple-openai.git?tag=v6.5.0#f163c9158c2596346638be74bd89d63561dea779" }
 dependencies = [
     { name = "aiohttp" },
     { name = "pydantic" },
@@ -622,7 +622,7 @@ requires-dist = [
     { name = "pillow" },
     { name = "python-telegram-bot" },
     { name = "requests" },
-    { name = "simple-openai", git = "https://github.com/schleising/simple-openai.git?tag=v6.4.0" },
+    { name = "simple-openai", git = "https://github.com/schleising/simple-openai.git?tag=v6.5.0" },
 ]
 
 [[package]]

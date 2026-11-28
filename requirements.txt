@@ -23,7 +23,7 @@ python-telegram-bot==22.8
 pytz==2026.6
 regex==2026.11.25
 requests==2.34.2
-simple-openai @ git+https://github.com/schleising/simple-openai.git@6197ad20cc260e283fcc2861276fab99ded701b2
+simple-openai @ git+https://github.com/schleising/simple-openai.git@f163c9158c2596346638be74bd89d63561dea779
 soupsieve==4.1.3
 typing-extensions==4.16.0
 typing-inspection==0.4.5
